@@ -1,0 +1,44 @@
+import styles from "../../constants/style";
+import {
+  Navbar,
+  Footer,
+  Billing,
+  Business,
+  CardDeal,
+  Hero,
+  Stats,
+  Testimonials,
+  Cta,
+  // Clients,
+} from "../../components/index";
+
+const LandingPage = () => {
+  return (
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats /> 
+          <Business /> 
+          <Billing /> 
+          <CardDeal /> 
+          <Testimonials />
+          {/* <Clients />  */}
+          <Cta />
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
