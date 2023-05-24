@@ -1,10 +1,17 @@
+import { Link } from "react-router-dom";
 import { features } from "../constants/";
 import styles, { layout } from "../constants/style";
 import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
+  <div
+    className={`flex flex-row p-6 rounded-[20px] ${
+      index !== features.length - 1 ? "mb-6" : "mb-0"
+    } feature-card`}
+  >
+    <div
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+    >
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
@@ -18,16 +25,19 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Business = () =>  (
+const Business = () => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-      Medsharing une société<br className="sm:block hidden" />  adaptée à votre profil
+        Medsharing une société
+        <br className="sm:block hidden" /> adaptée à votre profil
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Découvrez dès à présent nos solutions.
       </p>
-      <Button styles={`mt-10`} />
+      <Link to="/solutions">
+        <Button styles={`mt-10`} />
+      </Link>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>
