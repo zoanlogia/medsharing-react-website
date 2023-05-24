@@ -25,10 +25,10 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import certificate from "./certificate.svg";
 import medsharingManagement from "./medsharingManagement.svg";
-import logoRemoveBg from "./img/logo/logo-removeBg.png";
-import s1 from "./img/s1.png"
-import s2 from "./img/s2.png"
-import s3 from "./img/s3.png"
+import logoRemoveBg from "./logo-removeBg.png";
+import s1 from "./s1.png"
+import s2 from "./s2.png"
+import s3 from "./s3.png"
 import robot2 from "./robot2.png"
 import shuffle from "./shuffle.png"
 import afcp from "./afcp.jpeg"
