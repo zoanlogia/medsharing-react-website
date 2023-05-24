@@ -25,7 +25,7 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import certificate from "./certificate.svg";
 import medsharingManagement from "./medsharingManagement.svg";
-import logoRemoveBg from "./logo-removeBg.png";
+import logoRemoveBg from "./logonobg.png";
 import s1 from "./s1.png"
 import s2 from "./s2.png"
 import s3 from "./s3.png"
