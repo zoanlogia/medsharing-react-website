@@ -1,32 +1,72 @@
 import {  facebook, linkedin, twitter, send, shield, star, s1, s2, shuffle, afcp, renape, cemka, cro,  } from "../assets";
+import { LOCALES } from "../i18n/locales.js";
 
-
-export const navLinks = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/about",
-    title: "Société",
-  },
-  {
-    path: "/solutions",
-    title: "Solutions",
-  },
-  {
-    path: "/services",
-    title: "Services",
-  },
-  {
-    path: "/support",
-    title: "Support",
-  },
-  {
-    path: "/devis",
-    title: "Devis",
-  },
-];
+  export const navLinks = {
+    [LOCALES.FRENCH]: [
+      {
+        key: "nav-1",
+        path: "/",
+        title: "home.title",
+      },
+      {
+        key: "nav-2",
+        path: "/about",
+        title: "about.title",
+      },
+      {
+        key: "nav-3",
+        path: "/solutions",
+        title: "solutions.title",
+      },
+      {
+        key: "nav-4",
+        path: "/services",
+        title: "services.title",
+      },
+      {
+        key: "nav-5",
+        path: "/support",
+        title: "support.title",
+      },
+      {
+        key: "nav-6",
+        path: "/devis",
+        title: "devis.title",
+      },
+    ],
+    [LOCALES.EN]: [
+      {
+        key: "nav-1",
+        path: "/",
+        title: "home.title",
+      },
+      {
+        key: "nav-2",
+        path: "/about",
+        title: "about.title",
+      },
+      {
+        key: "nav-3",
+        path: "/solutions",
+        title: "slutions.title",
+      },
+      {
+        key: "nav-4",
+        path: "/services",
+        title: "services.title",
+      },
+      {
+        key: "nav-5",
+        path: "/support",
+        title: "support.title",
+      },
+      {
+        key: "nav-6",
+        path: "/devis",
+        title: "devis.title",
+      },
+    ],
+  };
 
 export const stats = [
   {

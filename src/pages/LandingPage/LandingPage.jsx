@@ -13,6 +13,7 @@ import {
 } from "../../components/index";
 
 const LandingPage = () => {
+
   return (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
