@@ -94,6 +94,45 @@ export const stats = [
     value: "randomisation",
   },
 ];
+export const counters = [
+  {
+    id: "counter-1",
+    title: "Nombre d'étude réalisée",
+    icon: s1,
+    start: 0,
+    end: 1500
+  },
+  {
+    id: "counter-2",
+    title: "Nombre de patient inclu",
+    icon: s2,
+    start: 0,
+    end: 1456
+  },
+  {
+    id: "counter-3",
+    title: "Nombre de clients privé",
+    icon: s2,
+    start: 0,
+    end: 1456
+  },
+  {
+    id: "counter-4",
+    title: "Nombre de clients publique",
+    icon: s2,
+    start: 0,
+    end: 1456
+  },
+  
+  {
+    id: "counter-5",
+    title: "Associations & sociétés savantes",
+    icon: shuffle,
+    value: "randomisation",
+    start: 0,
+    end: 20
+  },
+];
 
 export const features = [
   {

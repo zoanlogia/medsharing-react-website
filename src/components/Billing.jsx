@@ -12,13 +12,13 @@ const Billing = () => {
           alt="billing"
           className="md:w-[70%] md:h-[100%] sm:w-[100%] sm:h-[100%] relative z-[5]"
         />
-        <div className={layout.sectionInfo}>
-          <h2 className={styles.heading2}>
+        <div className={`${layout.sectionInfo} bg-white-gradient card-white`}>
+          <h2 className={styles.heading}>
             <div className="absolute z-[3] -left-1 top-0 w-[50%] h-[50%] rounded-full white__gradient"></div>
             Gérer vos études <br className="sm:block hidden" />
             en un click
           </h2>
-          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
             Administrez vos études cliniques en toute simplicité et autonomie. <br /> <br />
             De l&apos;Attaché de Recherche Clinique au Médecin Investigateur, collectez vos données en toute sécurité. <br /> <br />
             

@@ -4,7 +4,7 @@ import styles from "../constants/style.js";
 const Clients = () => {
   return (
     <section>
-      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
+      <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full">
         Medsharing une société
         <br className="sm:block hidden" /> adaptée à votre profil
       </h2>
