@@ -1,14 +1,17 @@
 import { FormattedMessage } from "react-intl";
 import { navLinks } from "../constants";
 import { menu, close, logoRemoveBg } from "../assets";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-// import ButtonLanguages from "./ButtonLanguages.jsx";
 import { LOCALES } from "../i18n/locales.js";
 import ButtonLanguages from "./ButtonLanguages.jsx";
+import ThemeModeButton from "./themeModeButton.jsx";
+import { ThemeContext } from "../contexts/ThemeContext.jsx";
 
 const Navbar = () => {
 
+  const {theme} = useContext(ThemeContext);
+  
   const links = navLinks[LOCALES.FRENCH] || navLinks[LOCALES.ENGLISH];
 
 
@@ -21,7 +24,7 @@ const Navbar = () => {
         alt="medsharing"
         className="w-[40px] h-[40px] box-shadow bg-white rounded-full"
       />
-      <h4 className="ml-3 font-poppins font-semibold xs:text-[20px] text-[20px] xs:leading-[53px] leading-[43px] text-white">Medsharing</h4>
+      <h4 className={`ml-3 font-poppins font-semibold xs:text-[20px] text-[20px] xs:leading-[53px] leading-[43px] ${theme === "light" ? "text-primary" : "text-white"}`}>Medsharing</h4>
       
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {links.map((link, index) => (
@@ -29,7 +32,7 @@ const Navbar = () => {
             key={link.key}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               index === links.length - 1 ? "mr-0" : "mr-10"
-            } text-white mr-10`}
+            } ${theme === "light" ? "text-primary" : "text-white"} mr-10`}
           >
             <Link to={link.path}><FormattedMessage id={link.title} /></Link>
           </li>          
@@ -37,6 +40,7 @@ const Navbar = () => {
         <li>
           <ButtonLanguages/>
         </li>
+        <li><ThemeModeButton /></li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -66,6 +70,7 @@ const Navbar = () => {
             <li>
               <ButtonLanguages/>
             </li>
+            <li><ThemeModeButton /></li>
           </ul>
         </div>
       </div>

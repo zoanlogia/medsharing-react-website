@@ -9,8 +9,8 @@ const Stats = () => {
             <div key={stat.id} className={`flex-1 flex justify-start items-center flex-col m-3`}>
               {/* <img src={stat.value} alt="" /> */}
               <img className='h-[80px]' src={stat.icon} alt="" />
-              <h4 className='font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white'>{stat.value}</h4>
-              <p className='font-poppins font-normal xs:text-[16px] text-[15px] xs:leading-[26px] leading-[21px] text-white text-center'>{stat.title}</p>
+              <h4 className='font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] '>{stat.value}</h4>
+              <p className='font-poppins font-normal xs:text-[16px] text-[15px] xs:leading-[26px] leading-[21px] text-center'>{stat.title}</p>
             </div>
           ))}
         </section>
