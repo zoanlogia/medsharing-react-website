@@ -2,8 +2,13 @@ import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
 import { robot2 } from "../assets/index.js";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext.jsx";
 
 const Hero = () => {
+
+  const {theme} = useContext(ThemeContext);
+
   return (
     <section
       id="home"
@@ -13,17 +18,17 @@ const Hero = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div
-          className={`flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2`}
+          className={`flex flex-row items-center py-[6px] px-4 card-white rounded-[10px] mb-2`}
         >
           <img
             src={saas}
             className="w-[50px] h-[50px] border rounded-full me-2"
             alt="saas"
           />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">L&apos;e-CRF </span>
-            <span> au service de vos </span>{" "}
-            <span className="text-white">études cliniques</span>
+          <p className={`${styles.paragraph1} ml-2`}>
+            <span className="text-primary">L&apos;e-CRF </span>
+            <span className="text-primary"> au service de vos </span>{" "}
+            <span className="text-primary">études cliniques</span>
           </p>
         </div>
         <div className="flex flex-row items-center w-full">
@@ -35,16 +40,16 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
+        <h1 className={`font-poppins font-semibold ss:text-[68px] text-[52px] ${theme === "light" ? "text-primary" : "text-white"} ss:leading-[100px] leading-[75px] w-full`}>
           l&apos;e-CRF <br /> 100% internet
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}><span className="font-semibold">MEDSHARING</span> conçoit et commercialise depuis plus de 20 ans des applications internet pour la recherche clinique.
+        <p className={`${styles.paragraph} ${theme === "light" ? "text-primary" : "text-white"} max-w-[470px] mt-5`}><span className="font-semibold">MEDSHARING</span> conçoit et commercialise depuis plus de 20 ans des applications internet pour la recherche clinique.
         </p>
         {/* <p className={`${styles.paragraph} max-w-[470px] mt-5`}> */}
         {/* <span className="font-semibold">MEDSHARING</span> est une entreprise qui crée des applications internet pour la recherche clinique depuis plus de 20 ans. <br /> <br /> Elle a été fondée par un <span className="font-semibold">chirurgien investigateur</span> et s&apos;est spécialisée dans <span className="font-semibold">l&apos;e-CRF</span> en proposant une solution complète de recueil de données, EOL©. <br /> <br /> L&apos;entreprise est certifiée <span className="font-semibold">ISO 9001</span> depuis 2006, respecte les réglementations françaises, européennes et la FDA 21 CFR part 11. <br /> <br /> Son offre s&apos;est diversifiée avec des services comme EolRandom© (randomisation en ligne), EOLConsent© (consentement électronique), et EOLPharma© (gestion des unités de traitement).
         </p> */}
       </div>
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-10 relative`}>
+      <div className={`flex-1 flex ${styles.flexCenter} ${theme === "light" ? "bg-primary p-3 rounded-2xl" : ""} md:my-10 relative`}>
         <img
           src={robot2}
           alt="robot"

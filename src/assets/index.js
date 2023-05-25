@@ -34,6 +34,8 @@ import shuffle from "./shuffle.png"
 import afcp from "./afcp.jpeg"
 import renape from "./renape.jpeg"
 import cemka from "./cemka.jpeg"
+import moon from "./moon-solid.svg"
+import lightbulb from "./lightbulb-solid.svg"
 
 
 export {
@@ -73,4 +75,6 @@ export {
   afcp,
   renape,
   cemka,
+  moon,
+  lightbulb,
 };

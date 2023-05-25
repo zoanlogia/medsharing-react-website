@@ -5,12 +5,12 @@ import Button from "./Button";
 const CardDeal = () => {
   return (
     <section className={layout.section}>
-      <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>
+      <div className={`${layout.sectionInfo} card-white`}>
+        <h2 className={styles.heading}>
           Des données de qualités
           <br className="sm:block hidden" /> pour des études réussies
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
           EOL©, conçu par MEDSHARING, assure une optimisation supérieure de la
           qualité du recueil des données. Il fournit des contrôles de cohérence
           automatisés durant la saisie, et vérifie systématiquement les formats
