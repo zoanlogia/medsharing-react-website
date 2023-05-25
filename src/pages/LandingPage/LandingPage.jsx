@@ -13,7 +13,7 @@ import {
 } from "../../components/index";
 import {  useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext.jsx";
-import CountUp from "react-countup";
+
 import Counters from "../../components/Counters.jsx";
 
 const LandingPage = () => {

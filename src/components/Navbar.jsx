@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { LOCALES } from "../i18n/locales.js";
 import ButtonLanguages from "./ButtonLanguages.jsx";
-import ThemeModeButton from "./themeModeButton.jsx";
+import {ThemeModeButton} from "./themeModeButton.jsx";
 import { ThemeContext } from "../contexts/ThemeContext.jsx";
 
 const Navbar = () => {
