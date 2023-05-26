@@ -1,13 +1,13 @@
-import { useContext } from 'react';
-import { LanguageContext } from '../contexts/LanguagesContext';
 import { LOCALES } from '../i18n/locales.js';
-import { ThemeContext } from '../contexts/ThemeContext.jsx';
+import { useTheme } from '../hooks/useTheme.jsx';
+import { useLanguage } from '../hooks/useLanguage.jsx';
 
 const ButtonLanguageTexts = () => {
-  const { language, switchLanguage } = useContext(LanguageContext);
+  const {theme} = useTheme()
+  const { language, switchLanguage } = useLanguage();
+  
   const languageText = language === LOCALES.FRENCH ? 'En' : 'Fr';
 
-  const {theme} = useContext(ThemeContext);
 
   return (
     <button className="" onClick={switchLanguage}>

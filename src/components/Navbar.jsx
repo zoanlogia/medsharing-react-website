@@ -1,16 +1,16 @@
 import { FormattedMessage } from "react-intl";
 import { navLinks } from "../constants";
 import { menu, close, logoRemoveBg } from "../assets";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { LOCALES } from "../i18n/locales.js";
 import ButtonLanguages from "./ButtonLanguages.jsx";
 import ThemeModeButton from "./ThemeButton.jsx";
-import { ThemeContext } from "../contexts/ThemeContext.jsx";
+import { useTheme } from "../hooks/useTheme.jsx";
 
 const Navbar = () => {
 
-  const {theme} = useContext(ThemeContext);
+  const {theme} = useTheme
   
   const links = navLinks[LOCALES.FRENCH] || navLinks[LOCALES.ENGLISH];
 
