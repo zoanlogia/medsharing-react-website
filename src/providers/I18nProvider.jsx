@@ -1,6 +1,6 @@
 import { IntlProvider } from "react-intl"
 import { LOCALES } from "../i18n/locales.js"
-import { useLanguage } from "../hooks/useLanguage.jsx"
+import useLanguage  from "../hooks/useLanguage.jsx"
 import { messages } from "../i18n/messages.js"
 
 const I18nProvider = ({children}) => {
