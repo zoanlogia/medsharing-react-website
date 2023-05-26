@@ -11,19 +11,17 @@ import {
   Cta,
   // Clients,
 } from "../../components/index";
-import {  useState } from "react";
-import { ThemeContext } from "../../contexts/ThemeContext.jsx";
 
 import Counters from "../../components/Counters.jsx";
+import { useTheme } from "../../hooks/useTheme.jsx";
 
 const LandingPage = () => {
-  const [theme, setTheme] = useState('dark');
-
-
+  
+  const { theme } = useTheme();
 
   return (
     
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    
     <div className={`${theme} w-full overflow-hidden`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -49,7 +47,6 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
-    </ThemeContext.Provider>
   );
 };
 

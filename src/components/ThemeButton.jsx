@@ -1,9 +1,8 @@
-import { useContext } from 'react';
-import { ThemeContext } from '../contexts/ThemeContext.jsx';
 import { moon, lightbulb } from '../assets/index.js';
+import { useTheme } from '../hooks/useTheme.jsx';
 
 const ThemeModeButton = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useTheme()
 
   const handleClick = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');

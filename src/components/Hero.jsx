@@ -2,12 +2,10 @@ import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
 import { smartphoneHero } from "../assets/index.js";
-import { useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext.jsx";
+import { useTheme } from "../hooks/useTheme.jsx";
 
 const Hero = () => {
-
-  const {theme} = useContext(ThemeContext);
+  const {theme} = useTheme();
 
   return (
     <section
