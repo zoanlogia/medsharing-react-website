@@ -1,18 +1,16 @@
-import { apple, bill } from "../assets";
+import { medsharingBoard } from "../assets";
 import styles, { layout } from "../constants/style";
-
-apple;
 
 const Billing = () => {
   return (
     <section id="product" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
         <img
-          src={bill}
-          alt="billing"
+          src={medsharingBoard}
+          alt="dashboard picture"
           className="md:w-[70%] md:h-[100%] sm:w-[100%] sm:h-[100%] relative z-[5]"
         />
-        <div className={`${layout.sectionInfo} bg-white-gradient card-white`}>
+        <div className={`${layout.sectionInfo} bg-white-gradient`}>
           <h2 className={styles.heading}>
             <div className="absolute z-[3] -left-1 top-0 w-[50%] h-[50%] rounded-full white__gradient"></div>
             Gérer vos études <br className="sm:block hidden" />

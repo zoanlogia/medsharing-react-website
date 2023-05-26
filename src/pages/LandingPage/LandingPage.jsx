@@ -17,7 +17,7 @@ import { ThemeContext } from "../../contexts/ThemeContext.jsx";
 import Counters from "../../components/Counters.jsx";
 
 const LandingPage = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
 
 

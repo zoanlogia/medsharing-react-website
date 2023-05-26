@@ -5,7 +5,7 @@ import { ThemeContext } from '../contexts/ThemeContext.jsx';
 
 const ButtonLanguageTexts = () => {
   const { language, switchLanguage } = useContext(LanguageContext);
-  const languageText = language === LOCALES.FRENCH ? 'Fr' : 'Fr';
+  const languageText = language === LOCALES.FRENCH ? 'En' : 'Fr';
 
   const {theme} = useContext(ThemeContext);
 

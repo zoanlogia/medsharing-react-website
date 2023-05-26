@@ -1,7 +1,7 @@
 import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
-import { robot2 } from "../assets/index.js";
+import { smartphoneHero } from "../assets/index.js";
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext.jsx";
 
@@ -51,13 +51,13 @@ const Hero = () => {
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} ${theme === "light" ? "bg-primary p-3 rounded-2xl" : ""} md:my-10 relative`}>
         <img
-          src={robot2}
+          src={smartphoneHero}
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 dark__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] dark__gradient rounded-full bottom-40 dark__gradient" />
-        <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 dark__gradient" />
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 white__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />
+        <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 blue__gradient" />
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

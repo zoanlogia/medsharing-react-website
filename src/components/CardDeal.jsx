@@ -5,7 +5,7 @@ import Button from "./Button";
 const CardDeal = () => {
   return (
     <section className={layout.section}>
-      <div className={`${layout.sectionInfo} card-white`}>
+      <div className={`${layout.sectionInfo}`}>
         <h2 className={styles.heading}>
           Des données de qualités
           <br className="sm:block hidden" /> pour des études réussies

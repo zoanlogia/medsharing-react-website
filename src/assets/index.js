@@ -36,6 +36,8 @@ import renape from "./renape.jpeg"
 import cemka from "./cemka.jpeg"
 import moon from "./moon-solid.svg"
 import lightbulb from "./lightbulb-solid.svg"
+import medsharingBoard from "./medsharingBoard.svg"
+import smartphoneHero from "./smartphoneHero.svg"
 
 
 export {
@@ -77,4 +79,6 @@ export {
   cemka,
   moon,
   lightbulb,
+  medsharingBoard,
+  smartphoneHero
 };
