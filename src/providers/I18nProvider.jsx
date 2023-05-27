@@ -8,7 +8,7 @@ const I18nProvider = ({children}) => {
     return (
         <IntlProvider defaultLocale={LOCALES.FRENCH} locale={language} messages={messages[language]}>
             {children}
-        </IntlProvider>
+        </IntlProvider> 
     )
 }
 
