@@ -11,5 +11,3 @@ const I18nProvider = ({children}) => {
         </IntlProvider>
     )
 }
-
-export default I18nProvider
