@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import { LOCALES } from "../i18n/locales.js";
 
 // CONTEXT == définition (valeur/default)
-export const LangageContext = createContext({
+export const LanguageContext = createContext({
   language: LOCALES.FRENCH,
   switchLanguage: () => {},
 });
@@ -20,9 +20,9 @@ const LanguageProvider = ({ children }) => {
   }
 
   return (
-    <LangageContext.Provider value={{ language, switchLanguage }}>
+    <LanguageContext.Provider value={{ language, switchLanguage }}>
       {children}
-    </LangageContext.Provider>
+    </LanguageContext.Provider>
   );
 };
 

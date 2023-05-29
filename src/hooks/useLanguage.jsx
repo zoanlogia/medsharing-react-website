@@ -1,8 +1,9 @@
 import { useContext } from "react"
-import { LangageContext } from "../providers/LanguageProvider.jsx"
+import  LanguageProvider  from "../providers/LanguageProvider.jsx"
 
 export const useLanguage = () => {
-    const context = useContext(LangageContext)
+
+    const context = useContext(LanguageProvider)
 
     if(!context) {
         throw new Error('useLanguage must be used within LanguageProvider')
