@@ -64,7 +64,7 @@ const Navbar = () => {
                   index === links.length - 1 ? "mr-0" : "mb-4"
                 } text-white mr-10`}
               >
-                <Link to={link.path}>{link.title}</Link>
+                <Link to={link.path}><FormattedMessage id={link.title} /></Link>
               </li>
             ))}
             <li>

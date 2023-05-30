@@ -75,12 +75,12 @@ body {
 .dark {
   --tw-bg-opacity: 1;
   background-color: rgb(0 63 117 / var(--tw-bg-opacity));
-  color: white!important;
+  color: white !important;
 }
 
 .light {
-  background-color: #f5f5f5!important;
-  color: #285D8A!important;
+  background-color: #f5f5f5 !important;
+  color: #285d8a !important;
 }
 
 /*
@@ -981,6 +981,32 @@ video {
   background-color: rgba(9, 151, 124, 0.1);
 }
 
+.light_blue {
+  background-color: #0099fe;
+  background-size: 50%;
+}
+
+.plenty-banner {
+  background-color: #0099fe;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+
+/* .bg_waves {
+
+    
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color:#0099FE; 
+} */
 /* .dark .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(0 63 117 / var(--tw-bg-opacity));
@@ -1467,4 +1493,79 @@ video {
   opacity: 0.8;
   border-radius: 20px;
   padding: 15px;
+}
+
+.top {
+  animation: rotate 15s infinite linear;
+}
+
+.middle {
+  animation: rotate 18s infinite reverse linear;
+}
+
+.bottom {
+  animation: rotate 20s infinite linear;
+}
+
+.blobs {
+  transition: transform 5s;
+}
+
+.blobs:hover {
+  transform: translate(100px, 100px) scale(0);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(100px, 100px) rotate(0deg);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(359deg);
+  }
+}
+
+.blobImg {
+  background-image: url("../assets/blob_light_blue.svg");
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  top: 50%;
+  transform: rotate(180deg);
+}
+
+.banner-top {
+  
+  width: 100%;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 700px;
+  top: 90%;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.layer1 {
+  background-image: url("../assets/bannerTop.svg");
+}
+
+.plenty-banner {
+  min-height: max-content;
+}
+
+.banner-bottom {
+  background-image: url("../assets/bannerBottom.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  right: 0;
+  left: 0;
 }

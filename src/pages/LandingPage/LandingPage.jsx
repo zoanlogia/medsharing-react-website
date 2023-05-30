@@ -14,7 +14,6 @@ import {
 
 import Counters from "../../components/Counters.jsx";
 import { useTheme } from "../../hooks/useTheme.jsx";
-import Hero2 from "../../components/Hero2.jsx";
 
 const LandingPage = () => {
   
@@ -43,7 +42,6 @@ const LandingPage = () => {
           <CardDeal />
           <Counters />
           <Testimonials />
-          {/* <Clients />  */}
           <Cta />
           <Footer />
         </div>
