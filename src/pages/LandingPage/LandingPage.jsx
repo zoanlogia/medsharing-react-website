@@ -31,8 +31,8 @@ const LandingPage = () => {
       </div>
       <div className={` ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          {/* <Hero /> */}
-          <Hero2 />
+          <Hero />
+          {/* <Hero2 /> */}
         </div>
       </div>
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>

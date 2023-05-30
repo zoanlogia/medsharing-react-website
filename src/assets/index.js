@@ -38,6 +38,8 @@ import moon from "./moon-solid.svg"
 import lightbulb from "./lightbulb-solid.svg"
 import medsharingBoard from "./medsharingBoard.svg"
 import smartphoneHero from "./smartphoneHero.svg"
+import business from "./Business_SVG.svg"
+import heroImg from "./hero_smartphone_cards.svg"
 
 
 export {
@@ -80,5 +82,7 @@ export {
   moon,
   lightbulb,
   medsharingBoard,
-  smartphoneHero
+  smartphoneHero,
+  business,
+  heroImg
 };

@@ -1,7 +1,7 @@
 import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
-import { smartphoneHero } from "../assets/index.js";
+import { heroImg, smartphoneHero } from "../assets/index.js";
 import { useTheme } from "../hooks/useTheme.jsx";
 
 const Hero = () => {
@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} ${theme === "light" ? "bg-primary p-3 rounded-2xl" : ""} md:my-10 relative`}>
         <img
-          src={smartphoneHero}
+          src={heroImg}
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />
