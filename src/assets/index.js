@@ -40,6 +40,9 @@ import medsharingBoard from "./medsharingBoard.svg"
 import smartphoneHero from "./smartphoneHero.svg"
 import business from "./Business_SVG.svg"
 import heroImg from "./hero_smartphone_cards.svg"
+import aboutVector from "./aboutVector.svg"
+import hospital from "./hospital.svg"
+import blobBlue from "./blob_light_blue.svg"
 
 
 export {
@@ -84,5 +87,8 @@ export {
   medsharingBoard,
   smartphoneHero,
   business,
-  heroImg
+  heroImg,
+  aboutVector,
+  hospital,
+  blobBlue
 };
