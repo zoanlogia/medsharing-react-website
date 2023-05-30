@@ -1,4 +1,4 @@
-import { medsharingBoard } from "../assets";
+import { bill } from "../assets";
 import styles, { layout } from "../constants/style";
 
 const Billing = () => {
@@ -6,9 +6,9 @@ const Billing = () => {
     <section id="product" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
         <img
-          src={medsharingBoard}
+          src={bill}
           alt="dashboard picture"
-          className="md:w-[70%] md:h-[100%] sm:w-[100%] sm:h-[100%] relative z-[5]"
+          className="md:w-[60%] md:h-[100%] sm:w-[100%] sm:h-[100%] relative z-[5]"
         />
         <div className={`${layout.sectionInfo} bg-white-gradient`}>
           <h2 className={styles.heading}>
