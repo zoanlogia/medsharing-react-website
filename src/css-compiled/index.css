@@ -782,6 +782,14 @@ video {
   height: 80px;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[95\%\] {
+  height: 95%;
+}
+
 .min-h-\[140px\] {
   min-height: 140px;
 }
@@ -864,6 +872,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[95\%\] {
+  width: 95%;
 }
 
 .min-w-\[120px\] {

@@ -51,7 +51,7 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="robot"
-          className="w-[100%] h-[100%] relative z-index-[5]"
+          className="w-[95%] h-[95%] relative z-index-[5]"
         />
         {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" /> */}
         {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 blue__gradient" /> */}

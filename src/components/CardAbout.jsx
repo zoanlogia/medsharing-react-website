@@ -52,9 +52,9 @@ const CardAbout = () => {
           />
         </div>
       </section>
-      <div className="banner-top layer1">
+      {/* <div className="banner-top layer1">
         <div className="plenty-banner"></div>
-      </div>
+      </div> */}
       <section className={`${layout.section} z-index-[5]`}>
         <div className={`${layout.sectionImg}`}>
           <LazyLoadImage
