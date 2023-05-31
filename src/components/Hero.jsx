@@ -1,7 +1,7 @@
 import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
-import { heroImg, smartphoneHero } from "../assets/index.js";
+import { handToEnd, handToEndPng } from "../assets/index.js";
 import { useTheme } from "../hooks/useTheme.jsx";
 
 const Hero = () => {
@@ -49,9 +49,9 @@ const Hero = () => {
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} ${theme === "light" ? "bg-primary p-3 rounded-2xl" : ""} md:my-10 relative`}>
         <img
-          src={heroImg}
+          src={handToEndPng}
           alt="robot"
-          className="w-[95%] h-[95%] relative z-index-[5]"
+          className="w-[100%] h-[100%] relative z-index-[5]"
         />
         {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" /> */}
         {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 blue__gradient" /> */}

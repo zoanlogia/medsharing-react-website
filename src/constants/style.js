@@ -3,10 +3,15 @@ const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
   
     heading: "font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
-    headingMd: "font-poppins font-semibold text-[40px] leading-[66.8px] w-full",
+
+    headingMd: "font-poppins font-semibold text-[40px] leading-[50.8px] w-full",
+
+    headingSm: "font-poppins font-semibold text-[25px] leading-[40.8px] w-full",
+
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
     paragraph: "font-poppins font-normal text-[18px] leading-[30.8px]",
     paragraph1: "font-poppins font-normal text-[18px] leading-[30.8px]",
+    paragraphMd: "font-poppins font-semibold text-[20px] leading-[30.8px]",
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",

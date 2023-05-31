@@ -10,7 +10,8 @@ import Stats from "./Stats";
 import Testimonials from "./Testimonials";
 import Cta from "./Cta";
 import Clients from "./Clients";
-import CardAbout from "./CardAbout";
+import CardAbout1 from "./CardAbout1";
+import CardAbout2 from "./CardAbout2";
 
 export {
     Navbar,
@@ -25,5 +26,6 @@ export {
     Testimonials,
     Cta,
     Clients,
-    CardAbout
+    CardAbout1,
+    CardAbout2,
 }

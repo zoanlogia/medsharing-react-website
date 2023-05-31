@@ -1542,9 +1542,10 @@ video {
   width: 100%;
   
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 700px;
-  top: 90%;
+  background-size: cover;
+  height: 55.4rem;
+  top: 80%;
+
   position: absolute;
   right: 0;
   left: 0;
@@ -1559,13 +1560,19 @@ video {
 }
 
 .banner-bottom {
-  background-image: url("../assets/bannerBottom.svg");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: absolute;
   right: 0;
   left: 0;
+}
+
+.layer2 {
+  background-image: url("../assets/bannerBottom.svg");
+}
+
+.list-inline {
+  display: inline;
 }

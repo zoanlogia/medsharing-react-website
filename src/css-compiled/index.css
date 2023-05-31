@@ -782,12 +782,8 @@ video {
   height: 80px;
 }
 
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[95\%\] {
-  height: 95%;
+.h-full {
+  height: 100%;
 }
 
 .min-h-\[140px\] {
@@ -804,10 +800,6 @@ video {
 
 .w-\[140px\] {
   width: 140px;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .w-\[21px\] {
@@ -842,6 +834,10 @@ video {
   width: 42px;
 }
 
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .w-\[48px\] {
   width: 48px;
 }
@@ -872,14 +868,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .min-w-\[120px\] {
@@ -962,8 +950,8 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1105,6 +1093,10 @@ video {
   font-size: 20px;
 }
 
+.text-\[25px\] {
+  font-size: 25px;
+}
+
 .text-\[30px\] {
   font-size: 30px;
 }
@@ -1157,8 +1149,16 @@ video {
   line-height: 32px;
 }
 
+.leading-\[40\.8px\] {
+  line-height: 40.8px;
+}
+
 .leading-\[43px\] {
   line-height: 43px;
+}
+
+.leading-\[50\.8px\] {
+  line-height: 50.8px;
 }
 
 .leading-\[66\.8px\] {
@@ -2728,9 +2728,9 @@ video {
 .banner-top {
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 700px;
-  top: 90%;
+  background-size: cover;
+  height: 55.4rem;
+  top: 80%;
   position: absolute;
   right: 0;
   left: 0;
@@ -2746,7 +2746,6 @@ video {
 }
 
 .banner-bottom {
-  background-image: url("../assets/bannerBottom.svg");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -2756,9 +2755,24 @@ video {
   left: 0;
 }
 
+.layer2 {
+  background-image: url("../assets/bannerBottom.svg");
+}
+
+.list-inline {
+  display: inline;
+}
+
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(164 182 219 / var(--tw-text-opacity));
+}
+
+@media (min-width: 320px) {
+  .xxs\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 @media (min-width: 480px) {
@@ -2949,6 +2963,10 @@ video {
 }
 
 @media (min-width: 1700px) {
+  .xl\:mr-0 {
+    margin-right: 0px;
+  }
+
   .xl\:mt-10 {
     margin-top: 2.5rem;
   }

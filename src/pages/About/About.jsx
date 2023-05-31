@@ -1,19 +1,13 @@
-import styles from "../../constants/style";
-import {
-  Navbar,
-  Footer,
-} from "../../components/index";
+import styles, { layout } from "../../constants/style";
+import { Navbar, Footer, CardAbout2 } from "../../components/index";
 
 import { useTheme } from "../../hooks/useTheme.jsx";
-import CardAbout from "../../components/CardAbout.jsx";
+import CardAbout1 from "../../components/CardAbout1.jsx";
 
 const about = () => {
-  
   const { theme } = useTheme();
 
   return (
-    
-    
     <div className={`${theme} w-full overflow-hidden`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -22,7 +16,14 @@ const about = () => {
       </div>
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <CardAbout />
+          <div className={layout.section}>
+            <CardAbout1 />
+          </div>
+          {/* <div className="banner-top layer1 xs:hidden md:block"></div> */}
+
+          <div className={layout.section}>
+            <CardAbout2 />
+          </div>
           <Footer />
         </div>
       </div>

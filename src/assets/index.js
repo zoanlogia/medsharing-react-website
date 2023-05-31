@@ -43,6 +43,8 @@ import heroImg from "./hero_smartphone_cards.svg"
 import aboutVector from "./aboutVector.svg"
 import hospital from "./hospital.svg"
 import blobBlue from "./blob_light_blue.svg"
+import handToEnd from "./hand-to-end.svg"
+import handToEndPng from "./hand-to-end.png"
 
 
 export {
@@ -90,5 +92,7 @@ export {
   heroImg,
   aboutVector,
   hospital,
-  blobBlue
+  blobBlue,
+  handToEnd,
+  handToEndPng
 };
