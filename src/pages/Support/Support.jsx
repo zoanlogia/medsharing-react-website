@@ -4,7 +4,7 @@ import styles, { layout } from "../../constants/style.js";
 import Navbar from "../../components/Navbar.jsx";
 import Footer from "../../components/Footer.jsx";
 
-const Solutions = () => {
+const Support = () => {
   const { theme } = useTheme();
 
   return (
@@ -26,4 +26,4 @@ const Solutions = () => {
   );
 };
 
-export default Solutions;
+export default Support;

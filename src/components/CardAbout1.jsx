@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { hospital } from "../assets/index.js";
 import styles, { layout } from "../constants/style.js";
+import Button from "./Button.jsx";
 
 const CardAbout1 = () => {
   return (
@@ -41,9 +43,10 @@ const CardAbout1 = () => {
           alt="card icon hospital"
           className="w-full mt-10 sm:mt-0 md:mt-10 object-contain"
         />
+        <Link to="https://www.medsharing.fr/pdf/z9xzkrgqip7y6qk9w6ri.pdf">
+          <Button customClass="mt-5" text="📚 Demandez la brochure"/>
+        </Link>
       </div>
-
-      
     </>
   );
 };
