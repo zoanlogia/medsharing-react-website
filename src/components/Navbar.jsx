@@ -2,7 +2,7 @@ import { FormattedMessage } from "react-intl";
 import { navLinks } from "../constants";
 import { menu, close, logoRemoveBg } from "../assets";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LOCALES } from "../i18n/locales.js";
 import ButtonLanguages from "./ButtonLanguages.jsx";
 import ThemeModeButton from "./ThemeButton.jsx";
@@ -34,16 +34,16 @@ const Navbar = () => {
         </h4>
         </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {links.map((link, index) => (
+        {links.map((link, index, isActive) => (
           <li
             key={link.key}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               index === links.length - 1 ? "mr-0" : "mr-10"
             } ${theme === "light" ? "text-primary" : "text-white"} mr-10`}
           >
-            <Link to={link.path}>
+            <NavLink to={link.path} className={`active-link ${link.isActive ? "active" : ""}`}>
               <FormattedMessage id={link.title} />
-            </Link>
+            </NavLink>
           </li>
         ))}
         <li>
@@ -75,9 +75,9 @@ const Navbar = () => {
                   index === links.length - 1 ? "mr-0" : "mb-4"
                 } text-white mr-10`}
               >
-                <Link to={link.path}>
+                <NavLink to={link.path} activeClassName="active-link">
                   <FormattedMessage id={link.title} />
-                </Link>
+                </NavLink>
               </li>
             ))}
             <li>

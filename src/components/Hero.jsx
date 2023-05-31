@@ -1,7 +1,7 @@
 import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
-import { handToEndPng } from "../assets/index.js";
+import { heroCity } from "../assets/index.js";
 import { useTheme } from "../hooks/useTheme.jsx";
 import { Link } from "react-router-dom";
 
@@ -67,13 +67,13 @@ const Hero = () => {
         } md:my-10 relative`}
       >
         <img
-          src={handToEndPng}
+          src={heroCity}
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />
-        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" /> */}
-        {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 blue__gradient" /> */}
-        {/* <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 blue__gradient" /> */}
+        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" />  */}
+        <div className="absolute z-[1] w-[60%] h-[60%] rounded-full bottom-40 white__gradient" />
+         {/* <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 blue__gradient" /> */}
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

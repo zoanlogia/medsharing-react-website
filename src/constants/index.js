@@ -81,12 +81,12 @@ export const stats = [
     icon: s2,
     value: "e-consent",
   },
-  // {
-  //   id: "stats-3",
-  //   title: "Module-3",
-  //   icon: s3,
-  //   value: "e-Pro",
-  // },
+  {
+    id: "stats-3",
+    title: "Module-3",
+    icon: s2,
+    value: "e-Pro",
+  },
   {
     id: "stats-4",
     title: "EOL Random©, un module d'EOL©, gère de façon autonome ou associée à l'eCRF toutes les problématiques de randomisation grâce à un algorithme adaptatif.",

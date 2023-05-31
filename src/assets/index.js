@@ -45,6 +45,7 @@ import hospital from "./hospital.svg"
 import blobBlue from "./blob_light_blue.svg"
 import handToEnd from "./hand-to-end.svg"
 import handToEndPng from "./hand-to-end.png"
+import heroCity from "./heroCity.png"
 
 
 export {
@@ -94,5 +95,6 @@ export {
   hospital,
   blobBlue,
   handToEnd,
-  handToEndPng
+  handToEndPng,
+  heroCity,
 };
