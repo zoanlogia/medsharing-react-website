@@ -21,14 +21,14 @@ const Navbar = () => {
         <img
           src={logoRemoveBg}
           alt="medsharing"
-          className="w-[40px] h-[40px] box-shadow bg-white rounded-full"
+          className="w-[40px] h-[40px] box-shadow bg-white rounded-full object-contain"
         />
             </Link>
             <Link to="/">
         <h4
           className={`ml-3 font-poppins font-semibold xs:text-[20px] text-[20px] xs:leading-[53px] leading-[43px] ${
             theme === "light" ? "text-primary" : "text-white"
-          }`}
+          } `}
         >
           Medsharing
         </h4>
@@ -71,21 +71,21 @@ const Navbar = () => {
             {links.map((link, index) => (
               <li
                 key={link.key}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  index === links.length - 1 ? "mr-0" : "mb-4"
-                } text-white mr-10`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}
               >
-                <NavLink to={link.path} activeClassName="active-link">
+                <NavLink to={link.path} className="active-link">
                   <FormattedMessage id={link.title} />
                 </NavLink>
               </li>
             ))}
-            <li>
+            
+            <li className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}>
               <ButtonLanguages />
             </li>
-            <li>
+            <li className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}>
               <ThemeModeButton />
             </li>
+            
           </ul>
         </div>
       </div>

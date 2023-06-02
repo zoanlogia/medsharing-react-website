@@ -46,6 +46,13 @@ import blobBlue from "./blob_light_blue.svg"
 import handToEnd from "./hand-to-end.svg"
 import handToEndPng from "./hand-to-end.png"
 import heroCity from "./heroCity.png"
+import kit from "./kit.svg"
+import loupe from "./loupe.svg"
+import pen from "./pen.svg"
+import tracking from "./tracking.svg"
+import drug from "./drug.svg"
+import details from "./details.svg"
+import consult from "./consult.svg"
 
 
 export {
@@ -97,4 +104,11 @@ export {
   handToEnd,
   handToEndPng,
   heroCity,
+  kit,
+  loupe,
+  pen,
+  tracking,
+  drug,
+  details,
+  consult,
 };
