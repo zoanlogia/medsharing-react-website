@@ -18,7 +18,7 @@ const CardAbout1 = () => {
             chirurgien{" "}
           </b>{" "}
           investigateur, spécialiste de la recherche clinique. <br />
-          <br /> Rapidement, nous nous sommes spécialisés dans l'
+          <br /> Rapidement, nous nous sommes spécialisés dans l&apos;
           <b>e-CRF</b> en créant une solution globale de recueil de données{" "}
           <b>EOL©</b>
           (Etude On Line) avec monitoring, système de validation, export de
@@ -29,7 +29,7 @@ const CardAbout1 = () => {
           réglementations françaises et européennes en matière de gestion des
           sonnées de santé au travers des <b>BPC</b> (directive 2001/20/CE du 4
           avril 2001 et loi du 9 août 2004) et de la <b>RGPD</b>. <br />
-          <br /> Au fil des années, notre offre s'est étoffée et se décline sous
+          <br /> Au fil des années, notre offre s&apos;est étoffée et se décline sous
           forme de différents services pouvant être utilisés indépendamment tels
           que <b>EolRandom©</b> (randomisation par internet),
           <b>EOLConsent©</b> (Consentement électronique), <b>EOLPharma©</b>{" "}

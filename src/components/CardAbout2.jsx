@@ -1,4 +1,3 @@
-import React from "react";
 import styles, { layout } from "../constants/style.js";
 import { aboutVector } from "../assets/index.js";
 import { Chip, Divider } from "@mui/material";
@@ -30,7 +29,7 @@ const CardAbout2 = () => {
       </div>
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.headingMd}`}>
-          Adapté à tous types d'études 
+          Adapté à tous types d&apos;études 
           {/* médicales et para-médicales */}
         </h2>
         <Root>
