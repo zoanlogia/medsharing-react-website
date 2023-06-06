@@ -53,6 +53,7 @@ import randomisationVector from "./randomisationVector.svg"
 import econsentVector from "./econsentVector.svg"
 import chevronUp from "./heroicons-solid/chevron-up.svg"
 import chevronDown from "./heroicons-solid/chevron-down.svg"
+import heroCity from "./heroCity.png"
 
 
 export {
@@ -111,4 +112,5 @@ export {
   econsentVector,
   chevronUp,
   chevronDown,
+  heroCity
 };

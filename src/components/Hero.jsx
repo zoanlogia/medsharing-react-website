@@ -1,7 +1,7 @@
 import styles from "../constants/style";
 import saas from "../assets/saas.svg";
 import GetStarted from "./GetStarted";
-import { handToEndPng } from "../assets/index.js";
+import { heroCity } from "../assets/index.js";
 import { useTheme } from "../hooks/useTheme.jsx";
 import { Link } from "react-router-dom";
 
@@ -67,7 +67,7 @@ const Hero = () => {
         } md:my-10 relative`}
       >
         <img
-          src={handToEndPng}
+          src={heroCity}
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />
