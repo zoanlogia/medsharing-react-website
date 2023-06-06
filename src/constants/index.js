@@ -182,7 +182,7 @@ export const features = [
     content: "MEDSHARING a créé EOL©, une plateforme eCRF en ligne complète, compatible avec tous les navigateurs et systèmes d'exploitation. Hébergée de manière sécurisée chez OVH, cette solution garantit disponibilité, sécurité, et simplicité, tout en permettant une mutualisation des coûts. L'approche technologique de MEDSHARING correspond aux défis actuels de la recherche clinique."
   },
 ];
-];
+
 
 export const feedback = [
   {
