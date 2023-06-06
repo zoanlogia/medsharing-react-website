@@ -1576,3 +1576,9 @@ video {
 .list-inline {
   display: inline;
 }
+
+#solutionsIconsSection {
+  background-image: url("../assets/city.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
