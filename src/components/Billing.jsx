@@ -12,7 +12,7 @@ const Billing = () => {
         />
         <div className={`${layout.sectionInfo} bg-white-gradient`}>
           <h2 className={styles.heading}>
-            <div className="absolute z-[3] -left-1 top-0 w-[50%] h-[50%] rounded-full white__gradient"></div>
+            <div className="absolute z-[3] -left-1 top-0 w-[50%] h-[50%] rounded-full "></div>
             Gérer vos études <br className="sm:block hidden" />
             en un click
           </h2>

@@ -7,7 +7,7 @@ const CardAbout1 = () => {
   return (
     <>
       <div className={`${layout.sectionInfo}`}>
-        <h2 className={styles.heading}>Qui sommes-nous ?</h2>
+        <h1 className={styles.heading}>Qui sommes-nous ?</h1>
         <hr className="w-[300px]" />
 
         <div className="blobImg xs:hidden md:block"></div>
