@@ -54,7 +54,11 @@ import econsentVector from "./econsentVector.svg"
 import chevronUp from "./heroicons-solid/chevron-up.svg"
 import chevronDown from "./heroicons-solid/chevron-down.svg"
 import heroCity from "./heroCity.png"
-
+import dots from "./dots.svg"
+import grandma from "./grandma.svg"
+import creating from "./creating.svg"
+import cleaning from "./cleaning.svg"
+import starsBg from "./stars-bg.svg"
 
 export {
   cro,
@@ -112,5 +116,10 @@ export {
   econsentVector,
   chevronUp,
   chevronDown,
-  heroCity
+  heroCity,
+  dots,
+  grandma,
+  creating,
+  cleaning,
+  starsBg
 };
