@@ -43,7 +43,7 @@ const Solutions = () => {
         </div>
       </div>
       {/* <div class="blobImgSolutionsRight xs:hidden md:block"></div> */}
-      <div className="white__gradient left-0 bottom-[60%] w-[40%] h-[40%] absolute"></div>
+      <div className="white__gradient left-0 bottom-[60%] w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
       <section
         className={` ${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
       >
@@ -53,7 +53,7 @@ const Solutions = () => {
           </h1>
           <hr className="w-[300px]" />
           <div className={`flex flex-wrap flex-row justify-center mt-10`}>
-            <div id="solutionsIconsSection" className="flex flex-wrap flex-row">
+            <div id="solutionsIconsSection" className="flex flex-wrap flex-row justify-center">
               <SolucesIcons
                 onClick={() => toggleShow("loupe")}
                 src={loupe}
@@ -395,7 +395,7 @@ const Solutions = () => {
                 }`}
                 
               >
-                <div className="white__gradient left-[50%] bottom-[50%] w-[20%] h-[20%] absolute"></div>
+                <div className="white__gradient left-[50%] bottom-[50%] w-[20%] h-[20%] absolute xxs:hidden md:block"></div>
                 <CardText>
                   <h2>
                     {" "}
@@ -465,7 +465,7 @@ const Solutions = () => {
               </div>
             </div>
             
-            <p className="flex justify-center  sm:my-5 sm:px-16 px-6 sm:py-12 py-4 flex-col bg-black-gradient-2 max-w-[800px] rounded-[20px] box-shadow">
+            <div className="flex justify-center  sm:my-5 sm:px-16 px-6 sm:py-12 py-4 flex-col bg-black-gradient-2 max-w-[800px] rounded-[20px] box-shadow">
               <h2>
                 Vous voulez en savoir plus ? Contactez-nous dès aujourd&apos;hui !
               </h2>
@@ -477,21 +477,21 @@ const Solutions = () => {
               <Link to="mailto:info@medsharing.fr">
                 <Button customClass={`mt-5`} text="Contactez-nous"></Button>
               </Link>
-            </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className="white__gradient right-0 w-[40%] h-[40%] absolute"></div>
-      <div className="ripple-background"></div>
-      <div className="circle small-l shade1 xs:hidden lg:block"></div>
-      <div className="circle medium-l shade2 xs:hidden lg:block"></div>
+      <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
+      <div className="ripple-background xxs:hidden md:block"></div>
+      <div className="circle small-l shade1 xxs:hidden md:block"></div>
+      <div className="circle medium-l shade2 xxs:hidden md:block"></div>
       <div className="ripple-background left-[100%] top-[100%]"></div>
 
-      <div className="ripple-background"></div>
-      <div className="circle small-r shade1 xs:hidden lg:block"></div>
-      <div className="circle medium-r shade2 xs:hidden lg:block"></div>  
-      <div className="ripple-background right-[100%] top-[100%]"></div>
+      <div className="ripple-background xxs:hidden md:block"></div>
+      <div className="circle small-r shade1 xxs:hidden md:block"></div>
+      <div className="circle medium-r shade2 xxs:hidden md:block"></div>  
+      <div className="ripple-background right-[100%] top-[100%] xxs:hidden md:block"></div>
 
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
