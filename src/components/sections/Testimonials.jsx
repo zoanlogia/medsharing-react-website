@@ -1,6 +1,7 @@
-import { feedback } from "../constants";
-import styles from "../constants/style";
-import Feedback from "./Feedback";
+import { hrBlue } from "../../assets/index.js";
+import { feedback } from "../../constants/index.js";
+import styles from "../../constants/style.js";
+import Feedback from "./Feedback.jsx";
 
 const Testimonials = () => {
   return (
@@ -14,7 +15,12 @@ const Testimonials = () => {
         <h1 className={styles.heading2}>
           {/* Ce que nos clients disent <br className="sm:block hidden" /> A propos
           de nous */}
-          Ils nous font confiance
+          Ils nous font  <span style={{
+             backgroundImage: `url('${hrBlue}')`,
+             backgroundRepeat: "no-repeat",
+             backgroundSize: "100%",
+             backgroundPosition: "left bottom",
+          }}>confiance</span>
         </h1>
         {/* <div className="w-full md:mt-0 mt-6">
           <p className={`${styles.paragraph} text-left max-w-[450px]`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quam, rerum accusantium </p>

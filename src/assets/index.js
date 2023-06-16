@@ -59,6 +59,17 @@ import grandma from "./grandma.svg"
 import creating from "./creating.svg"
 import cleaning from "./cleaning.svg"
 import starsBg from "./stars-bg.svg"
+import bigArrow from './bigArrow.svg'
+import bgForms from './bgForms.svg'
+import bgForms1 from './bgForms1.svg'
+import hrBlue from './hrBlue.svg'
+import hrYellow from './hrYellow.svg'
+import IconCheckBlue from './IconCheckBlue.svg'
+import linesWaves from './linesWaves.svg'
+import linesYellow from './linesYellow.svg'
+import shemaServices from './shemaServices.svg'
+import vortexBulls from './vortexBulls.svg'
+import saas from './saas.svg'
 
 export {
   cro,
@@ -121,5 +132,17 @@ export {
   grandma,
   creating,
   cleaning,
-  starsBg
+  starsBg,
+  bigArrow,
+  bgForms,
+  bgForms1,
+  hrBlue,
+  hrYellow,
+  IconCheckBlue,
+  linesWaves,
+  linesYellow,
+  shemaServices,
+  vortexBulls,
+  saas
+  
 };

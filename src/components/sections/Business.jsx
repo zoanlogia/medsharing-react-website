@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { features } from "../constants/";
-import styles, { layout } from "../constants/style";
-import Button from "./Button";
+import { features } from "../../constants";
+import styles, { layout } from "../../constants/style";
+import Button from "../buttons/Button";
+import { hrBlue } from "../../assets/index.js";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
@@ -30,7 +31,12 @@ const Business = () => (
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         Medsharing une société
-        <br className="sm:block hidden" /> adaptée à votre profil
+        <br className="sm:block hidden" /> adaptée à <span  style={{
+            backgroundImage: `url('${hrBlue}')`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "100%",
+            backgroundPosition: "left bottom",
+          }}> votre profil</span>
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Découvrez dès à présent nos solutions.

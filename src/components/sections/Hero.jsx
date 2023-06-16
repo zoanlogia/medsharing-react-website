@@ -1,8 +1,7 @@
-import styles from "../constants/style";
-import saas from "../assets/saas.svg";
-import GetStarted from "./GetStarted";
-import { heroCity } from "../assets/index.js";
-import { useTheme } from "../hooks/useTheme.jsx";
+import styles from "../../constants/style";
+import {GetStarted} from "../../components/index"
+import { heroCity, hrBlue, saas } from "../../assets/index";
+import { useTheme } from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -40,13 +39,18 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-
         <h1
           className={`font-poppins font-semibold ss:text-[68px] text-[52px] ${
             theme === "light" ? "text-primary" : "text-white"
           } ss:leading-[100px] leading-[75px] w-full`}
-        >
-          l&apos;e-CRF <br /> 100% internet
+         
+        > <span  style={{
+          backgroundImage: `url('${hrBlue}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+          backgroundPosition: "left bottom",
+        }}>l&apos;e-CRF </span>
+          <br /> 100% internet
         </h1>
         <p
           className={`${styles.paragraph} ${
@@ -73,7 +77,7 @@ const Hero = () => {
         />
         {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" />  */}
         <div className="absolute z-[1] w-[60%] h-[60%] rounded-full bottom-40 white__gradient" />
-         {/* <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 blue__gradient" /> */}
+        {/* <div className="absolute z-[1] w-[50%] h-[20%] right-20 bottom-20 blue__gradient" /> */}
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

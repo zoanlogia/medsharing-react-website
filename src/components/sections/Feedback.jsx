@@ -1,4 +1,4 @@
-import { quotes } from "../assets";
+import { quotes } from "../../assets";
 
 const Feedback = ({ content, title, name, img }) => {
   return (

@@ -1,12 +1,11 @@
 import { FormattedMessage } from "react-intl";
-import { navLinks } from "../constants";
-import { menu, close, logoRemoveBg } from "../assets";
+import { navLinks } from "../../constants";
+import { menu, close, logoRemoveBg } from "../../assets";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { LOCALES } from "../i18n/locales.js";
-import ButtonLanguages from "./ButtonLanguages.jsx";
-import ThemeModeButton from "./ThemeButton.jsx";
-import { useTheme } from "../hooks/useTheme.jsx";
+import { LOCALES } from "../../i18n/locales.js";
+import {ButtonLanguages, ThemeModeButton} from "../index";
+import { useTheme } from "../../hooks/useTheme.jsx";
 
 const Navbar = () => {
   const { theme } = useTheme;
@@ -34,7 +33,9 @@ const Navbar = () => {
         </h4>
         </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {links.map((link, index, isActive) => (
+        {links.map((link, index, 
+        // isActive
+        ) => (
           <li
             key={link.key}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
@@ -68,7 +69,9 @@ const Navbar = () => {
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-h-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {links.map((link, index) => (
+            {links.map((link, 
+            // index
+            ) => (
               <li
                 key={link.key}
                 className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}

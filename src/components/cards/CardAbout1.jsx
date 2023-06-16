@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { hospital } from "../assets/index.js";
-import styles, { layout } from "../constants/style.js";
-import Button from "./Button.jsx";
+import { hospital } from "../../assets/index.js";
+import styles, { layout } from "../../constants/style.js";
+import {SectionTitle, Button} from "../index.js";
 
 const CardAbout1 = () => {
   return (
     <>
       <div className={`${layout.sectionInfo}`}>
-        <h1 className={styles.heading}>Qui sommes-nous ?</h1>
-        <hr className="w-[300px]" />
+        <SectionTitle size="70%">Qui sommes-nous ?</SectionTitle>
+
 
         <div className="blobImg xs:hidden md:block"></div>
         <p className={`${styles.paragraph1} max-w-[700px] xs:mt-16 xl:mt-10`}>

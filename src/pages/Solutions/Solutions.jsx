@@ -1,8 +1,7 @@
 import { useTheme } from "../../hooks/useTheme";
 import styles, { layout } from "../../constants/style.js";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import SolucesIcons from "../../components/SolucesIcons.jsx";
+import {Navbar, Footer, SolucesIcons, SectionTitle, Button, CardText} from "../../components/index";
+
 import { 
   drugs,
   groupes,
@@ -10,9 +9,8 @@ import {
   loupe,
 } from "../../assets/index.js";
 import { useState } from "react";
-import Button from "../../components/Button.jsx";
 import { Link } from "react-router-dom";
-import CardText from "../../components/CardText.jsx";
+
 
 const Solutions = () => {
   const { theme } = useTheme();
@@ -48,10 +46,7 @@ const Solutions = () => {
         className={` ${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
       >
         <div className={`${styles.boxWidth}`}>
-          <h1 className="font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full">
-            Nos solutions
-          </h1>
-          <hr className="w-[300px]" />
+          <SectionTitle>Nos solutions</SectionTitle>
           <div className={`flex flex-wrap flex-row justify-center mt-10`}>
             <div id="solutionsIconsSection" className="flex flex-wrap flex-row justify-center">
               <SolucesIcons
