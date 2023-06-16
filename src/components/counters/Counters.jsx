@@ -1,6 +1,6 @@
 import CountUp from "react-countup"
-import { counters } from "../constants/index.js"
-import styles from "../constants/style.js"
+import { counters } from "../../constants/index.js"
+import styles from "../../constants/style.js"
 import { useState } from "react"
 import ScrollTrigger from 'react-scroll-trigger'
 

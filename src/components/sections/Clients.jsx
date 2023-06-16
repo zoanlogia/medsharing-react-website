@@ -1,5 +1,5 @@
-import { clients } from "../constants/index.js";
-import styles from "../constants/style.js";
+import { clients } from "../../constants/index.js";
+import styles from "../../constants/style.js";
 
 const Clients = () => {
   return (

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "../constants/style";
-import Button from "./Button";
+import styles from "../../constants/style";
+import Button from "../buttons/Button";
+import { hrBlue } from "../../assets/index.js";
 
 const Cta = () => {
   return (
@@ -8,7 +9,19 @@ const Cta = () => {
       className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
     >
       <div className="flex-1 flex flex-col">
-        <h2 className={styles.heading2}>Essayez dès à présent Eol!</h2>
+        <h2 className={styles.heading2}>
+          Essayez dès à présent{" "}
+          <span
+            style={{
+              backgroundImage: `url('${hrBlue}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "100%",
+              backgroundPosition: "left bottom",
+            }}
+          >
+            Eol!
+          </span>{" "}
+        </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Sur la base d&apos;un devis clair et détaillé, MEDSHARING prend
           l&apos;engagement de réaliser votre projet sans dépassement budgétaire

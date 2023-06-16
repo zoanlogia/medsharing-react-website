@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { medsharingManagement } from "../assets/index.js";
-import styles, { layout } from "../constants/style";
-import Button from "./Button";
+import { hrBlue, medsharingManagement } from "../../assets/index";
+import styles, { layout } from "../../constants/style";
+import {Button} from "../../components/index";
 
 const CardDeal = () => {
   return (
@@ -9,7 +9,18 @@ const CardDeal = () => {
       <div className={`${layout.sectionInfo}`}>
         <h2 className={styles.heading}>
           Des données de qualités
-          <br className="sm:block hidden" /> pour des études réussies
+          <br className="sm:block hidden" /> pour des{" "}
+          <span
+            style={{
+              backgroundImage: `url('${hrBlue}')`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "100%",
+              backgroundPosition: "left bottom",
+              
+            }}
+          >
+            études 
+          </span> réussies
         </h2>
         <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
           EOL©, conçu par MEDSHARING, assure une optimisation supérieure de la

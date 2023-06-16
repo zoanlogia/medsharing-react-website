@@ -1,5 +1,5 @@
-import { moon, lightbulb } from '../assets/index.js';
-import { useTheme } from '../hooks/useTheme.jsx';
+import { moon, lightbulb } from '../../assets/index.js';
+import { useTheme } from '../../hooks/useTheme.jsx';
 
 const ThemeModeButton = () => {
   const { theme, setTheme } = useTheme()

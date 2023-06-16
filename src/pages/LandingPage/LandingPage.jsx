@@ -9,10 +9,10 @@ import {
   Stats,
   Testimonials,
   Cta,
+  Counters
   // Clients,
 } from "../../components/index";
 
-import Counters from "../../components/Counters.jsx";
 import { useTheme } from "../../hooks/useTheme.jsx";
 
 const LandingPage = () => {
