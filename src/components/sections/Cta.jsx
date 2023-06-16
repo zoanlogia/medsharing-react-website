@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../../constants/style";
 import Button from "../buttons/Button";
-import { hrBlue } from "../../assets/index.js";
+import { hrBlue } from "../../assets/index";
 
 const Cta = () => {
   return (

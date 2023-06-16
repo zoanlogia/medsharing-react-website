@@ -1,4 +1,4 @@
-import styles, { layout } from "../../constants/style.js";
+import styles, { layout } from "../../constants/style";
 import { IconCheckBlue, aboutVector, hrBlue } from "../../assets/index";
 
 const CardAbout2 = () => {

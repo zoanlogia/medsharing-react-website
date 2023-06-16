@@ -1,7 +1,7 @@
-import styles from "../../constants/style.js";
+import styles from "../../constants/style";
 
-import { footerLinks, socialMedia } from "../../constants/index.js";
-import { logoRemoveBg } from "../../assets/index.js";
+import { footerLinks, socialMedia } from "../../constants/index";
+import { logoRemoveBg } from "../../assets/index";
 
 const Footer = () => {
   return (

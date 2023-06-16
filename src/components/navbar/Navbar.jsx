@@ -3,9 +3,9 @@ import { navLinks } from "../../constants";
 import { menu, close, logoRemoveBg } from "../../assets";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { LOCALES } from "../../i18n/locales.js";
+import { LOCALES } from "../../i18n/locales";
 import {ButtonLanguages, ThemeModeButton} from "../index";
-import { useTheme } from "../../hooks/useTheme.jsx";
+import { useTheme } from "../../hooks/useTheme";
 
 const Navbar = () => {
   const { theme } = useTheme;

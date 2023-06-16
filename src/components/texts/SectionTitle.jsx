@@ -1,4 +1,4 @@
-import { hrBlue } from "../../assets/index.js";
+import { hrBlue } from "../../assets/index";
 
 const SectionTitle = ({children, size}) => {
   return (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { hospital } from "../../assets/index.js";
-import styles, { layout } from "../../constants/style.js";
-import {SectionTitle, Button} from "../index.js";
+import { hospital } from "../../assets/index";
+import styles, { layout } from "../../constants/style";
+import {SectionTitle, Button} from "../index";
 
 const CardAbout1 = () => {
   return (

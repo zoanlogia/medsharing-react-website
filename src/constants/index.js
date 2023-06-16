@@ -1,5 +1,5 @@
 import {  facebook, linkedin, twitter, send, shield, star, s1, s2, shuffle, afcp, renape, cemka, cro,  } from "../assets";
-import { LOCALES } from "../i18n/locales.js";
+import { LOCALES } from "../i18n/locales";
 
   export const navLinks = {
     [LOCALES.FRENCH]: [

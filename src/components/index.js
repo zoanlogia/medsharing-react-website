@@ -23,6 +23,7 @@ import ButtonLanguages from "./buttons/ButtonLanguages";
 import CardText from "./cards/CardText";
 import SectionServices from "./sections/SectionServices";
 import ThemeModeButton from "./buttons/ThemeModeButton";
+import ServicesCard from "./cards/ServicesCard";
 
 export {
     Navbar,
@@ -50,5 +51,5 @@ export {
     CardText,
     SectionServices,
     ThemeModeButton,
-
+    ServicesCard,
 }
