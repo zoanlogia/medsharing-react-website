@@ -847,10 +847,6 @@ video {
   height: 100%;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .min-h-\[140px\] {
   min-height: 140px;
 }
@@ -1077,10 +1073,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border {
@@ -1382,10 +1374,6 @@ video {
 
 .opacity-\[0\.2\] {
   opacity: 0.2;
-}
-
-.opacity-5 {
-  opacity: 0.05;
 }
 
 .outline-none {
