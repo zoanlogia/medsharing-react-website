@@ -1,8 +1,7 @@
 import { useTheme } from "../../hooks/useTheme";
 import styles, { layout } from "../../constants/style.js";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import SolucesIcons from "../../components/SolucesIcons.jsx";
+import {Navbar, Footer, SolucesIcons, SectionTitle, Button, CardText} from "../../components/index";
+
 import { 
   drugs,
   groupes,
@@ -10,9 +9,8 @@ import {
   loupe,
 } from "../../assets/index.js";
 import { useState } from "react";
-import Button from "../../components/Button.jsx";
 import { Link } from "react-router-dom";
-import CardText from "../../components/CardText.jsx";
+
 
 const Solutions = () => {
   const { theme } = useTheme();
@@ -48,10 +46,7 @@ const Solutions = () => {
         className={` ${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
       >
         <div className={`${styles.boxWidth}`}>
-          <h1 className="font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full">
-            Nos solutions
-          </h1>
-          <hr className="w-[300px]" />
+          <SectionTitle>Nos solutions</SectionTitle>
           <div className={`flex flex-wrap flex-row justify-center mt-10`}>
             <div id="solutionsIconsSection" className="flex flex-wrap flex-row justify-center">
               <SolucesIcons
@@ -59,28 +54,28 @@ const Solutions = () => {
                 src={loupe}
                 alt={"loupe icon"}
                 title={"ePro"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("drugs")}
                 src={drugs}
                 alt={"laboratoire icon"}
                 title={"eConsent"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("groupes")}
                 src={groupes}
                 alt={"groupes icon"}
                 title={"eCRF"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("kit")}
                 src={kit}
                 alt={"kit icon"}
                 title={"Randomisation"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
             </div>
             <div className={`${layout.section}`}>

@@ -1,64 +1,78 @@
-import cro from "./cro.png";
-import bill from "./bill.png";
-import binance from "./binance.png";
-import card from "./card.png";
-import coinbase from "./coinbase.png";
-import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
-import quotes from "./quotes.svg";
-import robot from "./robot.png";
-import send from "./Send.svg";
-import shield from "./Shield.svg";
-import star from "./Star.svg";
-import menu from "./menu.svg";
-import close from "./close.svg";
-import google from "./google.svg";
-import apple from "./apple.svg";
-import arrowUp from "./arrow-up.svg";
-import discount from "./Discount.svg";
-import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
-import linkedin from "./linkedin.svg";
-import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
-import certificate from "./certificate.svg";
-import medsharingManagement from "./medsharingManagement.svg";
-import logoRemoveBg from "./logonobg.png";
-import s1 from "./s1.png"
-import s2 from "./s2.png"
-import s3 from "./s3.png"
-import robot2 from "./robot2.png"
-import shuffle from "./shuffle.png"
-import afcp from "./afcp.jpeg"
-import renape from "./renape.jpeg"
-import cemka from "./cemka.jpeg"
-import moon from "./moon-solid.svg"
-import lightbulb from "./lightbulb-solid.svg"
-import medsharingBoard from "./medsharingBoard.svg"
-import smartphoneHero from "./smartphoneHero.svg"
-import business from "./Business_SVG.svg"
-import heroImg from "./hero_smartphone_cards.svg"
-import aboutVector from "./aboutVector.svg"
-import hospital from "./hospital.svg"
-import blobBlue from "./blob_light_blue.svg"
-import handToEnd from "./hand-to-end.svg"
-import handToEndPng from "./hand-to-end.png"
-import loupe from "./loupe.svg"
-import kit from "./kit.svg"
-import groupes from "./groupes.svg"
-import drugs from "./drugs.svg"
-import randomisationVector from "./randomisationVector.svg"
-import econsentVector from "./econsentVector.svg"
-import chevronUp from "./heroicons-solid/chevron-up.svg"
-import chevronDown from "./heroicons-solid/chevron-down.svg"
-import heroCity from "./heroCity.png"
-import dots from "./dots.svg"
-import grandma from "./grandma.svg"
-import creating from "./creating.svg"
-import cleaning from "./cleaning.svg"
-import starsBg from "./stars-bg.svg"
+
+import cro from "./images/cro.png";
+import bill from "./images/bill.png";
+import binance from "./images/binance.png";
+import card from "./images/card.png";
+import coinbase from "./images/coinbase.png";
+import dropbox from "./images/dropbox.png";
+import logo from "./images/logo.svg";
+import quotes from "./images/quotes.svg";
+import robot from "./images/robot.png";
+import send from "./images/Send.svg";
+import shield from "./images/Shield.svg";
+import star from "./images/Star.svg";
+import menu from "./images/menu.svg";
+import close from "./images/close.svg";
+import google from "./images/google.svg";
+import apple from "./images/apple.svg";
+import arrowUp from "./images/arrow-up.svg";
+import discount from "./images/Discount.svg";
+import facebook from "./images/facebook.svg";
+import instagram from "./images/instagram.svg";
+import linkedin from "./images/linkedin.svg";
+import twitter from "./images/twitter.svg";
+import people01 from "./images/people01.png";
+import people02 from "./images/people02.png";
+import people03 from "./images/people03.png";
+import certificate from "./images/certificate.svg";
+import medsharingManagement from "./images/medsharingManagement.svg";
+import logoRemoveBg from "./images/logonobg.png";
+import s1 from "./images/s1.png"
+import s2 from "./images/s2.png"
+import s3 from "./images/s3.png"
+import robot2 from "./images/robot2.png"
+import shuffle from "./images/shuffle.png"
+import afcp from "./images/afcp.jpeg"
+import renape from "./images/renape.jpeg"
+import cemka from "./images/cemka.jpeg"
+import moon from "./images/moon-solid.svg"
+import lightbulb from "./images/lightbulb-solid.svg"
+import medsharingBoard from "./images/medsharingBoard.svg"
+import smartphoneHero from "./images/smartphoneHero.svg"
+import business from "./images/business.svg"
+import heroImg from "./images/hero_smartphone_cards.svg"
+import aboutVector from "./images/aboutVector.svg"
+import hospital from "./images/hospital.svg"
+import blobBlue from "./images/blob_light_blue.svg"
+import handToEnd from "./images/hand-to-end.svg"
+import handToEndPng from "./images/hand-to-end.png"
+import loupe from "./images/loupe.svg"
+import kit from "./images/kit.svg"
+import groupes from "./images/groupes.svg"
+import drugs from "./images/drugs.svg"
+import randomisationVector from "./images/randomisationVector.svg"
+import econsentVector from "./images/econsentVector.svg"
+import chevronUp from "./images/chevron-up.svg"
+import chevronDown from "./images/chevron-down.svg"
+import heroCity from "./images/heroCity.png"
+import dots from "./images/dots.svg"
+import grandma from "./images/grandma.svg"
+import creating from "./images/creating.svg"
+import cleaning from "./images/cleaning.svg"
+import starsBg from "./images/stars-bg.svg"
+import bigArrow from './images/bigArrow.svg'
+import bgForms from './images/bgForms.svg'
+import bgForms1 from './images/bgForms1.svg'
+import hrBlue from './images/hrBlue.svg'
+import hrYellow from './images/hrYellow.svg'
+import IconCheckBlue from './images/IconCheckBlue.svg'
+import linesWaves from './images/linesWaves.svg'
+import linesYellow from './images/linesYellow.svg'
+import shemaServices from './images/shemaServices.svg'
+import vortexBulls from './images/vortexBulls.svg'
+import saas from './images/saas.svg'
+import support from './images/support.jpeg'
+import supportNoBg from './images/supportNoBg.png'
 
 export {
   cro,
@@ -121,5 +135,19 @@ export {
   grandma,
   creating,
   cleaning,
-  starsBg
+  starsBg,
+  bigArrow,
+  bgForms,
+  bgForms1,
+  hrBlue,
+  hrYellow,
+  IconCheckBlue,
+  linesWaves,
+  linesYellow,
+  shemaServices,
+  vortexBulls,
+  saas,
+  support,
+  supportNoBg,
+  
 };
