@@ -1,31 +1,17 @@
-import {
-  SectionParagraph,
-  SolucesIcons,
-} from "../../components/index";
+import { SectionParagraph, SolucesIcons } from "../../components/index";
 import styles from "../../constants/style";
 
-const ServicesCard = ({src, title, alt, bold, content}) => {
+const ServicesCard = ({ src, title, alt, bold, content }) => {
   return (
-    <div>
-      
-      <div className={`${styles.boxWidth}`}>
-        <div className={`flex flex-wrap w-[400px] h-[400px]  gap-10 mt-10`}>
-          <SolucesIcons
-            widthImg={"400px"}
-            heightImg={"400px"}
-            src={src}
-            alt={alt}
-            title={title}
-            className={`z-10 ${styles.flexCenter} bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4 border-third object-contain`}
-          >
-             <SectionParagraph
-            bold={bold}
-            content={content}
-          />
-          </SolucesIcons>
-         
-        </div>
-      </div>
+    <div className="flex flex-col w-full">
+      <SolucesIcons
+        src={src}
+        alt={alt}
+        title={title}
+        className={`z-10 ${styles.flexCenter} h-[400px] w-[300px] bg-black-gradient-2 rounded-[20px] box-shadow text-center border-r-4 border-b-4 p-3 border-third`}
+      >
+        <SectionParagraph bold={bold} content={content} />
+      </SolucesIcons>
     </div>
   );
 };

@@ -998,6 +998,28 @@ video {
   bottom: 0;
 }
 
+.form-group > input:focus, textarea:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.form-group > input{
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: transparent;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill,
+input:-webkit-autofill:hover, textarea:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, textarea:-webkit-autofill:focus 
+input:-webkit-autofill:active, textarea:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #003f75 inset !important;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill{
+  -webkit-text-fill-color: white!important;
+}
+
 /* .bg_waves {
 
     
@@ -1563,9 +1585,8 @@ video {
 }
 
 .banner-top {
-  
   width: 100%;
-  
+
   background-repeat: no-repeat;
   background-size: cover;
   height: 55.4rem;
@@ -1610,7 +1631,7 @@ video {
   background-position: center;
 }
 
-.circle{
+.circle {
   position: absolute;
   border-radius: 50%;
   background: white;
@@ -1618,112 +1639,112 @@ video {
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
 
-.small-l{
+.small-l {
   width: 200px;
   height: 200px;
   left: -100px;
   bottom: -100px;
 }
 
-.medium-l{
+.medium-l {
   width: 400px;
   height: 400px;
   left: -200px;
   bottom: -200px;
 }
 
-.large-l{
+.large-l {
   width: 600px;
   height: 600px;
   left: -300px;
   bottom: -300px;
 }
 
-.xlarge-l{
+.xlarge-l {
   width: 800px;
   height: 800px;
   left: -400px;
   bottom: -400px;
 }
 
-.xxlarge-l{
+.xxlarge-l {
   width: 1000px;
   height: 1000px;
   left: -500px;
   bottom: -500px;
 }
 
-.small-l{
+.small-l {
   width: 200px;
   height: 200px;
   left: -100px;
   bottom: -100px;
 }
 
-.small-r{
+.small-r {
   width: 200px;
   height: 200px;
   right: -100px;
   bottom: -1000px;
 }
 
-.medium-r{
+.medium-r {
   width: 400px;
   height: 400px;
   right: -200px;
   bottom: -1000px;
 }
 
-.large-r{
+.large-r {
   width: 600px;
   height: 600px;
   right: -300px;
   bottom: -300px;
 }
 
-.xlarge-r{
+.xlarge-r {
   width: 800px;
   height: 800px;
   right: -400px;
   bottom: -1000px;
 }
 
-.xxlarge-r{
+.xxlarge-r {
   width: 1000px;
   height: 1000px;
   right: -500px;
   bottom: -500px;
 }
 
-.shade1{
+.shade1 {
   opacity: 0.2;
 }
-.shade2{
+.shade2 {
   opacity: 0.5;
 }
 
-.shade3{
+.shade3 {
   opacity: 0.7;
 }
 
-.shade4{
+.shade4 {
   opacity: 0.8;
 }
 
-.shade5{
+.shade5 {
   opacity: 0.9;
 }
 
-@keyframes ripple{
-  0%{
+@keyframes ripple {
+  0% {
     transform: scale(0.8);
   }
-  
-  50%{
+
+  50% {
     transform: scale(1.2);
   }
-  
-  100%{
+
+  100% {
     transform: scale(0.8);
   }
 }

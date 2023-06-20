@@ -24,6 +24,9 @@ import CardText from "./cards/CardText";
 import SectionServices from "./sections/SectionServices";
 import ThemeModeButton from "./buttons/ThemeModeButton";
 import ServicesCard from "./cards/ServicesCard";
+import FlipCard from "./cards/FlipCard";
+import InputGroup from "./inputs/InputGroup";
+import Textarea from "./inputs/Textarea";
 
 export {
     Navbar,
@@ -52,4 +55,7 @@ export {
     SectionServices,
     ThemeModeButton,
     ServicesCard,
+    FlipCard,
+    InputGroup,
+    Textarea
 }

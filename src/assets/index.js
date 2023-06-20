@@ -71,6 +71,8 @@ import linesYellow from './images/linesYellow.svg'
 import shemaServices from './images/shemaServices.svg'
 import vortexBulls from './images/vortexBulls.svg'
 import saas from './images/saas.svg'
+import support from './images/support.jpeg'
+import supportNoBg from './images/supportNoBg.png'
 
 export {
   cro,
@@ -145,5 +147,7 @@ export {
   shemaServices,
   vortexBulls,
   saas,
+  support,
+  supportNoBg,
   
 };

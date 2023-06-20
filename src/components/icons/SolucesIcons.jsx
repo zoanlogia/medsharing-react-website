@@ -4,15 +4,13 @@ const SolucesIcons = ({
   alt,
   title,
   onClick,
-  heightImg,
-  widthImg,
   children,
 }) => {
   return (
     <>
       <div onClick={onClick} className={className}>
         <img
-          className={`w-[${widthImg}] h-[${heightImg}] object-contain`}
+          className={`object-contain w-[100%] h-[100%]`}
           src={src}
           alt={alt}
         />

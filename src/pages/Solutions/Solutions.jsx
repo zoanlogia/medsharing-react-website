@@ -54,28 +54,28 @@ const Solutions = () => {
                 src={loupe}
                 alt={"loupe icon"}
                 title={"ePro"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("drugs")}
                 src={drugs}
                 alt={"laboratoire icon"}
                 title={"eConsent"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("groupes")}
                 src={groupes}
                 alt={"groupes icon"}
                 title={"eCRF"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("kit")}
                 src={kit}
                 alt={"kit icon"}
                 title={"Randomisation"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-2 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
               ></SolucesIcons>
             </div>
             <div className={`${layout.section}`}>

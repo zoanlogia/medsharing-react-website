@@ -19,32 +19,9 @@ const CardAbout2 = () => {
         <h2 className={`${styles.headingMd}`} >
           Adapté à tous types d&apos;études 
           <img className="w-full h-[10px] object-cover" src={hrBlue} alt="hr" />
-          {/* médicales et para-médicales */}
         </h2>
-        {/* <Root>
-          <Divider
-            variant="middle"
-            textAlign="center"
-            sx={{
-              "&::before, &::after": {
-                borderColor: "white",
-              },
-            }}
-          >
-            <Chip label="⭐️" sx={{
-              
-                backgroundColor: "white",
-                color: "white",
-                borderColor: "white",
-                typography: {
-                  color: "black",
-                }
-              
-            }}/>
-          </Divider>
-        </Root> */}
         
-        <ul>
+        <ul className="mt-5">
           <li>
             <p className={`${styles.paragraph1} flex gap-2`}>
               <img src={IconCheckBlue} alt="check icon" /><span>Études pharmaco–épidémiologiques</span> 
@@ -77,9 +54,9 @@ const CardAbout2 = () => {
         </h2>
         <img className="w-full h-[10px] object-cover" src={hrBlue} alt="hr" />
         <div className="flex gap-10 md:flex-row flex-col">
-          <ul>
+          <ul className="mt-5">
             <li>
-              <p className={styles.paragraphMd}>
+              <p className={`${styles.paragraphMd} mb-2`}>
                 <span>📖 </span>
                 Acteurs Institutionnels
               </p>
@@ -101,7 +78,7 @@ const CardAbout2 = () => {
             </li>
             <li>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" /><span>                Associations ou groupes académiques</span>
+                <img src={IconCheckBlue} alt="check icon" /><span>Associations ou groupes académiques</span>
 
               </p>
             </li>
@@ -112,9 +89,9 @@ const CardAbout2 = () => {
             </li>
           </ul>
 
-          <ul>
+          <ul className="mt-5">
             <li>
-              <p className={styles.paragraphMd}>
+              <p className={`${styles.paragraphMd} mb-2`}>
                 <span>🕵️‍♀️ </span>
                 Acteurs privés
               </p>
