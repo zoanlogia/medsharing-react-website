@@ -60,7 +60,7 @@ import grandma from "./images/grandma.svg"
 import creating from "./images/creating.svg"
 import cleaning from "./images/cleaning.svg"
 import starsBg from "./images/stars-bg.svg"
-import bigArrow from './images/bigArrow.svg'
+// import bigArrow from './images/bigArrow.svg'
 import bgForms from './images/bgForms.svg'
 import bgForms1 from './images/bgForms1.svg'
 import hrBlue from './images/hrBlue.svg'
@@ -136,7 +136,7 @@ export {
   creating,
   cleaning,
   starsBg,
-  bigArrow,
+  // bigArrow,
   bgForms,
   bgForms1,
   hrBlue,
