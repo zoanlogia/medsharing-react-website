@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion as m } from "framer-motion";
 
-const SuccessModal = ({ closeModal }) => {
+const SuccessModal = ({ closeModal, title, content ,children }) => {
 
   const backdrop = {
     hidden: { opacity: 0 },
@@ -61,17 +61,18 @@ const SuccessModal = ({ closeModal }) => {
         >
           <m.div className="flex-col flex items-center justify-center h-auto w-[100%]" variants={modal}>
             <h1 className="text-3xl p-4 text-primary">
-              Votre message a bien été envoyé ✨
+              {title}
             </h1>
             <p className="p-5 text-[20px] text-primary">
-              Nous reviendrons vers vous au plus vite. 🎉
+              {content}
             </p>
-            <button
+            {children}
+            {/* <button
               className="text-primary text-lg font-medium p-4"
               onClick={(e) => handleModalClose(e)}
             >
-              Fermer
-            </button>
+              ❌
+            </button> */}
           </m.div>
        
         </m.div>

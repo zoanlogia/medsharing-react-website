@@ -27,6 +27,7 @@ import ServicesCard from "./cards/ServicesCard";
 import FlipCard from "./cards/FlipCard";
 import InputGroup from "./inputs/InputGroup";
 import Textarea from "./inputs/Textarea";
+import Select from "./inputs/Select";
 import SuccessModal from "./modals/SuccessModal";
 import Rainfall from "./animations/Rainfall";
 
@@ -61,5 +62,6 @@ export {
     InputGroup,
     Textarea,
     SuccessModal,
-    Rainfall
+    Rainfall,
+    Select,
 }

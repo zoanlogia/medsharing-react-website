@@ -76,7 +76,7 @@ const Support = () => {
               animate={{ opacity: 1, y: 0 }} // Animation d'entrée : opacité à 1 et décalage de 0 pixels
               exit={{ opacity: 0, y: -20 }} // Animation de sortie : opacité à 0 et décalage de 20 pixels vers le haut>
             >
-              <SuccessModal closeModal={() => setShowModal(false)} />
+              <SuccessModal title="Votre message a bien été envoyé ✨" content={"Nous reviendrons vers vous au plus vite. 🎉"}  closeModal={() => setShowModal(false)} />
               <Rainfall />
             </m.div>
           )}
@@ -120,7 +120,7 @@ const Support = () => {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.name && formik.errors.name ? (
-                  <span className="text-red-400">{formik.errors.name}</span>
+                  <small className="text-red-400">{formik.errors.name}</small>
                 ) : (
                   ""
                 )}
@@ -141,7 +141,7 @@ const Support = () => {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.mail && formik.errors.mail ? (
-                  <span className="text-red-400">{formik.errors.mail}</span>
+                  <small className="text-red-400">{formik.errors.mail}</small>
                 ) : (
                   ""
                 )}
@@ -163,7 +163,7 @@ const Support = () => {
                 />
 
                 {formik.touched.phone && formik.errors.phone ? (
-                  <span className="text-red-400">{formik.errors.phone}</span>
+                  <small className="text-red-400">{formik.errors.phone}</small>
                 ) : (
                   ""
                 )}
@@ -185,7 +185,7 @@ const Support = () => {
                 />
 
                 {formik.touched.society && formik.errors.society ? (
-                  <span className="text-red-400">{formik.errors.society}</span>
+                  <small className="text-red-400">{formik.errors.society}</small>
                 ) : (
                   ""
                 )}
@@ -207,7 +207,7 @@ const Support = () => {
                 />
 
                 {formik.touched.study && formik.errors.study ? (
-                  <span className="text-red-400">{formik.errors.study}</span>
+                  <small className="text-red-400">{formik.errors.study}</small>
                 ) : (
                   ""
                 )}
@@ -227,7 +227,7 @@ const Support = () => {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.message && formik.errors.message ? (
-                  <span className="text-red-400">{formik.errors.message}</span>
+                  <small className="text-red-400">{formik.errors.message}</small>
                 ) : (
                   ""
                 )}
@@ -239,12 +239,13 @@ const Support = () => {
                   type={"submit"}
                 />
               </form>
-              <div className="mt-6 h-full w-full">
+              <div className="mt-6 h-full w-full flex items-center justify-center">
                 <img
                   className="object-cover lg:w-[500px] lg:h-[500px]"
                   src={supportNoBg}
                   alt="support"
                 />
+                <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
               </div>
             </div>
             <Footer />
