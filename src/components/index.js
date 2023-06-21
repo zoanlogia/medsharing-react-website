@@ -27,6 +27,8 @@ import ServicesCard from "./cards/ServicesCard";
 import FlipCard from "./cards/FlipCard";
 import InputGroup from "./inputs/InputGroup";
 import Textarea from "./inputs/Textarea";
+import SuccessModal from "./modals/SuccessModal";
+import Rainfall from "./animations/Rainfall";
 
 export {
     Navbar,
@@ -57,5 +59,7 @@ export {
     ServicesCard,
     FlipCard,
     InputGroup,
-    Textarea
+    Textarea,
+    SuccessModal,
+    Rainfall
 }

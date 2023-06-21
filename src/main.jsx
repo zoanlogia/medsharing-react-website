@@ -1,13 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Router from "./Router/Router.jsx";
-import './css-compiled/index.css'
-import LanguageProvider from './providers/LanguageProvider';
-import ThemeProvider from './providers/ThemeProvider.jsx';
-import I18nProvider from './providers/I18nProvider.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Router from "./Router/Router";
+import "./css-compiled/index.css";
+import LanguageProvider from "./providers/LanguageProvider";
+import ThemeProvider from "./providers/ThemeProvider";
+import I18nProvider from "./providers/I18nProvider";
+import { AnimatePresence } from "framer-motion";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <AnimatePresence>
       <LanguageProvider>
         <I18nProvider>
           <ThemeProvider>
@@ -15,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </ThemeProvider>
         </I18nProvider>
       </LanguageProvider>
-    </React.StrictMode>,
-  )
+      </AnimatePresence>
+  </React.StrictMode>
+);
