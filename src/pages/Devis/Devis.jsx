@@ -128,7 +128,7 @@ const Devis = () => {
                   </Link>
                 </div>
               </div>
-              <div className={`${layout.section} gap-10 w-full`}>
+              <div className={`${layout.section} gap-10 items-center justify-center w-full`}>
                 <div className="list w-full rounded-[20px] relative">
                   <div className={`${styles.paragraph} mt-3 feature-card p-5 rounded-xl hover:opacity-100`}>
                     <h2 className="text-[22px] leading-[34.8px]">
@@ -210,6 +210,16 @@ const Devis = () => {
                     >
                       <p className="text-primary text-[24px] text-bolder">
                         MEDSHARING, 44 rue Roger Salengro, 94120, Fontenay Sous Bois, France
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-3 mt-6">
+                    <img src={mailIcon} alt="mail icon" />
+                    <Link
+                      mailto={"info@medsharing.fr"}
+                    >
+                      <p className="text-primary text-[24px] text-bolder">
+                      info@medsharing.fr
                       </p>
                     </Link>
                   </div>

@@ -1746,3 +1746,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+/* 
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+} */

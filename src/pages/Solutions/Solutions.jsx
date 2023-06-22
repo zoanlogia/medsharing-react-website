@@ -1,16 +1,17 @@
 import { useTheme } from "../../hooks/useTheme";
 import styles, { layout } from "../../constants/style.js";
-import {Navbar, Footer, SolucesIcons, SectionTitle, Button, CardText} from "../../components/index";
+import {
+  Navbar,
+  Footer,
+  SolucesIcons,
+  SectionTitle,
+  Button,
+  CardText,
+} from "../../components/index";
 
-import { 
-  drugs,
-  groupes,
-  kit,
-  loupe,
-} from "../../assets/index.js";
-import { useState } from "react";
+import { drugs, groupes, kit, loupe } from "../../assets/index.js";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
 
 const Solutions = () => {
   const { theme } = useTheme();
@@ -33,6 +34,53 @@ const Solutions = () => {
     });
   };
 
+  const [height, setHeight] = useState("250px");
+  const [width, setWidth] = useState("250px");
+
+  const div = useRef();
+
+  useLayoutEffect(() => {
+    console.log(div);
+    const divAnimate = div.current.getBoundingClientRect().top;
+    console.log(divAnimate);
+    const onScroll = () => {
+      if (divAnimate < window.scrollY) {
+        setHeight("50px");
+        div.current.style.backgroundColor = "white";
+        setWidth("auto");
+        div.current.style.position = "fixed";
+        div.current.style.top = 0;
+        div.current.style.left = 0;
+        div.current.style.right = 0;
+        div.current.style.backgroundSize = "cover";
+        div.current.style.backgroundPosition = "center";
+        div.current.style.backgroundRepeat = "no-repeat";
+        
+
+        div.current.style.opacity = 0.9;
+        div.current.style.zIndex = 1000;
+        div.current.style.height = "auto"; 
+        div.current.style.width = "100%";
+        div.current.style.transition = "background-color 0.3s ease-in-out";
+      } else {
+        div.current.style.opacity = 20;
+        div.current.style.position = "unset";
+        
+        setHeight("250px");
+        setWidth("250px");
+
+        div.current.style.height = "100%";
+        div.current.style.width = "100%"; 
+        div.current.style.zIndex = 0;
+        div.current.style.backgroundColor = "transparent";
+        
+        div.current.style.transition = "background-color 0.3s ease-in-out";
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className={`${theme} overflow-hidden`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -48,34 +96,39 @@ const Solutions = () => {
         <div className={`${styles.boxWidth}`}>
           <SectionTitle>Nos solutions</SectionTitle>
           <div className={`flex flex-wrap flex-row justify-center mt-10`}>
-            <div id="solutionsIconsSection" className="flex flex-wrap flex-row justify-center">
+            <div
+              ref={div}
+              id="solutionsIconsSection"
+              className="flex flex-wrap flex-row justify-center"
+            >
               <SolucesIcons
+                
                 onClick={() => toggleShow("loupe")}
                 src={loupe}
                 alt={"loupe icon"}
                 title={"ePro"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4 w-[${width}] h-[${height}] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("drugs")}
                 src={drugs}
                 alt={"laboratoire icon"}
                 title={"eConsent"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[${width}] h-[${height}] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("groupes")}
                 src={groupes}
                 alt={"groupes icon"}
                 title={"eCRF"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[${width}] h-[${height}] hover:border-white border-third`}
               ></SolucesIcons>
               <SolucesIcons
                 onClick={() => toggleShow("kit")}
                 src={kit}
                 alt={"kit icon"}
                 title={"Randomisation"}
-                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[250px] h-[250px] hover:border-white border-third`}
+                className={`m-2 cursor-pointer ${styles.flexCenter} flex-col  bg-black-gradient-2 rounded-[20px] box-shadow p-10 text-center border-r-4 border-b-4  w-[${width}] h-[${height}] hover:border-white border-third`}
               ></SolucesIcons>
             </div>
             <div className={`${layout.section}`}>
@@ -91,9 +144,10 @@ const Solutions = () => {
                   </h2>
                   <br />
                   <p>
-                    Découvrez l&apos;avenir des études cliniques avec notre logiciel
-                    unique conçu pour l&apos;<b>eCRF</b> et <b>l&apos;ePRO</b>. Grâce à
-                    son <strong>ergonomie simplifiée</strong>, des{" "}
+                    Découvrez l&apos;avenir des études cliniques avec notre
+                    logiciel unique conçu pour l&apos;<b>eCRF</b> et{" "}
+                    <b>l&apos;ePRO</b>. Grâce à son{" "}
+                    <strong>ergonomie simplifiée</strong>, des{" "}
                     <strong>images interactives</strong>, et des{" "}
                     <strong>fenêtres pop-up contextuelles</strong>, nous vous
                     offrons une expérience utilisateur sans précédent, rendant
@@ -110,9 +164,9 @@ const Solutions = () => {
                       formation nécessaire pour l&apos;utilisateur final
                     </strong>{" "}
                     à son strict minimum, rendant ainsi notre logiciel facile à
-                    apprendre et à utiliser. Cette approche facilite l&apos;adhésion
-                    des investigateurs et des patients, augmentant ainsi
-                    l&apos;efficacité de vos études.
+                    apprendre et à utiliser. Cette approche facilite
+                    l&apos;adhésion des investigateurs et des patients,
+                    augmentant ainsi l&apos;efficacité de vos études.
                   </p>
                 </CardText>
 
@@ -133,8 +187,8 @@ const Solutions = () => {
                   <br />
                   <p>
                     Notre logiciel est conçu avec une approche{" "}
-                    <strong>responsive</strong>, s&apos;adaptant parfaitement à tous
-                    les appareils - ordinateurs, tablettes, et smartphones.
+                    <strong>responsive</strong>, s&apos;adaptant parfaitement à
+                    tous les appareils - ordinateurs, tablettes, et smartphones.
                     Ainsi, vous et votre équipe pouvez accéder à vos études à
                     tout moment, où que vous soyez.
                   </p>
@@ -145,8 +199,9 @@ const Solutions = () => {
                   <p>
                     Notre solution vous permet d&apos;apporter des{" "}
                     <strong>amendements en temps réel</strong> pendant vos
-                    études, comme l&apos;ajout d&apos;une page de CRF, vous donnant ainsi
-                    la liberté de vous adapter aux changements et aux imprévus.
+                    études, comme l&apos;ajout d&apos;une page de CRF, vous
+                    donnant ainsi la liberté de vous adapter aux changements et
+                    aux imprévus.
                   </p>
                 </CardText>
 
@@ -176,11 +231,11 @@ const Solutions = () => {
                   <br />
                   <p>
                     L&APOS;<strong>eConsent</strong> est un outil essentiel qui
-                    permet au médecin investigateur d&apos;envoyer directement une
-                    demande de consentement via l&apos;eCRF avant d&apos;inclure son
-                    patient dans l&apos;étude. Cette technologie moderne et pratique
-                    révolutionne le processus de consentement dans les études
-                    cliniques.
+                    permet au médecin investigateur d&apos;envoyer directement
+                    une demande de consentement via l&apos;eCRF avant
+                    d&apos;inclure son patient dans l&apos;étude. Cette
+                    technologie moderne et pratique révolutionne le processus de
+                    consentement dans les études cliniques.
                   </p>
                 </CardText>
 
@@ -201,11 +256,11 @@ const Solutions = () => {
                   <h2>🏆 Simplification du travail du moniteur</h2>
                   <br />
                   <p>
-                    Que vous l&apos;utilisiez seul ou intégré à l&apos;eCRF, l&apos;eConsent
-                    est conçu pour simplifier le travail du moniteur tout en
-                    garantissant la <strong>sécurité</strong> et la{" "}
-                    <strong>confidentialité</strong> des données. De plus, il
-                    offre une flexibilité accrue avec des options de
+                    Que vous l&apos;utilisiez seul ou intégré à l&apos;eCRF,
+                    l&apos;eConsent est conçu pour simplifier le travail du
+                    moniteur tout en garantissant la <strong>sécurité</strong>{" "}
+                    et la <strong>confidentialité</strong> des données. De plus,
+                    il offre une flexibilité accrue avec des options de
                     consentement en face-à-face ou à distance par signature SMS
                     ou Mail.
                   </p>
@@ -255,18 +310,19 @@ const Solutions = () => {
                     PC ou smartphone, et offre une option de signature tactile
                     sur tablette ou smartphone. De plus, il respecte le circuit
                     des signatures, avec la signature du médecin en dernier, et
-                    permet l&apos;obtention du consentement des parents dans le cas
-                    d&apos;enfants mineurs.
+                    permet l&apos;obtention du consentement des parents dans le
+                    cas d&apos;enfants mineurs.
                   </p>
                 </CardText>
 
                 <CardText>
                   <h2>🏆 eCRF : Une option mixte possible</h2>
                   <p>
-                    Avec l&apos;eCRF, une option mixte est disponible qui vous permet
-                    d&apos;inclure à la fois des patients avec consentement papier ou
-                    électronique. Cela vous offre une flexibilité maximale pour
-                    répondre aux besoins de votre étude.
+                    Avec l&apos;eCRF, une option mixte est disponible qui vous
+                    permet d&apos;inclure à la fois des patients avec
+                    consentement papier ou électronique. Cela vous offre une
+                    flexibilité maximale pour répondre aux besoins de votre
+                    étude.
                   </p>
                 </CardText>
               </div>
@@ -286,8 +342,8 @@ const Solutions = () => {
                     MEDSHARING a conçu <strong>EOL©</strong> pour répondre aux
                     projets d&apos;eCRF de la façon la plus simple, robuste et
                     économique possible. Nous avons utilisé les technologies
-                    modernes pour créer une solution qui s&apos;adapte à vos besoins
-                    tout en restant facile à utiliser et abordable.
+                    modernes pour créer une solution qui s&apos;adapte à vos
+                    besoins tout en restant facile à utiliser et abordable.
                   </p>
                 </CardText>
 
@@ -298,9 +354,9 @@ const Solutions = () => {
                     EOL© est bâti sur un modèle 100% internet. Tous ses modules,
                     de la phase de conception à la livraison, en passant par la
                     randomisation, le monitoring, le Data-Management et
-                    l&apos;administration, sont accessibles par internet. Peu importe
-                    où vous êtes, tant que vous avez une connexion Internet,
-                    vous avez accès à EOL©.
+                    l&apos;administration, sont accessibles par internet. Peu
+                    importe où vous êtes, tant que vous avez une connexion
+                    Internet, vous avez accès à EOL©.
                   </p>
                 </CardText>
 
@@ -311,9 +367,9 @@ const Solutions = () => {
                   <p>
                     Nous stockons chaque nouvelle étude de façon indépendante et
                     sécurisée sur notre plateforme mutualisée d&apos;hébergement
-                    d&apos;études cliniques, agréée Hébergement de données de santé
-                    en France par notre partenaire OVH. Cette approche garantit
-                    la <strong>confidentialité</strong> et la{" "}
+                    d&apos;études cliniques, agréée Hébergement de données de
+                    santé en France par notre partenaire OVH. Cette approche
+                    garantit la <strong>confidentialité</strong> et la{" "}
                     <strong>sécurité</strong> de vos données.
                   </p>
                 </CardText>
@@ -363,12 +419,14 @@ const Solutions = () => {
                       des centres et des investigateurs.
                     </li>
                     <li>
-                      👉 <strong>Adaptabilité :</strong> Réactivité d&apos;adaptation
-                      de votre eCRF aux exigences de vos études.
+                      👉 <strong>Adaptabilité :</strong> Réactivité
+                      d&apos;adaptation de votre eCRF aux exigences de vos
+                      études.
                     </li>
                     <li>
                       👉 <strong>Autonomie :</strong> Vos équipes sont
-                      totalement autonomes pendant toute la durée de l&apos;étude.
+                      totalement autonomes pendant toute la durée de
+                      l&apos;étude.
                     </li>
                   </ul>
                 </CardText>
@@ -378,9 +436,9 @@ const Solutions = () => {
                   <br />
                   <p>
                     MEDSHARING a choisi ce modèle pour sa parfaite adéquation
-                    entre les nouvelles technologies de l&apos;information et les
-                    nouveaux enjeux et problématiques de la recherche clinique
-                    d&apos;aujourd&apos;hui.
+                    entre les nouvelles technologies de l&apos;information et
+                    les nouveaux enjeux et problématiques de la recherche
+                    clinique d&apos;aujourd&apos;hui.
                   </p>
                 </CardText>
               </div>
@@ -388,14 +446,13 @@ const Solutions = () => {
                 className={`font-poppins font-normal text-[18px] leading-[30.8px] max-w-[800px] xs:mt-10 ${
                   showStates.kit ? "block" : "hidden"
                 }`}
-                
               >
                 <div className="white__gradient left-[50%] bottom-[50%] w-[20%] h-[20%] absolute xxs:hidden md:block"></div>
                 <CardText>
                   <h2>
                     {" "}
-                    🏆 RANDOMIZER for CLINICAL TRIAL : l&apos;outil ultime pour la
-                    gestion de vos patients
+                    🏆 RANDOMIZER for CLINICAL TRIAL : l&apos;outil ultime pour
+                    la gestion de vos patients
                   </h2>
                   <br />
                   <p>
@@ -414,9 +471,9 @@ const Solutions = () => {
                 <CardText>
                   <h2> 🏆 Téléchargez dès maintenant</h2>
                   <p>
-                    Prenez de l&apos;avance dès aujourd&apos;hui en téléchargeant notre
-                    application. Vous pouvez la trouver sur l’AppStore en
-                    utilisant des mots clés tels que{" "}
+                    Prenez de l&apos;avance dès aujourd&apos;hui en
+                    téléchargeant notre application. Vous pouvez la trouver sur
+                    l’AppStore en utilisant des mots clés tels que{" "}
                     <strong>Medsharing, Randomization, Randomizer</strong>... ou
                     directement depuis la page de notre site consacrée à la{" "}
                     <strong>Randomisation iPhone-iPad</strong>.
@@ -427,11 +484,11 @@ const Solutions = () => {
                 <CardText>
                   <h2> 🏆 Simple et efficace</h2>
                   <p>
-                    Nous avons conçu cette application pour qu&apos;elle soit à la
-                    fois <strong>simple et pratique à utiliser</strong>. Elle
+                    Nous avons conçu cette application pour qu&apos;elle soit à
+                    la fois <strong>simple et pratique à utiliser</strong>. Elle
                     s’intègre parfaitement dans la gestion de tous types
-                    d’études, qu&apos;elles soient petites ou grandes, simples ou
-                    complexes.
+                    d’études, qu&apos;elles soient petites ou grandes, simples
+                    ou complexes.
                   </p>
                 </CardText>
 
@@ -459,10 +516,11 @@ const Solutions = () => {
                 </CardText>
               </div>
             </div>
-            
+
             <div className="flex justify-center  sm:my-5 sm:px-16 px-6 sm:py-12 py-4 flex-col bg-black-gradient-2 max-w-[800px] rounded-[20px] box-shadow">
               <h2>
-                Vous voulez en savoir plus ? Contactez-nous dès aujourd&apos;hui !
+                Vous voulez en savoir plus ? Contactez-nous dès aujourd&apos;hui
+                !
               </h2>
               <br />
               Nous serions ravis de vous fournir plus de détails sur nos
@@ -485,7 +543,7 @@ const Solutions = () => {
 
       <div className="ripple-background xxs:hidden md:block"></div>
       <div className="circle small-r shade1 xxs:hidden md:block"></div>
-      <div className="circle medium-r shade2 xxs:hidden md:block"></div>  
+      <div className="circle medium-r shade2 xxs:hidden md:block"></div>
       <div className="ripple-background right-[100%] top-[100%] xxs:hidden md:block"></div>
 
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
