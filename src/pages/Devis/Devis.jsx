@@ -1,6 +1,6 @@
 import { useTheme } from "../../hooks/useTheme.jsx";
 import styles, { layout } from "../../constants/style.js";
-import { Rainfall, Select } from "../../components/index";
+import { BadgeSocialMedias, Rainfall, Select } from "../../components/index";
 
 import {
   Navbar,
@@ -17,6 +17,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { mailIcon, mapIcon, phoneIcon, vectorContact } from "../../assets/index.js";
 
 const Devis = () => {
   const { theme } = useTheme();
@@ -58,8 +59,8 @@ const Devis = () => {
 
       // status est un select option
       status: Yup.string()
-      .oneOf(["1", "2", "3", "4", "5"], "le statut est obligatoire")
-      .required("le statut est obligatoire"),
+        .oneOf(["1", "2", "3", "4", "5"], "le statut est obligatoire")
+        .required("le statut est obligatoire"),
 
       message: Yup.string()
         .max(500, "le message ne doit pas éxcéder 500 caractères.")
@@ -121,68 +122,104 @@ const Devis = () => {
                       </span>
                       <span className="ms-2 py-[6px] px-4 card-white rounded-[10px] mb-2 hover:font-bold">
                         {" "}
-                        ☎️ 01 48 75 39 14{" "}
+                        ☎️ +33(0)148753914{" "}
                       </span>
                     </p>
                   </Link>
                 </div>
               </div>
+              <div className={`${layout.section} gap-10 w-full`}>
+                <div className="list w-full rounded-[20px] relative">
+                  <div className={`${styles.paragraph} mt-3 feature-card p-5 rounded-xl hover:opacity-100`}>
+                    <h2 className="text-[22px] leading-[34.8px]">
+                      🔄
+                      <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
+                        {" "}
+                        Pour une randomisation
+                      </span>
+                    </h2>
+                    <ul>
+                      <li>
+                        → Randomisation par internet et/ou téléphone, sur iPad
+                        et/ou iPhone
+                      </li>
+                      <li>
+                        → Randomisation en ouvert, simple ou double aveugle
+                      </li>
+                      <li>→ Durée de la randomisation</li>
+                      <li>→ Nombre de patients</li>
+                    </ul>
+                  </div>
+                  <div className={`${styles.paragraph} mt-3 feature-card p-5 rounded-xl hover:opacity-100`}>
+                    <h2 className="text-[22px] leading-[34.8px]">
+                      📈
+                      <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
+                        Pour un e-CRF
+                      </span>
+                    </h2>
+                    <ul>
+                      <li>
+                        → Type d&apos;étude (Si randomisée, ajouter les
+                        questions ci-dessus)
+                      </li>
+                      <li>
+                        → Nombre d&apos;items du CRF Papier (à + ou - 50 items)
+                      </li>
+                      <li>→ Durée des inclusions</li>
+                      <li>→ Durée du suivi</li>
+                      <li>→ Nombre de patients</li>
+                      <li>→ Nombre de centres</li>
+                    </ul>
+                  </div>
+                  <div className={`${styles.paragraph} mt-3`}>
+                    <h2 className="text-[22px] leading-[34.8px]">
+                      <span>Nous vous contacterons</span>
+                      <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
+                        {" "}
+                        dès réception de votre demande.
+                      </span>
+                    </h2>
+                  </div>
+                </div>
+                <div className={`w-[75%] h-[75%]`}>
+                  <img
+                    className="h-[100%] w-[100%]"
+                    src={vectorContact}
+                    alt="contact image"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap sm:my-5 sm:px-16 px-6 sm:py-12 py-4 w-full bg-black-gradient-2 rounded-[20px] box-shadow">
-              <div className="mt-6 h-[auto] w-full flex flex-col justify-between">
-                <div className={`${styles.paragraph}`}>
-                  <h2 className="text-[22px] leading-[34.8px]">
-                    🔄
-                    <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
-                      {" "}
-                      Pour une randomisation
-                    </span>
-                  </h2>
-                  <ul>
-                    <li>
-                      → Randomisation par internet et/ou téléphone, sur iPad
-                      et/ou iPhone
-                    </li>
-                    <li>→ Randomisation en ouvert, simple ou double aveugle</li>
-                    <li>→ Durée de la randomisation</li>
-                    <li>→ Nombre de patients</li>
-                  </ul>
+            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap w-full bg-black-gradient-2 rounded-[20px] box-shadow relative">
+              <div className="bg-[#D9D9D9] rounded-tl-2xl rounded-bl-2xl w-full flex flex-col items-center">
+                <div className="flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4">
+                  <div className="flex items-center gap-3 mt-6">
+                    <img src={phoneIcon} alt="phone icon" />
+                    <Link to={"tel:0148753914"}>
+                      <p className="text-primary text-[24px] text-bolder">
+                        +33(0)148753914
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-3 mt-6">
+                    <img src={mapIcon} alt="map icon" />
+                    <Link
+                      to={
+                        "https://www.google.com/maps?q=Medsharing+Solution+e-CRF&ftid=0x47e672a91afbce3b:0x357a800695fd02"
+                      }
+                    >
+                      <p className="text-primary text-[24px] text-bolder">
+                        MEDSHARING, 44 rue Roger Salengro, 94120, Fontenay Sous Bois, France
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="mt-6 shadow-xl w-full h-[600px]">
+                    <iframe className="w-full h-full rounded-2xl"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=MEDSHARING,%2044%20rue%20Roger%20Salengro,%2094120,%20Fontenay%20Sous%20Bois,%20France+(Medsharing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
                 </div>
-                <div className={`${styles.paragraph}`}>
-                  <h2 className="text-[22px] leading-[34.8px]">
-                    📈
-                    <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
-                      Pour un e-CRF
-                    </span>
-                  </h2>
-                  <ul>
-                    <li>
-                      → Type d&apos;étude (Si randomisée, ajouter les questions
-                      ci-dessus)
-                    </li>
-                    <li>
-                      → Nombre d&apos;items du CRF Papier (à + ou - 50 items)
-                    </li>
-                    <li>→ Durée des inclusions</li>
-                    <li>→ Durée du suivi</li>
-                    <li>→ Nombre de patients</li>
-                    <li>→ Nombre de centres</li>
-                  </ul>
-                </div>
-                <div className={`${styles.paragraph}`}>
-                  <h2 className="text-[22px] leading-[34.8px]">
-                    <span>Nous vous contacterons</span>
-                    <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
-                      {" "}
-                      dès réception de votre demande.
-                    </span>
-                  </h2>
-                </div>
-                {/* <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div> */}
               </div>
               <form
                 id="support"
-                className={`flex align-baseline flex-col w-full`}
+                className={`flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4`}
                 onSubmit={formik.handleSubmit}
               >
                 <InputGroup
@@ -315,9 +352,7 @@ const Devis = () => {
                 />
 
                 {formik.touched.status && formik.errors.status ? (
-                  <small className="text-red-400">
-                    {formik.errors.status}
-                  </small>
+                  <small className="text-red-400">{formik.errors.status}</small>
                 ) : (
                   ""
                 )}
@@ -351,6 +386,7 @@ const Devis = () => {
                   type={"submit"}
                 />
               </form>
+              <BadgeSocialMedias />
             </div>
             <Footer />
           </div>

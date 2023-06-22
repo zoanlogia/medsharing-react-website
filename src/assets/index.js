@@ -73,6 +73,10 @@ import vortexBulls from './images/vortexBulls.svg'
 import saas from './images/saas.svg'
 import support from './images/support.jpeg'
 import supportNoBg from './images/supportNoBg.png'
+import vectorContact from './images/vectorContact.svg'
+import mailIcon from './images/mailIcon.svg'
+import phoneIcon from './images/phoneIcon.svg'
+import mapIcon from './images/mapIcon.svg'
 
 export {
   cro,
@@ -149,5 +153,9 @@ export {
   saas,
   support,
   supportNoBg,
+  vectorContact,
+  mailIcon,
+  phoneIcon,
+  mapIcon
   
 };

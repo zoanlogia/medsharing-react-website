@@ -30,6 +30,7 @@ import Textarea from "./inputs/Textarea";
 import Select from "./inputs/Select";
 import SuccessModal from "./modals/SuccessModal";
 import Rainfall from "./animations/Rainfall";
+import BadgeSocialMedias from "./badges/BadgeSocialMedias";
 
 export {
     Navbar,
@@ -64,4 +65,5 @@ export {
     SuccessModal,
     Rainfall,
     Select,
+    BadgeSocialMedias,
 }

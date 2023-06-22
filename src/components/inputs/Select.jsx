@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Select = ({htmlFor, label, className, type, classLabel, classInput, placeholder, needed, value, onChange, onBlur, options}) => {
 
-    const [isNeeded, setIsNeeded] = useState(!!needed)
+    const [isNeeded] = useState(!!needed)
 
     return (
         <div className={className}>
