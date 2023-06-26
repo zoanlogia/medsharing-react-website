@@ -1,4 +1,17 @@
-import {  facebook, linkedin, twitter, send, shield, star, s1, s2, shuffle, afcp, renape, cemka, cro,  } from "../assets";
+import s1 from "../assets/images/s1.png";
+import s2 from "../assets/images/s2.png";
+import shuffle from "../assets/images/shuffle.png";
+import star from "../assets/images/star.svg";
+import shield from "../assets/images/shield.svg";
+import send from "../assets/images/send.svg";
+import afcp from "../assets/images/afcp.jpeg";
+import renape from "../assets/images/renape.jpeg";
+import cemka from "../assets/images/cemka.jpeg";
+import cro from "../assets/images/cro.png";
+import linkedin from "../assets/images/linkedin.svg";
+import twitter from "../assets/images/twitter.svg";
+
+
 import { LOCALES } from "../i18n/locales";
 
   export const navLinks = {
@@ -234,74 +247,47 @@ export const clients = [
 export const footerLinks = [
   {
     id: "footer-link-1",
-    title: "Useful Links",
+    title: "",
     links: [
       { 
         id: "footer-link-1-1",
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Accueil",
+        link: "/",
       },
       { id: "footer-link-1-2",
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      { id : "footer-link-1-3",
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      { id : "footer-link-1-4",
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      { id : "footer-link-1-5",
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Devis",
+        link: "/devis",
       },
     ],
   },
   {
     id: "footer-link-2",
-    title: "Community",
+    title: "",
     links: [
       {
         id: "footer-link-2-1",
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Mentions légales",
+        link: "/legacy",
       },
       {
         id: "footer-link-2-2",
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        id: "footer-link-2-3",
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        id: "footer-link-2-4",
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        id: "footer-link-2-5",
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "rss",
+        link: "/rss",
       },
     ],
   },
   {
     id: "footer-link-3",
-    title: "Partner",
+    title: "",
     links: [
       {
         id: "footer-link-3-1",
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Support",
+        link: "/support",
       },
       {
         id: "footer-link-3-2",
-        name: "Become a Partner",
+        name: "Administration",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
@@ -314,11 +300,11 @@ export const socialMedia = [
   //   icon: instagram,
   //   link: "https://www.instagram.com/",
   // },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
+  // {
+  //   id: "social-media-2",
+  //   icon: facebook,
+  //   link: "https://www.facebook.com/",
+  // },
   {
     id: "social-media-3",
     icon: twitter,

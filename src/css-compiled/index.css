@@ -800,6 +800,10 @@ video {
   height: 100px;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[10px\] {
   height: 10px;
 }
@@ -1320,9 +1324,19 @@ video {
   font-family: Poppins, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .text-\[15px\] {
@@ -1368,6 +1382,10 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -1437,6 +1455,11 @@ video {
 .text-\[\#858383\] {
   --tw-text-opacity: 1;
   color: rgb(133 131 131 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -3045,7 +3068,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImg {
-  background-image: url("../assets/blob_light_blue.svg");
+  background-image: url("../assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 600px;
@@ -3058,7 +3081,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImgSolutionsRight {
-  background-image: url("../assets/blob_light_blue.svg");
+  background-image: url("../assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -3071,7 +3094,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImgSolutionsLeft {
-  background-image: url("../assets/blob_light_blue.svg");
+  background-image: url("../assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -3095,7 +3118,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .layer1 {
-  background-image: url("../assets/bannerTop.svg");
+  background-image: url("../../assets/images/bannerTop.svg");
 }
 
 .plenty-banner {
@@ -3114,7 +3137,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .layer2 {
-  background-image: url("../assets/bannerBottom.svg");
+  background-image: url("../../assets/images/bannerBottom.svg");
 }
 
 .list-inline {
@@ -3122,7 +3145,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 #solutionsIconsSection {
-  background-image: url("../assets/city.svg");
+  background-image: url("../../assets/images/city.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;

@@ -1,7 +1,7 @@
-import { hrBlue } from "../../assets/index";
 import { feedback } from "../../constants/index";
 import styles from "../../constants/style";
 import Feedback from "./Feedback";
+import hrBlue from "../../assets/images/hrBlue.svg";
 
 const Testimonials = () => {
   return (

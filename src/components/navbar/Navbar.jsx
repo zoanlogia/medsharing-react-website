@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { navLinks } from "../../constants";
-import { menu, close, logoRemoveBg } from "../../assets";
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { LOCALES } from "../../i18n/locales";
-import {ButtonLanguages, ThemeModeButton} from "../index";
 import { useTheme } from "../../hooks/useTheme";
+import logoRemoveBg  from "../../assets/images/logonobg.png";
+import ButtonLanguageTexts from "../buttons/ButtonLanguages.jsx";
+import ThemeModeButton from "../buttons/ThemeModeButton.jsx";
+import menu from "../../assets/images/menu.svg";
 
 const Navbar = () => {
   const { theme } = useTheme;
@@ -16,14 +18,14 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Link to="/">
+      <NavLink to="/">
         <img
           src={logoRemoveBg}
           alt="medsharing"
-          className="w-[40px] h-[40px] box-shadow bg-white rounded-full object-contain"
+          className={`w-[40px] h-[40px] box-shadow bg-white rounded-full object-contain`}
         />
-            </Link>
-            <Link to="/">
+      </NavLink>
+      <NavLink to="/">
         <h4
           className={`ml-3 font-poppins font-semibold xs:text-[20px] text-[20px] xs:leading-[53px] leading-[43px] ${
             theme === "light" ? "text-primary" : "text-white"
@@ -31,24 +33,32 @@ const Navbar = () => {
         >
           Medsharing
         </h4>
-        </Link>
+      </NavLink>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {links.map((link, index, 
-        // isActive
-        ) => (
-          <li
-            key={link.key}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              index === links.length - 1 ? "mr-0" : "mr-10"
-            } ${theme === "light" ? "text-primary" : "text-white"} mr-10`}
-          >
-            <NavLink to={link.path} className={`active-link ${link.isActive ? "active" : ""}`}>
-              <FormattedMessage id={link.title} />
-            </NavLink>
-          </li>
-        ))}
+        {links.map(
+          (
+            link,
+            index
+            // isActive
+          ) => (
+            <li
+              key={link.key}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                index === links.length - 1 ? "mr-0" : "mr-10"
+              } ${theme === "light" ? "text-primary" : "text-white"} mr-10`}
+            >
+              <NavLink
+                to={link.path}
+                className={`active-link ${({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active bg-white" : ""}`}
+              >
+                <FormattedMessage id={link.title} />
+              </NavLink>
+            </li>
+          )
+        )}
         <li>
-          <ButtonLanguages />
+          <ButtonLanguageTexts />
         </li>
         <li>
           <ThemeModeButton />
@@ -69,26 +79,36 @@ const Navbar = () => {
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-h-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {links.map((link, 
-            // index
-            ) => (
-              <li
-                key={link.key}
-                className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}
-              >
-                <NavLink to={link.path} className="active-link">
-                  <FormattedMessage id={link.title} />
-                </NavLink>
-              </li>
-            ))}
-            
-            <li className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}>
-              <ButtonLanguages />
+            {links.map(
+              (
+                link
+                // index
+              ) => (
+                <li
+                  key={link.key}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}
+                >
+                  <NavLink
+                    to={link.path}
+                    className={`active-link ${({ isActive, isPending }) =>
+                      isPending ? "pending" : isActive ? "active" : ""}`}
+                  >
+                    <FormattedMessage id={link.title} />
+                  </NavLink>
+                </li>
+              )
+            )}
+
+            <li
+              className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}
+            >
+              <ButtonLanguageTexts />
             </li>
-            <li className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}>
+            <li
+              className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white mr-10`}
+            >
               <ThemeModeButton />
             </li>
-            
           </ul>
         </div>
       </div>

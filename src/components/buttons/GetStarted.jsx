@@ -1,4 +1,4 @@
-import { arrowUp } from "../../assets/index";
+import arrowUp from "../../assets/images/arrow-up.svg";
 import styles from "../../constants/style";
 
 const GetStarted = () => {

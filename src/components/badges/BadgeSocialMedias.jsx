@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { linkedin } from "../../assets/index.js";
+import linkedin from "../../assets/images/linkedin.svg";
 
 const BadgeSocialMedias = () => {
   return (

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { features } from "../../constants";
 import styles, { layout } from "../../constants/style";
 import Button from "../buttons/Button";
-import { hrBlue } from "../../assets/index.js";
+import hrBlue  from "../../assets/images/hrBlue.svg";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div

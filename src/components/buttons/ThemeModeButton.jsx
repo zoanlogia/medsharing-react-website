@@ -1,4 +1,5 @@
-import { moon, lightbulb } from '../../assets/index';
+import moon from '../../assets/images/moon-solid.svg';
+import lightbulb from '../../assets/images/lightbulb-solid.svg';
 import { useTheme } from '../../hooks/useTheme';
 
 const ThemeModeButton = () => {

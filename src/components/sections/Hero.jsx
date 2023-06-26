@@ -1,8 +1,10 @@
 import styles from "../../constants/style";
-import {GetStarted} from "../../components/index"
-import { heroCity, hrBlue, saas } from "../../assets/index";
 import { useTheme } from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
+import saas from "../../assets/images/saas.svg";
+import hrBlue from "../../assets/images/hrBlue.svg";
+import heroCity from "../../assets/images/heroCity.svg";
+import GetStarted from "../buttons/GetStarted.jsx";
 
 const Hero = () => {
   const { theme } = useTheme();

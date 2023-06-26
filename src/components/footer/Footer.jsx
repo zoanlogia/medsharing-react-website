@@ -1,11 +1,14 @@
 import styles from "../../constants/style";
 
 import { footerLinks, socialMedia } from "../../constants/index";
-import { logoRemoveBg } from "../../assets/index";
+import  logoRemoveBg  from "../../assets/images/logonobg.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col z-10`}>
+    <section
+      className={`${styles.flexCenter} ${styles.paddingY} flex-col z-10`}
+    >
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className="flex-1 flex flex-col justify-start mr-10">
           <img
@@ -15,8 +18,8 @@ const Footer = () => {
           />
           <p className={`${styles.paragraph} mt-4 maw-w-[310px]`}>
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            consequatur.{" "}
+            Medsharing <br />
+            le SaaS au service de vos études{" "}
           </p>
         </div>
 
@@ -32,13 +35,14 @@ const Footer = () => {
 
               <ul className="list-none mt-4">
                 {footerLink.links.map((link, index) => (
-                  <li
-                    key={link.id}
+                  <li key={link.id}
                     className={`font-poppins font-normal text-[16px] leading-[24px] hover:text-secondary cursor-pointer ${
                       index !== footerLink.links.length - 1 ? "mb-4" : "mb-0"
                     }`}
                   >
-                    {link.name}
+                    <NavLink  to={link.link}>
+                      {link.name}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -54,7 +58,14 @@ const Footer = () => {
 
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index) => (
-            <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? 'mr-4' : 'mr-0'}`} />
+            <img
+              key={social.id}
+              src={social.icon}
+              alt={social.id}
+              className={`w-[21px] h-[21px] object-contain cursor-pointer ${
+                index !== socialMedia.length - 1 ? "mr-4" : "mr-0"
+              }`}
+            />
           ))}
         </div>
       </div>

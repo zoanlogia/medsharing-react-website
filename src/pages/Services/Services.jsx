@@ -1,19 +1,15 @@
 import { useTheme } from "../../hooks/useTheme.jsx";
 import styles, { layout } from "../../constants/style.js";
-import {
-  Navbar,
-  Footer,
-  SectionServices,
-  ServicesCard,
-  SectionTitle,
-  SectionParagraph,
-} from "../../components/index";
-import {
-  bgForms,
-  business,
-  econsentVector,
-  randomisationVector,
-} from "../../assets/index";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import SectionParagraph from "../../components/texts/SectionParagraph.jsx";
+import SectionTitle from "../../components/texts/SectionTitle.jsx";
+import ServicesCard from "../../components/cards/ServicesCard.jsx";
+import Footer from "../../components/footer/Footer.jsx";
+
+import bgForms from "../../assets/images/bgForms.svg";
+import econsentVector from "../../assets/images/econsentVector.svg";
+import business from "../../assets/images/business.svg";
+import randomisationVector from "../../assets/images/randomisationVector.svg";
 
 const Services = () => {
   const { theme } = useTheme();
@@ -28,7 +24,7 @@ const Services = () => {
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <div className={`${layout.section} lg:gap-20`}>
-            <SectionServices />
+            <SectionParagraph />
           </div>
           <div
             className="bg-lines xs:hidden md:block"
