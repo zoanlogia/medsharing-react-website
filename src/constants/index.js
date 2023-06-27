@@ -3,7 +3,7 @@ import s2 from "../assets/images/s2.png";
 import shuffle from "../assets/images/shuffle.png";
 // import star from "../assets/images/star.svg";
 import shield from "../assets/images/shield.svg";
-import send from "../assets/images/end.svg";
+import send from "../assets/images/send.svg";
 import afcp from "../assets/images/afcp.jpeg";
 import renape from "../assets/images/renape.jpeg";
 import cemka from "../assets/images/cemka.jpeg";
