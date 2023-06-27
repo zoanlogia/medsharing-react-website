@@ -1,15 +1,15 @@
-import s1 from "../../src/assets/images/s1.png";
-import s2 from "../../src/assets/images/s2.png";
-import shuffle from "../../src/assets/images/shuffle.png";
-import star from "../../src/assets/images/star.svg";
-import shield from "../../src/assets/images/shield.svg";
-import send from "../../src/assets/images/send.svg";
-import afcp from "../../src/assets/images/afcp.jpeg";
-import renape from "../../src/assets/images/renape.jpeg";
-import cemka from "../../src/assets/images/cemka.jpeg";
-import cro from "../../src/assets/images/cro.png";
-import linkedin from "../../src/assets/images/linkedin.svg";
-import twitter from "../../src/assets/images/twitter.svg";
+import s1 from "../assets/images/s1.png";
+import s2 from "../assets/images/s2.png";
+import shuffle from "../assets/images/shuffle.png";
+// import star from "../assets/images/star.svg";
+import shield from "../assets/images/shield.svg";
+import send from "../assets/images/end.svg";
+import afcp from "../assets/images/afcp.jpeg";
+import renape from "../assets/images/renape.jpeg";
+import cemka from "../assets/images/cemka.jpeg";
+import cro from "../assets/images/cro.png";
+import linkedin from "../assets/images/linkedin.svg";
+import twitter from "../assets/images/twitter.svg";
 
 
 import { LOCALES } from "../i18n/locales";
@@ -112,6 +112,9 @@ export const counters = [
     id: "counter-1",
     title: "Nombre d'étude réalisée",
     icon: s1,
+    /* The line `// import star from "../assets/images/star.svg";` is commented out, which means it is not
+    being used in the code. It is likely that it was previously used to import an SVG image of a star
+    from the `../assets/images` directory, but was later removed or replaced with a different image. */
     start: 0,
     end: 1500
   },
@@ -178,7 +181,7 @@ export const counters = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
+    // icon: star,
     title: 'E-consent',
     content: "L'eConsent ou Consentement électronique permet au médecin investigateur d'envoyer directement une demande de consentement via l'eCRF avant d'inclure son patient dans l'étude."
   },
