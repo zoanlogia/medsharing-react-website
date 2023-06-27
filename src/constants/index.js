@@ -1,9 +1,9 @@
 import s1 from "../assets/images/s1.png";
 import s2 from "../assets/images/s2.png";
 import shuffle from "../assets/images/shuffle.png";
-// import star from "../assets/images/star.svg";
-import shield from "../assets/images/shield.svg";
-import send from "../assets/images/send.svg";
+import star from "../assets/images/Star.svg";
+import shield from "../assets/images/Shield.svg";
+import send from "../assets/images/end.svg";
 import afcp from "../assets/images/afcp.jpeg";
 import renape from "../assets/images/renape.jpeg";
 import cemka from "../assets/images/cemka.jpeg";
@@ -112,9 +112,6 @@ export const counters = [
     id: "counter-1",
     title: "Nombre d'étude réalisée",
     icon: s1,
-    /* The line `// import star from "../assets/images/star.svg";` is commented out, which means it is not
-    being used in the code. It is likely that it was previously used to import an SVG image of a star
-    from the `../assets/images` directory, but was later removed or replaced with a different image. */
     start: 0,
     end: 1500
   },
@@ -181,7 +178,7 @@ export const counters = [
 export const features = [
   {
     id: "feature-1",
-    // icon: star,
+    icon: star,
     title: 'E-consent',
     content: "L'eConsent ou Consentement électronique permet au médecin investigateur d'envoyer directement une demande de consentement via l'eCRF avant d'inclure son patient dans l'étude."
   },
