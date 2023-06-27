@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { navLinks } from "../../constants";
 import { NavLink } from "react-router-dom";
 import { LOCALES } from "../../i18n/locales";
 import { useTheme } from "../../hooks/useTheme";
-import logoRemoveBg  from "../../assets/images/logonobg.png";
+import logoRemoveBg from "../../assets/images/logonobg.png";
 import ButtonLanguageTexts from "../buttons/ButtonLanguages.jsx";
 import ThemeModeButton from "../buttons/ThemeModeButton.jsx";
 import menu from "../../assets/images/menu.svg";
@@ -12,12 +12,35 @@ import menu from "../../assets/images/menu.svg";
 const Navbar = () => {
   const { theme } = useTheme;
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 1 ) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const links = navLinks[LOCALES.FRENCH] || navLinks[LOCALES.ENGLISH];
 
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav
+      className={`w-full flex py-6 justify-between items-center navbar shadow-xl ${
+        isScrolled ? "bg-primary z-50" : ""
+      }`}
+      onScroll={handleScroll}
+    >
       <NavLink to="/">
         <img
           src={logoRemoveBg}
