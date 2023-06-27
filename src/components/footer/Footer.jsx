@@ -4,8 +4,10 @@ import { footerLinks, socialMedia } from "../../constants/index";
 import  logoRemoveBg  from "../../assets/images/logonobg.png";
 import { NavLink } from "react-router-dom";
 
+
 const Footer = () => {
   return (
+    
     <section
       className={`${styles.flexCenter} ${styles.paddingY} flex-col z-10`}
     >

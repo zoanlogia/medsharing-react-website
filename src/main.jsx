@@ -8,7 +8,7 @@ import I18nProvider from "./providers/I18nProvider";
 import { AnimatePresence } from "framer-motion";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <React.Fragment>
     <AnimatePresence>
       <LanguageProvider>
         <I18nProvider>
@@ -18,5 +18,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </I18nProvider>
       </LanguageProvider>
       </AnimatePresence>
-  </React.StrictMode>
+  </React.Fragment>
 );
