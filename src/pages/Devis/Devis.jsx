@@ -12,7 +12,7 @@ import Rainfall from "../../components/animations/Rainfall.jsx";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import SectionTitle from "../../components/texts/SectionTitle.jsx";
 import InputGroup from "../../components/inputs/InputGroup.jsx";
-import Select from "../../components/inputs/select.jsx";
+import Select from "../../components/inputs/Select.jsx";
 import Textarea from "../../components/inputs/Textarea.jsx";
 import Button from "../../components/buttons/Button.jsx";
 import BadgeSocialMedias from "../../components/badges/BadgeSocialMedias.jsx";
