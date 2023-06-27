@@ -790,6 +790,14 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }

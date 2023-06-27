@@ -36,11 +36,19 @@ const LandingPage = () => {
           <Fade bottom>
             <Stats />
           </Fade>
-          <Business />
-          <Billing />
-          <CardDeal />
-          <Counters />
-          <Testimonials />
+          <div className="h-[100vh]">
+            <Business />
+          </div>
+          <div className="h-[100vh]">
+            <Billing />
+          </div>
+          <div className="h–[100vh]">
+            <CardDeal />
+            <Counters />
+          </div>
+          <div className="h–[100vh]">
+            <Testimonials />
+          </div>
           <Fade left>
             <Cta />
           </Fade>
