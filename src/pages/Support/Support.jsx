@@ -96,19 +96,19 @@ const Support = () => {
                 </span>
               </p>
             </div>
-            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap xxs:items-center sm:my-5 sm:px-16 px-6 sm:py-12 py-4 w-full bg-black-gradient-2 rounded-[20px] box-shadow">
+            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap xxs:items-center sm:my-5 sm:px-16 px-6 sm:py-12 py-4 w-full bg-[#d9D9D9] box-shadow rounded-2xl">
               <form
                 id="support"
                 className={`flex align-baseline flex-col w-full`}
                 onSubmit={formik.handleSubmit}
               >
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary"}
                   label={"Nom"}
                   htmlFor="name"
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
+                    "bg-primary -b-4 -indigo-500 h-[25px] placeholder-gray-500"
                   }
                   placeholder="Inscrivez votre nom"
                   type="text"
@@ -124,12 +124,12 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary"}
                   label={"Mail"}
                   htmlFor={"mail"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
+                    "bg-primary  -indigo-500 h-[25px] placeholder-gray-500"
                   }
                   placeholder={"Inscrivez votre mail"}
                   type={"email"}
@@ -145,12 +145,12 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary"}
                   label={"Téléphone"}
                   htmlFor={"phone"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
+                    "bg-primary  h-[25px] placeholder-gray-500"
                   }
                   placeholder={"Inscrivez votre numéro"}
                   type={"tel"}
@@ -167,12 +167,12 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary"}
                   label={"Société"}
                   htmlFor={"society"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
+                    "bg-primary  h-[25px] placeholder-gray-500"
                   }
                   placeholder={"Inscrivez votre société"}
                   type={"text"}
@@ -189,12 +189,12 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary"}
                   label={"Nom de l'etude"}
                   htmlFor={"study"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
+                    "bg-primary  h-[25px] placeholder-gray-500"
                   }
                   placeholder={"Inscrivez le nom de l'étude"}
                   type={"text"}
@@ -211,12 +211,12 @@ const Support = () => {
                 )}
 
                 <Textarea
-                  className={"flex flex-col w-full form-group mt-6"}
+                  className={"flex flex-col w-full form-group mt-6 text-primary border-1"}
                   label={"Message"}
                   htmlFor={"message"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "border rounded-xl border-white-500 h-[100px] placeholder-gray-500 p-1"
+                    "  h-[100px] placeholder-gray-500 p-1"
                   }
                   placeholder={"Tapez ici votre message"}
                   needed={true}
@@ -231,7 +231,7 @@ const Support = () => {
                 )}
 
                 <Button
-                  customClass={`mt-6`}
+                  customClass={`mt-6 shadow-xl`}
                   text="Envoyer"
                   icon={"📨"}
                   type={"submit"}
@@ -243,7 +243,7 @@ const Support = () => {
                   src={supportNoBg}
                   alt="support"
                 />
-                <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
+                {/* <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div> */}
               </div>
             </div>
             <Footer />

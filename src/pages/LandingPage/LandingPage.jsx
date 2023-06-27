@@ -11,7 +11,6 @@ import Testimonials from "../../components/sections/Testimonials.jsx";
 import styles from "../../constants/style";
 
 import { useTheme } from "../../hooks/useTheme.jsx";
-import Fade from "react-reveal/Fade";
 
 const LandingPage = () => {
   const { theme } = useTheme();
@@ -25,17 +24,17 @@ const LandingPage = () => {
       </div>
       <div className={` ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Fade right>
+          
             <Hero />
-          </Fade>
+          
           {/* <Hero2 /> */}
         </div>
       </div>
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Fade bottom>
+          
             <Stats />
-          </Fade>
+          
           <div className="h-[100vh]">
             <Business />
           </div>
@@ -49,9 +48,9 @@ const LandingPage = () => {
           <div className="h–[100vh]">
             <Testimonials />
           </div>
-          <Fade left>
+          
             <Cta />
-          </Fade>
+          
           <Footer />
         </div>
       </div>

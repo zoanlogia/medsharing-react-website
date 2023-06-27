@@ -4,6 +4,10 @@ const InputGroup = ({htmlFor, label, className, type, classLabel, classInput, pl
 
     const [isNeeded, setIsNeeded] = useState(!!needed);
 
+    if (isNeeded && !value) {
+        setIsNeeded(false);
+    }
+
     return (
         <div className={className}>
             <label className={classLabel} htmlFor={htmlFor}>

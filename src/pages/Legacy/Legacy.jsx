@@ -169,7 +169,7 @@ const Legacy = () => {
                   MEDSHARING. La mise en place de liens hypertextes n’autorise
                   en aucune façon la reproduction d’éléments du site ou la
                   présentation sur des sites tiers d’éléments du site sous forme
-                  de " Frame " ou système apparenté. EN SAVOIR PLUS nous
+                  de <i>Frame</i> ou système apparenté. EN SAVOIR PLUS nous
                   contacter icone flux RSS icone Demande de devis +33 (0)1 48 75
                   39 14 par mail Raison sociale et dénomination MEDSHARING 44
                   rue Roger Salengro 94120 Fontenay Sous Bois France

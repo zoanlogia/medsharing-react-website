@@ -6,6 +6,7 @@ import LanguageProvider from "./providers/LanguageProvider";
 import ThemeProvider from "./providers/ThemeProvider";
 import I18nProvider from "./providers/I18nProvider";
 import { AnimatePresence } from "framer-motion";
+// import { Link, animateScroll as scroll } from "react-scroll";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.Fragment>

@@ -4,7 +4,7 @@ import { navLinks } from "../../constants";
 import { NavLink } from "react-router-dom";
 import { LOCALES } from "../../i18n/locales";
 import { useTheme } from "../../hooks/useTheme";
-import logoRemoveBg from "../../assets/images/logonobg.png";
+import logoRemoveBg from "../../assets/images/logonobg.svg";
 import ButtonLanguageTexts from "../buttons/ButtonLanguages.jsx";
 import ThemeModeButton from "../buttons/ThemeModeButton.jsx";
 import menu from "../../assets/images/menu.svg";
@@ -36,8 +36,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex py-6 justify-between items-center navbar shadow-xl ${
-        isScrolled ? "bg-primary z-50" : ""
+      className={`w-full flex py-6 justify-between items-center navbar ${
+        isScrolled ? "bg-primary z-50 h-[30px] shadow-xl border-gray-600" : ""
       }`}
       onScroll={handleScroll}
     >
@@ -45,7 +45,7 @@ const Navbar = () => {
         <img
           src={logoRemoveBg}
           alt="medsharing"
-          className={`w-[40px] h-[40px] box-shadow bg-white rounded-full object-contain`}
+          className={`w-[40px] h-[40px] bg-white border rounded-full box-shadow shadow-xl`}
         />
       </NavLink>
       <NavLink to="/">

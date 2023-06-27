@@ -15,8 +15,6 @@ import CardText from "../../components/cards/CardText.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Button from "../../components/buttons/Button.jsx";
 
-import Fade from "react-reveal/Fade";
-
 const Solutions = () => {
   const { theme } = useTheme();
 
@@ -98,7 +96,7 @@ const Solutions = () => {
                   showStates.loupe ? "block" : "hidden"
                 }`}
               >
-                <Fade left>
+                
                   <CardText>
                     <h2>
                       🏆 Transformez vos études cliniques avec notre solution{" "}
@@ -180,14 +178,14 @@ const Solutions = () => {
                       de confiance dans le domaine.
                     </p>
                   </CardText>
-                </Fade>
+                
               </div>
               <div
                 className={`font-poppins font-normal text-[18px] leading-[30.8px] max-w-[800px] xs:mt-10 ${
                   showStates.drugs ? "block" : "hidden"
                 }`}
               >
-                <Fade left>
+                
                   <CardText>
                     <h2>
                       🏆 Découvrez l&apos;eConsent : votre solution pour un
@@ -291,14 +289,14 @@ const Solutions = () => {
                       étude.
                     </p>
                   </CardText>
-                </Fade>
+                
               </div>
               <div
                 className={`font-poppins font-normal text-[18px] leading-[30.8px] max-w-[800px] xs:mt-10 ${
                   showStates.groupes ? "block" : "hidden"
                 }`}
               >
-                <Fade left>
+                
                   <CardText>
                     <h2>
                       🏆 Découvrez EOL© par MEDSHARING : Votre solution eCRF
@@ -410,14 +408,14 @@ const Solutions = () => {
                       clinique d&apos;aujourd&apos;hui.
                     </p>
                   </CardText>
-                </Fade>
+                
               </div>
               <div
                 className={`font-poppins font-normal text-[18px] leading-[30.8px] max-w-[800px] xs:mt-10 ${
                   showStates.kit ? "block" : "hidden"
                 }`}
               >
-                <Fade left>
+                
                   <div className="white__gradient left-[50%] bottom-[50%] w-[20%] h-[20%] absolute xxs:hidden md:block"></div>
                   <CardText>
                     <h2>
@@ -485,11 +483,11 @@ const Solutions = () => {
                       cliniques avec le RANDOMIZER for CLINICAL TRIAL.{" "}
                     </p>
                   </CardText>
-                </Fade>
+                
               </div>
             </div>
 
-            <Fade right >
+            
               <div className="flex justify-center  sm:my-5 sm:px-16 px-6 sm:py-12 py-4 flex-col bg-black-gradient-2 max-w-[800px] rounded-[20px] box-shadow">
                 <h2>
                   Vous voulez en savoir plus ? Contactez-nous dès
@@ -504,7 +502,7 @@ const Solutions = () => {
                   <Button customClass={`mt-5`} text="Contactez-nous"></Button>
                 </Link>
               </div>
-            </Fade>
+            
           </div>
         </div>
       </section>

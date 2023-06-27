@@ -1,7 +1,7 @@
 import styles from "../../constants/style";
 
 import { footerLinks, socialMedia } from "../../constants/index";
-import  logoRemoveBg  from "../../assets/images/logonobg.png";
+import  logoRemoveBg  from "../../assets/images/logonobg.svg";
 import { NavLink } from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <img
             src={logoRemoveBg}
             alt="medsharing"
-            className="w-[72px] h-[72px] object-contain box-shadow bg-white rounded-full"
+            className="w-[72px] h-[72px] bg-white border rounded-full box-shadow shadow-xl"
           />
           <p className={`${styles.paragraph} mt-4 maw-w-[310px]`}>
             {" "}
