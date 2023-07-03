@@ -1,6 +1,6 @@
-import { vortexBulls } from "@/assets/index";
-import { layout } from "@/constants/style";
-import { SectionParagraph, SectionTitle } from "@/index";
+import { vortexBulls } from "../../assets/index";
+import { layout } from "../../constants/style";
+import { SectionParagraph, SectionTitle } from "../index";
 
 const SectionServices = () => {
   return (

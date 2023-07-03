@@ -1,6 +1,6 @@
-import { LOCALES } from '@/i18n/locales';
-import { useTheme } from '@/hooks/useTheme';
-import { useLanguage } from '@/hooks/useLanguage';
+import { LOCALES } from '../../i18n/locales';
+import { useTheme } from '../../hooks/useTheme';
+import { useLanguage } from '../../hooks/useLanguage';
 
 const ButtonLanguageTexts = () => {
   const {theme} = useTheme()

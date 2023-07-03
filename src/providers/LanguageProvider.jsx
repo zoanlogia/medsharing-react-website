@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { LOCALES } from "@/i18n/locales.js";
+import { LOCALES } from "../i18n/locales.js";
 
 // CONTEXT == définition (valeur/default)
 export const LangageContext = createContext({

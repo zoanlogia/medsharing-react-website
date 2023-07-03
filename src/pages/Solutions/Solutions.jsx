@@ -1,19 +1,19 @@
-import { useTheme } from "@/hooks/useTheme";
-import styles, { layout } from "@/constants/style.js";
+import { useTheme } from "../../hooks/useTheme";
+import styles, { layout } from "../../constants/style.js";
 
-import loupe from "@/assets/images/loupe.svg";
-import drugs from "@/assets/images/drugs.svg";
-import groupes from "@/assets/images/groupes.svg";
-import kit from "@/assets/images/kit.svg";
+import loupe from "../../assets/images/loupe.svg";
+import drugs from "../../assets/images/drugs.svg";
+import groupes from "../../assets/images/groupes.svg";
+import kit from "../../assets/images/kit.svg";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "@/components/navbar/Navbar.jsx";
-import SectionTitle from "@/components/texts/SectionTitle.jsx";
-import SolucesIcons from "@/components/icons/SolucesIcons.jsx";
-import CardText from "@/components/cards/CardText.jsx";
-import Footer from "@/components/footer/Footer.jsx";
-import Button from "@/components/buttons/Button.jsx";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import SectionTitle from "../../components/texts/SectionTitle.jsx";
+import SolucesIcons from "../../components/icons/SolucesIcons.jsx";
+import CardText from "../../components/cards/CardText.jsx";
+import Footer from "../../components/footer/Footer.jsx";
+import Button from "../../components/buttons/Button.jsx";
 
 const Solutions = () => {
   const { theme } = useTheme();

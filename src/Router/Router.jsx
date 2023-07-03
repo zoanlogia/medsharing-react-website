@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LandingPage from "@/pages/LandingPage/LandingPage";
-import About from "@/pages/About/About";
-import Solutions from "@/pages/Solutions/Solutions";
-import Devis from "@/pages/Devis/Devis.jsx";
-import Services from "@/pages/Services/Services.jsx";
-import Support from "@/pages/Support/Support.jsx";
-import Error from "@/pages/Error/Error.jsx";
-import Legacy from "@/pages/Legacy/Legacy.jsx";
+import LandingPage from "../pages/LandingPage/LandingPage";
+import About from "../pages/About/About";
+import Solutions from "../pages/Solutions/Solutions";
+import Devis from "../pages/Devis/Devis.jsx";
+import Services from "../pages/Services/Services.jsx";
+import Support from "../pages/Support/Support.jsx";
+import Error from "../pages/Error/Error.jsx";
+import Legacy from "../pages/Legacy/Legacy.jsx";
 
 const Router = () => {
   return (

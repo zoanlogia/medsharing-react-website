@@ -1,5 +1,5 @@
-import { useTheme } from "@/hooks/useTheme.jsx";
-import styles, { layout } from "@/constants/style.js";
+import { useTheme } from "../../hooks/useTheme.jsx";
+import styles, { layout } from "../../constants/style.js";
 
 import { AnimatePresence, motion as m } from "framer-motion";
 
@@ -7,21 +7,21 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SuccessModal from "@/components/modals/SuccessModal.jsx";
-import Rainfall from "@/components/animations/Rainfall.jsx";
-import Navbar from "@/components/navbar/Navbar.jsx";
-import SectionTitle from "@/components/texts/SectionTitle.jsx";
-import InputGroup from "@/components/inputs/InputGroup.jsx";
-import Select from "@/components/inputs/Select.jsx";
-import Textarea from "@/components/inputs/Textarea.jsx";
-import Button from "@/components/buttons/Button.jsx";
-import BadgeSocialMedias from "@/components/badges/BadgeSocialMedias.jsx";
-import Footer from "@/components/footer/Footer.jsx";
+import SuccessModal from "../../components/modals/SuccessModal.jsx";
+import Rainfall from "../../components/animations/Rainfall.jsx";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import SectionTitle from "../../components/texts/SectionTitle.jsx";
+import InputGroup from "../../components/inputs/InputGroup.jsx";
+import Select from "../../components/inputs/Select.jsx";
+import Textarea from "../../components/inputs/Textarea.jsx";
+import Button from "../../components/buttons/Button.jsx";
+import BadgeSocialMedias from "../../components/badges/BadgeSocialMedias.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 
-import vectorContact from "@/assets/images/vectorContact.svg";
-import phoneIcon from "@/assets/images/phoneIcon.svg";
-import mapIcon from "@/assets/images/mapIcon.svg";
-import mailIcon from "@/assets/images/mailIcon.svg";
+import vectorContact from "../../assets/images/vectorContact.svg";
+import phoneIcon from "../../assets/images/phoneIcon.svg";
+import mapIcon from "../../assets/images/mapIcon.svg";
+import mailIcon from "../../assets/images/mailIcon.svg";
 
 
 const Devis = () => {

@@ -1,15 +1,15 @@
-import { useTheme } from "@/hooks/useTheme";
-import styles, { layout } from "@/constants/style.js";
-import Navbar from "@/components/navbar/Navbar";
-import SectionParagraph from "@/components/texts/SectionParagraph";
-import SectionTitle from "@/components/texts/SectionTitle";
-import ServicesCard from "@/components/cards/ServicesCard";
-import Footer from "@/components/footer/Footer";
+import { useTheme } from "../../hooks/useTheme.jsx";
+import styles, { layout } from "../../constants/style.js";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import SectionParagraph from "../../components/texts/SectionParagraph.jsx";
+import SectionTitle from "../../components/texts/SectionTitle.jsx";
+import ServicesCard from "../../components/cards/ServicesCard.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 
-import bgForms from "@/assets/images/bgForms.svg";
-import econsentVector from "@/assets/images/econsentVector.svg";
-import business from "@/assets/images/business.svg";
-import randomisationVector from "@/assets/images/randomisationVector.svg";
+import bgForms from "../../assets/images/bgForms.svg";
+import econsentVector from "../../assets/images/econsentVector.svg";
+import business from "../../assets/images/business.svg";
+import randomisationVector from "../../assets/images/randomisationVector.svg";
 
 const Services = () => {
   const { theme } = useTheme();

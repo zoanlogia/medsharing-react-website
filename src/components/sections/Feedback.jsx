@@ -1,4 +1,4 @@
-import quotes from "@/assets/images/quotes.svg";
+import quotes from "../../assets/images/quotes.svg";
 
 const Feedback = ({ content, title, name, img }) => {
   return (

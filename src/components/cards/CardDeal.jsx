@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styles, { layout } from "@/constants/style";
-import hrBlue from "@/assets/images/hrBlue.svg";
-import medsharingManagement from "@/assets/images/medsharingManagement.svg";
-import Button from "@/components/buttons/Button";
+import styles, { layout } from "../../constants/style";
+import hrBlue from "../../assets/images/hrBlue.svg";
+import medsharingManagement from "../../assets/images/medsharingManagement.svg";
+import Button from "../buttons/Button.jsx";
 
 const CardDeal = () => {
   return (

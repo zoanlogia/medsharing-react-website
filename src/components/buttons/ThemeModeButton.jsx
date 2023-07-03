@@ -1,6 +1,6 @@
-import moon from '@/assets/images/moon-solid.svg';
-import lightbulb from '@/assets/images/lightbulb-solid.svg';
-import { useTheme } from '@/hooks/useTheme';
+import moon from '../../assets/images/moon-solid.svg';
+import lightbulb from '../../assets/images/lightbulb-solid.svg';
+import { useTheme } from '../../hooks/useTheme';
 
 const ThemeModeButton = () => {
   const { theme, setTheme } = useTheme()
