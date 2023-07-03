@@ -35,17 +35,17 @@ const LandingPage = () => {
           
             <Stats />
           
-          <div className="h-[100vh]">
+          <div className="xl:h-screen">
             <Business />
           </div>
-          <div className="h-[100vh]">
+          <div className="xl:h-screen">
             <Billing />
           </div>
-          <div className="h–[100vh]">
+          <div className="xl:h-screen">
             <CardDeal />
             <Counters />
           </div>
-          <div className="h–[100vh]">
+          <div className="xl:h-screen">
             <Testimonials />
           </div>
           
