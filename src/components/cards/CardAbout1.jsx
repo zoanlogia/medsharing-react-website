@@ -36,6 +36,9 @@ const CardAbout1 = () => {
           <b>EOLConsent©</b> (Consentement électronique), <b>EOLPharma©</b>{" "}
           (Gestion des unités de traitements)
         </p>
+        <Link to="https://www.medsharing.fr/pdf/z9xzkrgqip7y6qk9w6ri.pdf">
+          <Button customClass="mt-5" text="📚 Demandez la brochure"/>
+        </Link>
       </div>
 
       <div className={`${layout.sectionImgReverse}`}>
@@ -44,9 +47,6 @@ const CardAbout1 = () => {
           alt="card icon hospital"
           className="w-full mt-10 sm:mt-0 md:mt-10 object-contain"
         />
-        <Link to="https://www.medsharing.fr/pdf/z9xzkrgqip7y6qk9w6ri.pdf">
-          <Button customClass="mt-5" text="📚 Demandez la brochure"/>
-        </Link>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
-import { useTheme } from "../../hooks/useTheme.jsx";
-import styles, { layout } from "../../constants/style.js";
+import { useTheme } from "../../hooks/useTheme";
+import styles, { layout } from "../../constants/style";
 
 import { AnimatePresence, motion as m } from "framer-motion";
 
@@ -7,16 +7,16 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SuccessModal from "../../components/modals/SuccessModal.jsx";
-import Rainfall from "../../components/animations/Rainfall.jsx";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import SectionTitle from "../../components/texts/SectionTitle.jsx";
-import InputGroup from "../../components/inputs/InputGroup.jsx";
-import Select from "../../components/inputs/Select.jsx";
-import Textarea from "../../components/inputs/Textarea.jsx";
-import Button from "../../components/buttons/Button.jsx";
-import BadgeSocialMedias from "../../components/badges/BadgeSocialMedias.jsx";
-import Footer from "../../components/footer/Footer.jsx";
+import SuccessModal from "../../components/modals/SuccessModal";
+import Rainfall from "../../components/animations/Rainfall";
+import Navbar from "../../components/navbar/Navbar";
+import SectionTitle from "../../components/texts/SectionTitle";
+import InputGroup from "../../components/inputs/InputGroup";
+import Select from "../../components/inputs/Select";
+import Textarea from "../../components/inputs/Textarea";
+import Button from "../../components/buttons/Button";
+import BadgeSocialMedias from "../../components/badges/BadgeSocialMedias";
+import Footer from "../../components/footer/Footer";
 
 import vectorContact from "../../assets/images/vectorContact.svg";
 import phoneIcon from "../../assets/images/phoneIcon.svg";
@@ -125,7 +125,7 @@ const Devis = () => {
                       <span className="font-poppins font-semibold text-[20px] leading-[30.8px] text-gradient">
                         Contactez notre support.{" "}
                       </span>
-                      <span className="ms-2 py-[6px] px-4 card-white rounded-[10px] mb-2 hover:font-bold">
+                      <span className="ms-2 py-[6px] px-4 rounded-full shadow-2xl border mb-2 hover:font-bold">
                         {" "}
                         ☎️ +33(0)148753914{" "}
                       </span>
@@ -196,7 +196,177 @@ const Devis = () => {
               </div>
             </div>
             <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap w-full bg-black-gradient-2 rounded-[20px] box-shadow relative">
-              <div className="bg-[#D9D9D9] rounded-tl-2xl rounded-bl-2xl w-full flex flex-col items-center">
+              
+              <form
+                id="support"
+                className={`flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4`}
+                onSubmit={formik.handleSubmit}
+              >
+                <InputGroup
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Société"}
+                  htmlFor={"society"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  placeholder={"Inscrivez votre société"}
+                  type={"text"}
+                  needed={true}
+                  value={formik.values.society}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+
+                {formik.touched.society && formik.errors.society ? (
+                  <small className="text-red-400">
+                    {formik.errors.society}
+                  </small>
+                ) : (
+                  ""
+                )}
+
+                <InputGroup
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Pays"}
+                  htmlFor={"country"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  placeholder={"Inscrivez votre pays"}
+                  type={"text"}
+                  needed={true}
+                  value={formik.values.country}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+
+                {formik.touched.country && formik.errors.country ? (
+                  <small className="text-red-400">
+                    {formik.errors.country}
+                  </small>
+                ) : (
+                  ""
+                )}
+
+                <InputGroup
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Nom"}
+                  htmlFor="name"
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  placeholder="Inscrivez votre nom"
+                  type="text"
+                  needed={true}
+                  value={formik.values.name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {formik.touched.name && formik.errors.name ? (
+                  <small className="text-red-400">{formik.errors.name}</small>
+                ) : (
+                  ""
+                )}
+
+                <InputGroup
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Mail"}
+                  htmlFor={"mail"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  placeholder={"Inscrivez votre mail"}
+                  type={"email"}
+                  needed={true}
+                  value={formik.values.mail}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {formik.touched.mail && formik.errors.mail ? (
+                  <small className="text-red-400">{formik.errors.mail}</small>
+                ) : (
+                  ""
+                )}
+
+                <InputGroup
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Téléphone"}
+                  htmlFor={"phone"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  placeholder={"Inscrivez votre numéro"}
+                  type={"tel"}
+                  needed={true}
+                  value={formik.values.phone}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+
+                {formik.touched.phone && formik.errors.phone ? (
+                  <small className="text-red-400">{formik.errors.phone}</small>
+                ) : (
+                  ""
+                )}
+
+                <Select
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Statut"}
+                  htmlFor={"status"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border-b-2 border-white-500 h-[25px] placeholder-gray-500"
+                  }
+                  options={status}
+                  placeholder={"Indiquez votre statut"}
+                  needed={true}
+                  value={formik.values.status}
+                  status={status}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+
+                {formik.touched.status && formik.errors.status ? (
+                  <small className="text-red-400">{formik.errors.status}</small>
+                ) : (
+                  ""
+                )}
+
+                <Textarea
+                  className={"flex flex-col w-full form-group-white mt-6"}
+                  label={"Message"}
+                  htmlFor={"message"}
+                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
+                  classInput={
+                    "bg-transparent border rounded-xl border-white-500 h-[100px] placeholder-gray-500 p-1"
+                  }
+                  placeholder={"Tapez ici votre message"}
+                  needed={true}
+                  value={formik.values.message}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {formik.touched.message && formik.errors.message ? (
+                  <small className="text-red-400">
+                    {formik.errors.message}
+                  </small>
+                ) : (
+                  ""
+                )}
+
+                <Button
+                  customClass={`mt-6`}
+                  text="Demander un devis"
+                  icon={"🧾"}
+                  type={"submit"}
+                />
+              </form>
+              <div className="bg-[#D9D9D9] w-full flex flex-col items-center rounded-tr-[20px] rounded-br-[20px]">
                 <div className="flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4">
                   <div className="flex items-center gap-3 mt-6">
                     <img src={phoneIcon} alt="phone icon" />
@@ -232,176 +402,7 @@ const Devis = () => {
                     <iframe className="w-full h-full rounded-2xl"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=MEDSHARING,%2044%20rue%20Roger%20Salengro,%2094120,%20Fontenay%20Sous%20Bois,%20France+(Medsharing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
                 </div>
               </div>
-              <form
-                id="support"
-                className={`flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4`}
-                onSubmit={formik.handleSubmit}
-              >
-                <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Société"}
-                  htmlFor={"society"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  placeholder={"Inscrivez votre société"}
-                  type={"text"}
-                  needed={true}
-                  value={formik.values.society}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-
-                {formik.touched.society && formik.errors.society ? (
-                  <small className="text-red-400">
-                    {formik.errors.society}
-                  </small>
-                ) : (
-                  ""
-                )}
-
-                <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Pays"}
-                  htmlFor={"country"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  placeholder={"Inscrivez votre pays"}
-                  type={"text"}
-                  needed={true}
-                  value={formik.values.country}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-
-                {formik.touched.country && formik.errors.country ? (
-                  <small className="text-red-400">
-                    {formik.errors.country}
-                  </small>
-                ) : (
-                  ""
-                )}
-
-                <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Nom"}
-                  htmlFor="name"
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  placeholder="Inscrivez votre nom"
-                  type="text"
-                  needed={true}
-                  value={formik.values.name}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-                {formik.touched.name && formik.errors.name ? (
-                  <small className="text-red-400">{formik.errors.name}</small>
-                ) : (
-                  ""
-                )}
-
-                <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Mail"}
-                  htmlFor={"mail"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  placeholder={"Inscrivez votre mail"}
-                  type={"email"}
-                  needed={true}
-                  value={formik.values.mail}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-                {formik.touched.mail && formik.errors.mail ? (
-                  <small className="text-red-400">{formik.errors.mail}</small>
-                ) : (
-                  ""
-                )}
-
-                <InputGroup
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Téléphone"}
-                  htmlFor={"phone"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  placeholder={"Inscrivez votre numéro"}
-                  type={"tel"}
-                  needed={true}
-                  value={formik.values.phone}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-
-                {formik.touched.phone && formik.errors.phone ? (
-                  <small className="text-red-400">{formik.errors.phone}</small>
-                ) : (
-                  ""
-                )}
-
-                <Select
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Statut"}
-                  htmlFor={"status"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary border-b-4 border-white-500 h-[25px] placeholder-gray-500"
-                  }
-                  options={status}
-                  placeholder={"Indiquez votre statut"}
-                  needed={true}
-                  value={formik.values.status}
-                  status={status}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-
-                {formik.touched.status && formik.errors.status ? (
-                  <small className="text-red-400">{formik.errors.status}</small>
-                ) : (
-                  ""
-                )}
-
-                <Textarea
-                  className={"flex flex-col w-full form-group mt-6"}
-                  label={"Message"}
-                  htmlFor={"message"}
-                  classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "border rounded-xl border-white-500 h-[100px] placeholder-gray-500 p-1"
-                  }
-                  placeholder={"Tapez ici votre message"}
-                  needed={true}
-                  value={formik.values.message}
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                />
-                {formik.touched.message && formik.errors.message ? (
-                  <small className="text-red-400">
-                    {formik.errors.message}
-                  </small>
-                ) : (
-                  ""
-                )}
-
-                <Button
-                  customClass={`mt-6`}
-                  text="Demander un devis"
-                  icon={"🧾"}
-                  type={"submit"}
-                />
-              </form>
-              <BadgeSocialMedias />
+              <BadgeSocialMedias posX={"right"} />
             </div>
             <Footer />
           </div>

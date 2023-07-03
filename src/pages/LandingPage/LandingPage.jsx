@@ -1,18 +1,30 @@
-import CardDeal from "../../components/cards/CardDeal.jsx";
-import Counters from "../../components/counters/Counters.jsx";
-import Footer from "../../components/footer/Footer.jsx";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import Billing from "../../components/sections/Billing.jsx";
-import Business from "../../components/sections/Business.jsx";
-import Cta from "../../components/sections/Cta.jsx";
-import Hero from "../../components/sections/Hero.jsx";
-import Stats from "../../components/sections/Stats.jsx";
-import Testimonials from "../../components/sections/Testimonials.jsx";
+import { motion as m } from "framer-motion";
+import { useTheme } from "../../hooks/useTheme.jsx";
+import { useScrollFadeScale } from "../../hooks/useScrollFadeScale.jsx";
 import styles from "../../constants/style";
 
-import { useTheme } from "../../hooks/useTheme.jsx";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import Hero from "../../components/sections/Hero.jsx";
+import Stats from "../../components/sections/Stats.jsx";
+import Business from "../../components/sections/Business.jsx";
+import Billing from "../../components/sections/Billing.jsx";
+import CardDeal from "../../components/cards/CardDeal.jsx";
+import Counters from "../../components/counters/Counters.jsx";
+import Testimonials from "../../components/sections/Testimonials.jsx";
+import Cta from "../../components/sections/Cta.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 
 const LandingPage = () => {
+  const heroAnimation = useScrollFadeScale();
+  const statsAnimation = useScrollFadeScale();
+  const businessAnimation = useScrollFadeScale();
+  const billingAnimation = useScrollFadeScale();
+  const cardDealAnimation = useScrollFadeScale();
+  const countersAnimation = useScrollFadeScale();
+  const testimonialsAnimation = useScrollFadeScale();
+  const ctaAnimation = useScrollFadeScale();
+  const footerAnimation = useScrollFadeScale();
+
   const { theme } = useTheme();
 
   return (
@@ -22,36 +34,63 @@ const LandingPage = () => {
           <Navbar />
         </div>
       </div>
-      <div className={` ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          
-            <Hero />
-          
-          {/* <Hero2 /> */}
-        </div>
-      </div>
+      <m.div
+        style={{ opacity: heroAnimation.opacity, scale: heroAnimation.scale }}
+        ref={heroAnimation.Ref}
+        className={` ${styles.flexCenter} ${styles.boxWidth} h-screen relative`}
+      >
+        <Hero />
+      </m.div>
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          
+          <m.div
+            ref={statsAnimation.Ref}
+            style={{ opacity: statsAnimation.opacity, scale: statsAnimation.scale }}
+          >
             <Stats />
-          
-          <div className="xl:h-screen">
+          </m.div>
+          <m.div
+            ref={businessAnimation.Ref}
+            style={{ opacity: businessAnimation.opacity, scale: businessAnimation.scale }}
+          >
             <Business />
-          </div>
-          <div className="xl:h-screen">
+          </m.div>
+          <m.div
+            ref={billingAnimation.Ref}
+            style={{ opacity: billingAnimation.opacity, scale: billingAnimation.scale }}
+          >
             <Billing />
-          </div>
-          <div className="xl:h-screen">
+          </m.div>
+          <m.div
+            ref={cardDealAnimation.Ref}
+            style={{ opacity: cardDealAnimation.opacity, scale: cardDealAnimation.scale }}
+          >
             <CardDeal />
+          </m.div>
+          <m.div
+            ref={countersAnimation.Ref}
+            style={{ opacity: countersAnimation.opacity, scale: countersAnimation.scale }}
+          >
             <Counters />
-          </div>
-          <div className="xl:h-screen">
+          </m.div>
+          <m.div
+            ref={testimonialsAnimation.Ref}
+            style={{ opacity: testimonialsAnimation.opacity, scale: testimonialsAnimation.scale }}
+          >
             <Testimonials />
-          </div>
-          
+          </m.div>
+          <m.div
+            ref={ctaAnimation.Ref}
+            style={{ opacity: ctaAnimation.opacity, scale: ctaAnimation.scale }}
+          >
             <Cta />
-          
-          <Footer />
+          </m.div>
+          <m.div
+            ref={footerAnimation.Ref}
+            style={{ opacity: footerAnimation.opacity, scale: footerAnimation.scale }}
+          >
+            <Footer />
+          </m.div>
         </div>
       </div>
     </div>

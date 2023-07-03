@@ -45,7 +45,7 @@ const Navbar = () => {
         <img
           src={logoRemoveBg}
           alt="medsharing"
-          className={`w-[40px] h-[40px] bg-white border rounded-full box-shadow shadow-xl`}
+          className={`w-[40px] h-[40px] bg-white rounded-full`}
         />
       </NavLink>
       <NavLink to="/">

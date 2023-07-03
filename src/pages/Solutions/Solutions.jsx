@@ -52,7 +52,7 @@ const Solutions = () => {
       {/* <div class="blobImgSolutionsRight xs:hidden md:block"></div> */}
       <div className="white__gradient left-0 bottom-[60%] w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
       <section
-        className={` ${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
+        className={`${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
       >
         <div className={`${styles.boxWidth}`}>
           <SectionTitle>Nos solutions</SectionTitle>
@@ -489,9 +489,9 @@ const Solutions = () => {
 
             
               <div className="flex justify-center  sm:my-5 sm:px-16 px-6 sm:py-12 py-4 flex-col bg-black-gradient-2 max-w-[800px] rounded-[20px] box-shadow">
-                <h2>
+                <h2 className={styles.paragraphMd}>
                   Vous voulez en savoir plus ? Contactez-nous dès
-                  aujourd&apos;hui !
+                  aujourd&apos;hui ! 🚀
                 </h2>
                 <br />
                 Nous serions ravis de vous fournir plus de détails sur nos
@@ -499,7 +499,7 @@ const Solutions = () => {
                 transformer vos études cliniques.{" "}
                 <strong>Programmez une démo par webconférence ou</strong>
                 <Link to="mailto:info@medsharing.fr">
-                  <Button customClass={`mt-5`} text="Contactez-nous"></Button>
+                  <Button customClass={`mt-5`} text="Contactez-nous ☎️"></Button>
                 </Link>
               </div>
             

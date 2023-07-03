@@ -68,16 +68,20 @@ const Support = () => {
     <AnimatePresence>
       <div className={`${theme} w-full overflow-hidden static`}>
         {showModal && (
-            <m.div
-              className="backdrop"
-              initial={{ opacity: 0, y: 20 }} // Animation initiale : opacité à 0 et décalage de 20 pixels vers le bas
-              animate={{ opacity: 1, y: 0 }} // Animation d'entrée : opacité à 1 et décalage de 0 pixels
-              exit={{ opacity: 0, y: -20 }} // Animation de sortie : opacité à 0 et décalage de 20 pixels vers le haut>
-            >
-              <SuccessModal title="Votre message a bien été envoyé ✨" content={"Nous reviendrons vers vous au plus vite. 🎉"}  closeModal={() => setShowModal(false)} />
-              <Rainfall />
-            </m.div>
-          )}
+          <m.div
+            className="backdrop"
+            initial={{ opacity: 0, y: 20 }} // Animation initiale : opacité à 0 et décalage de 20 pixels vers le bas
+            animate={{ opacity: 1, y: 0 }} // Animation d'entrée : opacité à 1 et décalage de 0 pixels
+            exit={{ opacity: 0, y: -20 }} // Animation de sortie : opacité à 0 et décalage de 20 pixels vers le haut>
+          >
+            <SuccessModal
+              title="Votre message a bien été envoyé ✨"
+              content={"Nous reviendrons vers vous au plus vite. 🎉"}
+              closeModal={() => setShowModal(false)}
+            />
+            <Rainfall />
+          </m.div>
+        )}
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
@@ -96,19 +100,21 @@ const Support = () => {
                 </span>
               </p>
             </div>
-            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap xxs:items-center sm:my-5 sm:px-16 px-6 sm:py-12 py-4 w-full bg-[#d9D9D9] box-shadow rounded-2xl">
+            <div className="flex gap-10 xxs:flex-wrap md:flex-nowrap xxs:items-center sm:my-5 sm:px-16 px-6 sm:py-12 py-4 w-full bg-white  box-shadow rounded-2xl">
               <form
                 id="support"
                 className={`flex align-baseline flex-col w-full`}
                 onSubmit={formik.handleSubmit}
               >
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6 text-primary"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary"
+                  }
                   label={"Nom"}
                   htmlFor="name"
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-primary -b-4 -indigo-500 h-[25px] placeholder-gray-500"
+                    "bg-transparent -indigo-500 h-[25px] border-b-2 border-primary  placeholder-gray-500"
                   }
                   placeholder="Inscrivez votre nom"
                   type="text"
@@ -124,13 +130,13 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6 text-primary"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary"
+                  }
                   label={"Mail"}
                   htmlFor={"mail"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary  -indigo-500 h-[25px] placeholder-gray-500"
-                  }
+                  classInput={"bg-transparent h-[25px] border-b-2 border-primary  placeholder-gray-500"}
                   placeholder={"Inscrivez votre mail"}
                   type={"email"}
                   needed={true}
@@ -145,13 +151,13 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6 text-primary"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary"
+                  }
                   label={"Téléphone"}
                   htmlFor={"phone"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary  h-[25px] placeholder-gray-500"
-                  }
+                  classInput={"bg-transparent h-[25px] border-b-2 border-primary  placeholder-gray-500"}
                   placeholder={"Inscrivez votre numéro"}
                   type={"tel"}
                   needed={true}
@@ -167,13 +173,13 @@ const Support = () => {
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6 text-primary"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary"
+                  }
                   label={"Société"}
                   htmlFor={"society"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary  h-[25px] placeholder-gray-500"
-                  }
+                  classInput={"bg-transparent  h-[25px] border-b-2 border-primary  placeholder-gray-500"}
                   placeholder={"Inscrivez votre société"}
                   type={"text"}
                   needed={true}
@@ -183,19 +189,21 @@ const Support = () => {
                 />
 
                 {formik.touched.society && formik.errors.society ? (
-                  <small className="text-red-400">{formik.errors.society}</small>
+                  <small className="text-red-400">
+                    {formik.errors.society}
+                  </small>
                 ) : (
                   ""
                 )}
 
                 <InputGroup
-                  className={"flex flex-col w-full form-group mt-6 text-primary"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary"
+                  }
                   label={"Nom de l'etude"}
                   htmlFor={"study"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "bg-primary  h-[25px] placeholder-gray-500"
-                  }
+                  classInput={"bg-transparent  h-[25px] border-b-2 border-primary  placeholder-gray-500"}
                   placeholder={"Inscrivez le nom de l'étude"}
                   type={"text"}
                   needed={true}
@@ -211,13 +219,13 @@ const Support = () => {
                 )}
 
                 <Textarea
-                  className={"flex flex-col w-full form-group mt-6 text-primary border-1"}
+                  className={
+                    "flex flex-col w-full form-group mt-6 text-primary border-1"
+                  }
                   label={"Message"}
                   htmlFor={"message"}
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
-                  classInput={
-                    "  h-[100px] placeholder-gray-500 p-1"
-                  }
+                  classInput={"bg-transparent h-[100px] border-b-2 border-primary  placeholder-gray-500 p-1"}
                   placeholder={"Tapez ici votre message"}
                   needed={true}
                   value={formik.values.message}
@@ -225,7 +233,9 @@ const Support = () => {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.message && formik.errors.message ? (
-                  <small className="text-red-400">{formik.errors.message}</small>
+                  <small className="text-red-400">
+                    {formik.errors.message}
+                  </small>
                 ) : (
                   ""
                 )}

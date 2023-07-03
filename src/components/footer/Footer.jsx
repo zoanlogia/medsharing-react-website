@@ -16,7 +16,7 @@ const Footer = () => {
           <img
             src={logoRemoveBg}
             alt="medsharing"
-            className="w-[72px] h-[72px] bg-white border rounded-full box-shadow shadow-xl"
+            className="w-[72px] h-[72px] bg-white rounded-full object-contain"
           />
           <p className={`${styles.paragraph} mt-4 maw-w-[310px]`}>
             {" "}
