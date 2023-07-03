@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme.jsx";
-import { useScrollFadeScale } from "../../hooks/useScrollFadeScale.jsx";
+import { useScrollFadeScaleDown } from "../../hooks/useScrollFadeScale.jsx";
 import styles from "../../constants/style";
 
 import Navbar from "../../components/navbar/Navbar.jsx";
@@ -15,15 +15,15 @@ import Cta from "../../components/sections/Cta.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 
 const LandingPage = () => {
-  const heroAnimation = useScrollFadeScale();
-  const statsAnimation = useScrollFadeScale();
-  const businessAnimation = useScrollFadeScale();
-  const billingAnimation = useScrollFadeScale();
-  const cardDealAnimation = useScrollFadeScale();
-  const countersAnimation = useScrollFadeScale();
-  const testimonialsAnimation = useScrollFadeScale();
-  const ctaAnimation = useScrollFadeScale();
-  const footerAnimation = useScrollFadeScale();
+  const heroAnimation = useScrollFadeScaleDown();
+  const statsAnimation = useScrollFadeScaleDown();
+  const businessAnimation = useScrollFadeScaleDown();
+  const billingAnimation = useScrollFadeScaleDown();
+  const cardDealAnimation = useScrollFadeScaleDown();
+  const countersAnimation = useScrollFadeScaleDown();
+  const testimonialsAnimation = useScrollFadeScaleDown();
+  const ctaAnimation = useScrollFadeScaleDown();
+  const footerAnimation = useScrollFadeScaleDown();
 
   const { theme } = useTheme();
 
@@ -37,7 +37,7 @@ const LandingPage = () => {
       <m.div
         style={{ opacity: heroAnimation.opacity, scale: heroAnimation.scale }}
         ref={heroAnimation.Ref}
-        className={` ${styles.flexCenter} ${styles.boxWidth} h-screen relative`}
+        className={` ${styles.flexCenter} ${styles.boxWidth} h-screen mx-auto`}
       >
         <Hero />
       </m.div>

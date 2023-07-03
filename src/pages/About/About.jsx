@@ -16,12 +16,12 @@ const About = () => {
         </div>
       </div>
       <div className={` ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <div className={layout.section}>
+        <div className={`${styles.boxWidth} `}>
+          <div className={`${layout.section} lg:h-screen`}>
             <CardAbout1 />
           </div>
 
-          <div className={layout.section}>
+          <div className={`${layout.section} lg:h-screen`}>
             <CardAbout2 />
           </div>
           <Footer />
