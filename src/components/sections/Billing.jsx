@@ -1,6 +1,6 @@
-import styles, { layout } from "../../constants/style";
-import bill from "../../assets/images/bill.png";
-import hrBlue from "../../assets//images/hrBlue.svg";
+import styles, { layout } from "@/constants/style";
+import bill from "@/assets/images/bill.png";
+import hrBlue from "@/assets//images/hrBlue.svg";
 const Billing = () => {
   return (
     <section id="product" className={layout.sectionReverse}>

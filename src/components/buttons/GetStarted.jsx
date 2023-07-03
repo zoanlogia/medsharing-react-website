@@ -1,5 +1,5 @@
-import arrowUp from "../../assets/images/arrow-up.svg";
-import styles from "../../constants/style";
+import arrowUp from "@/assets/images/arrow-up.svg";
+import styles from "@/constants/style";
 
 const GetStarted = () => {
   return (

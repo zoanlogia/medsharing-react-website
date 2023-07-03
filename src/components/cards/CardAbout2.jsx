@@ -1,7 +1,7 @@
-import styles, { layout } from "../../constants/style";
-import aboutVector from "../../assets/images/aboutVector.svg";
-import hrBlue from "../../assets/images/hrBlue.svg";
-import IconCheckBlue from "../../assets/images/IconCheckBlue.svg";
+import styles, { layout } from "@/constants/style";
+import aboutVector from "@/assets/images/aboutVector.svg";
+import hrBlue from "@/assets/images/hrBlue.svg";
+import IconCheckBlue from "@/assets/images/IconCheckBlue.svg";
 
 
 const CardAbout2 = () => {

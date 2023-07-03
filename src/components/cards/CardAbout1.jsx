@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styles, { layout } from "../../constants/style";
-import SectionTitle from "../texts/SectionTitle.jsx";
-import Button from "../buttons/Button.jsx";
-import hospital from "../../assets/images/hospital.svg";
+import styles, { layout } from "@/constants/style";
+import SectionTitle from "@/components/texts/SectionTitle";
+import Button from "@/components/buttons/Button";
+import hospital from "@/assets/images/hospital.svg";
 
 const CardAbout1 = () => {
   return (

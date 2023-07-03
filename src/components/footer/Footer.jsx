@@ -1,7 +1,7 @@
-import styles from "../../constants/style";
+import styles from "@/constants/style";
 
-import { footerLinks, socialMedia } from "../../constants/index";
-import  logoRemoveBg  from "../../assets/images/logonobg.svg";
+import { footerLinks, socialMedia } from "@/constants/index";
+import  logoRemoveBg  from "@/assets/images/logonobg.svg";
 import { NavLink } from "react-router-dom";
 
 

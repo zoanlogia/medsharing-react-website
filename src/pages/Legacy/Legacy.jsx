@@ -1,17 +1,17 @@
-import privacyVector from "../../assets/images/privacyVector.svg";
-import BadgeRounded from "../../components/badges/BadgeRounded.jsx";
+import privacyVector from "@/assets/images/privacyVector.svg";
+import BadgeRounded from "@/components/badges/BadgeRounded.jsx";
 
-import Footer from "../../components/footer/Footer.jsx";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import SectionParagraph from "../../components/texts/SectionParagraph.jsx";
-import SectionTitle from "../../components/texts/SectionTitle.jsx";
-import styles, { layout } from "../../constants/style.js";
-import { useTheme } from "../../hooks/useTheme.jsx";
+import Footer from "@/components/footer/Footer.jsx";
+import Navbar from "@/components/navbar/Navbar.jsx";
+import SectionParagraph from "@/components/texts/SectionParagraph.jsx";
+import SectionTitle from "@/components/texts/SectionTitle.jsx";
+import styles, { layout } from "@/constants/style.js";
+import { useTheme } from "@/hooks/useTheme.jsx";
 
-import validDoc from "../../assets/images/validDoc.png";
-import cookies from "../../assets/images/cookies.svg";
-import serviceAgreement from "../../assets/images/serviceAgreement.png";
-import drone from "../../assets/images/drone.png";
+import validDoc from "@/assets/images/validDoc.png";
+import cookies from "@/assets/images/cookies.svg";
+import serviceAgreement from "@/assets/images/serviceAgreement.png";
+import drone from "@/assets/images/drone.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

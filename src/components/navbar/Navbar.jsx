@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
-import { navLinks } from "../../constants";
+import { navLinks } from "@/constants";
 import { NavLink } from "react-router-dom";
-import { LOCALES } from "../../i18n/locales";
-import { useTheme } from "../../hooks/useTheme";
-import logoRemoveBg from "../../assets/images/logonobg.svg";
-import ButtonLanguageTexts from "../buttons/ButtonLanguages.jsx";
-import ThemeModeButton from "../buttons/ThemeModeButton.jsx";
-import menu from "../../assets/images/menu.svg";
+import { LOCALES } from "@/i18n/locales";
+import { useTheme } from "@/hooks/useTheme";
+import logoRemoveBg from "@/assets/images/logonobg.svg";
+import ButtonLanguageTexts from "@/components/buttons/ButtonLanguages";
+import ThemeModeButton from "@/components/buttons/ThemeModeButton";
+import menu from "@/assets/images/menu.svg";
 
 const Navbar = () => {
   const { theme } = useTheme;

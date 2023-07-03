@@ -1,9 +1,9 @@
-import CardAbout1 from "../../components/cards/CardAbout1.jsx";
-import CardAbout2 from "../../components/cards/CardAbout2.jsx";
-import Footer from "../../components/footer/Footer.jsx";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import styles, { layout } from "../../constants/style";
-import { useTheme } from "../../hooks/useTheme.jsx";
+import CardAbout1 from "@/components/cards/CardAbout1";
+import CardAbout2 from "@/components/cards/CardAbout2";
+import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import styles, { layout } from "@/constants/style";
+import { useTheme } from "@/hooks/useTheme";
 
 const About = () => {
   const {theme} = useTheme();

@@ -1,18 +1,18 @@
-import s1 from "../assets/images/s1.png";
-import s2 from "../assets/images/s2.png";
-import shuffle from "../assets/images/shuffle.png";
-import star from "../assets/images/Star.svg";
-import shield from "../assets/images/Shield.svg";
-import send from "../assets/images/Send.svg";
-import afcp from "../assets/images/afcp.jpeg";
-import renape from "../assets/images/renape.jpeg";
-import cemka from "../assets/images/cemka.jpeg";
-import cro from "../assets/images/cro.png";
-import linkedin from "../assets/images/linkedin.svg";
-import twitter from "../assets/images/twitter.svg";
+import s1 from "@/assets/images/s1.png";
+import s2 from "@/assets/images/s2.png";
+import shuffle from "@/assets/images/shuffle.png";
+import star from "@/assets/images/Star.svg";
+import shield from "@/assets/images/Shield.svg";
+import send from "@/assets/images/Send.svg";
+import afcp from "@/assets/images/afcp.jpeg";
+import renape from "@/assets/images/renape.jpeg";
+import cemka from "@/assets/images/cemka.jpeg";
+import cro from "@/assets/images/cro.png";
+import linkedin from "@/assets/images/linkedin.svg";
+import twitter from "@/assets/images/twitter.svg";
 
 
-import { LOCALES } from "../i18n/locales";
+import { LOCALES } from "@/i18n/locales";
 
   export const navLinks = {
     [LOCALES.FRENCH]: [

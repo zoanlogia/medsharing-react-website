@@ -1,7 +1,7 @@
-import { useTheme } from "../../hooks/useTheme.jsx";
-import styles, { layout } from "../../constants/style.js";
-import Navbar from "../../components/Navbar.jsx";
-import Footer from "../../components/Footer.jsx";
+import { useTheme } from "@/hooks/useTheme.jsx";
+import styles, { layout } from "@/constants/style.js";
+import Navbar from "@/components/Navbar.jsx";
+import Footer from "@/components/Footer.jsx";
 import {
   bigArrow,
   cleaning,
@@ -9,9 +9,9 @@ import {
   dots,
   grandma,
   starsBg,
-} from "../../assets/index.js";
-import BullInfo from "../../components/BullInfo.jsx";
-import CardParagraph from "../../components/CardParagraph.jsx";
+} from "@/assets/index.js";
+import BullInfo from "@/components/BullInfo.jsx";
+import CardParagraph from "@/components/CardParagraph.jsx";
 
 const Services = ({ onClick }) => {
   const { theme } = useTheme();

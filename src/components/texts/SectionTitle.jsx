@@ -1,4 +1,4 @@
-import hrBlue from "../../assets/images/hrBlue.svg";
+import hrBlue from "@/assets/images/hrBlue.svg";
 
 const SectionTitle = ({children, size}) => {
   return (

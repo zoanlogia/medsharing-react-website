@@ -1,5 +1,5 @@
-import { clients } from "../../constants/index";
-import styles from "../../constants/style";
+import { clients } from "@/constants/index";
+import styles from "@/constants/style";
 
 const Clients = () => {
   return (

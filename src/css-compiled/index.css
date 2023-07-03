@@ -3127,7 +3127,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImg {
-  background-image: url("../assets/images/blob_light_blue.svg");
+  background-image: url("@/assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 600px;
@@ -3140,7 +3140,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImgSolutionsRight {
-  background-image: url("../assets/images/blob_light_blue.svg");
+  background-image: url("@/assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -3153,7 +3153,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .blobImgSolutionsLeft {
-  background-image: url("../assets/images/blob_light_blue.svg");
+  background-image: url("@/assets/images/blob_light_blue.svg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -3177,7 +3177,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .layer1 {
-  background-image: url("../../assets/images/bannerTop.svg");
+  background-image: url("@/assets/images/bannerTop.svg");
 }
 
 .plenty-banner {
@@ -3196,7 +3196,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 .layer2 {
-  background-image: url("../assets/images/bannerBottom.svg");
+  background-image: url("@/assets/images/bannerBottom.svg");
 }
 
 .list-inline {
@@ -3204,7 +3204,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
 }
 
 #solutionsIconsSection {
-  background-image: url("../assets/images/city.svg");
+  background-image: url("@/assets/images/city.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;

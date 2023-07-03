@@ -1,6 +1,6 @@
-import styles from "../../constants/style";
-import SolucesIcons from "../icons/SolucesIcons.jsx";
-import SectionParagraph from "../texts/SectionParagraph.jsx";
+import styles from "@/constants/style";
+import SolucesIcons from "@/components/icons/SolucesIcons";
+import SectionParagraph from "@/components/texts/SectionParagraph";
 
 const ServicesCard = ({ src, title, alt, bold, content }) => {
   return (
