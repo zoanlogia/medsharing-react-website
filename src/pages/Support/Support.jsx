@@ -251,9 +251,11 @@ const Support = () => {
                   type={"submit"}
                 />
               </form>
-              <div className="mt-6 h-full w-full flex items-center justify-center">
+              <div className="h-full w-full flex items-center justify-center">
                 <img
-                  className="object-cover lg:w-[500px] lg:h-[500px]"
+                  height={600}
+                  width={600}
+                  className="object-cover"
                   src={supportNoBg}
                   alt="support"
                 />

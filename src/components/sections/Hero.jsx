@@ -22,7 +22,9 @@ const Hero = () => {
         >
           <img
             src={saas}
-            className="w-[50px] h-[50px] border rounded-full me-2"
+            width={50}
+            height={50}
+            className="border rounded-full me-2"
             alt="saas"
           />
           <p className={`${styles.paragraph1} ml-2`}>
@@ -80,7 +82,7 @@ const Hero = () => {
              ${heroCity}?w=800 800w, 
              ${heroCity}?w=1024 1024w`}
           alt="robot"
-          className="w-[100%] h-[100%] relative z-index-[5]"
+          className="relative z-index-[5]"
         />
 
       </div>

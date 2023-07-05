@@ -25,7 +25,7 @@ const BullInfo = ({ src, title, text }) => {
   return (
     <>
       <div className="img_item" onClick={handleShow}>
-        <img className="w-[300px] h–[300px]" src={src} alt="img" />
+        <img width={300} height={300} src={src} alt="bulle" />
         <div
           ref={ref}
           className={`details rounded-[80px] border-secondary border-2 max-w-[400px] ${

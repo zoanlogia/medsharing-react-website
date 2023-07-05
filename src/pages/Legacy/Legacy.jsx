@@ -180,7 +180,7 @@ const Legacy = () => {
                 </SectionParagraph>
               )}
             </div>
-            <img src={privacyVector} alt="icon privacy" />
+            <img src={privacyVector} width={478} height={564} alt="icon privacy" />
           </div>
           <div className={layout.section}></div>
           <Footer />

@@ -1505,6 +1505,10 @@ video {
   }
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 .blobImg {
   background-image: url("../assets/images/blob_light_blue.svg");
   background-size: cover;

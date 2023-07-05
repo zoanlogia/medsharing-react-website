@@ -8,7 +8,9 @@ const Billing = () => {
         <img
           src={bill}
           alt="dashboard picture"
-          className="md:w-[60%] md:h-[100%] sm:w-[100%] sm:h-[100%] relative z-[5]"
+          className="relative z-[5]"
+          width={700}
+          height={650}
         />
         <div className={`${layout.sectionInfo} bg-white-gradient`}>
           <h2 className={styles.heading}>

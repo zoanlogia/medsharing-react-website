@@ -1,5 +1,3 @@
-
-import { lazy } from 'react';
 import { motion as m } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme";
 import { useScrollFadeScaleDown } from "../../hooks/useScrollFadeScale";
@@ -8,14 +6,14 @@ import styles from "../../constants/style";
 import Navbar from "../../components/navbar/Navbar";
 import Hero from "../../components/sections/Hero";
 import useScrollToTop from '../../hooks/useScrollToTop.jsx';
-const Stats = lazy(() => import("../../components/sections/Stats"))
-const Business = lazy(() => import("../../components/sections/Business"))
-const Billing = lazy(() => import("../../components/sections/Billing"))
-const CardDeal = lazy(() => import("../../components/cards/CardDeal"))
-const Counters = lazy(() => import("../../components/counters/Counters"))
-const Testimonials = lazy(() => import("../../components/sections/Testimonials"))
-const Cta = lazy(() => import("../../components/sections/Cta"))
-const Footer = lazy(() => import("../../components/footer/Footer"))
+ import Stats from "../../components/sections/Stats"
+ import Business from "../../components/sections/Business"
+ import Billing from "../../components/sections/Billing"
+ import CardDeal from "../../components/cards/CardDeal"
+ import Counters from "../../components/counters/Counters"
+ import Testimonials from "../../components/sections/Testimonials"
+ import Cta from "../../components/sections/Cta"
+ import Footer from "../../components/footer/Footer"
 
 
 const LandingPage = () => {

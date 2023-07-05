@@ -11,7 +11,7 @@ const ThemeModeButton = () => {
 
   return (
     <button className='m-1' onClick={handleClick}>
-      <img className={`w-[25px] h-[25px]`} src={theme === 'light' ? moon  : lightbulb} alt="theme-icon" />
+      <img width={25} height={25} src={theme === 'light' ? moon  : lightbulb} alt="theme-icon" />
     </button>
   );
 };

@@ -6,14 +6,16 @@ const Feedback = ({ content, title, name, img }) => {
       <img
         src={quotes}
         alt="double_quotes"
-        className="w-[42px] h-[27px] object-contain"
+        width={42}
+        height={27}
+        className="object-contain"
       />
       <p className="font-poppins font-normal text-[18px] leading-[32px] my-10">
         {content}
       </p>
 
-      <div className="flex flex-row">
-        <img src={img} alt={name} className="w-[48px] h-[48px] object-cover rounded-full" />
+      <div className="flex flex-row h-[48px] w-[48px]">
+        <img src={img} alt={name} width={48} height={48} className="object-fill rounded-full" />
 
         <div className="flex flex-col ml-4">
           <h4 className="font-poppins font-semibold text-[20px] leading-[32px] ">

@@ -17,11 +17,11 @@ const CardDeal = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "100%",
               backgroundPosition: "left bottom",
-              
             }}
           >
-            études 
-          </span> réussies
+            études
+          </span>{" "}
+          réussies
         </h2>
         <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
           EOL©, conçu par MEDSHARING, assure une optimisation supérieure de la
@@ -45,7 +45,8 @@ const CardDeal = () => {
         <img
           src={medsharingManagement}
           alt="card"
-          className="w-[100%] h-[100%]"
+          width={700}
+          height={600}
         />
       </div>
     </section>

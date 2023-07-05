@@ -28,48 +28,50 @@ const CardAbout2 = () => {
     <section
       className={`${layout.section} relative flex-col-reverse sm:flex-row bg-black-gradient-2 rounded-[20px] box-shadow w-full xxs:px-2`}
     >
-      <div className="blue__gradient w-[45%] h-[50%] absolute"></div>
+      
       <div className={`${layout.sectionImgReverse} xl:mr-0`}>
         <img
           src={aboutVector}
-          className="w-full h-full mt-10 sm:mt-0 md:mt-10 object-contain"
+          width={700}
+          height={500}
+          className=" mt-10 sm:mt-0 md:mt-10 object-contain"
           alt="hospital"
         />
       </div>
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.headingMd}`}>
           Adapté à tous types d&apos;études
-          <img className="w-full h-[10px] object-cover" src={hrBlue} alt="hr" />
+          <img className="h-[10px] w-full object-cover" src={hrBlue} alt="hr" />
         </h2>
 
         <ul className="mt-5">
           <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls}>
             <p className={`${styles.paragraph1} flex gap-2`}>
-              <img src={IconCheckBlue} alt="check icon" />
+              <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
               <span>Études pharmaco–épidémiologiques</span>
             </p>
           </m.li>
           <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls1}>
             <p className={`${styles.paragraph1} flex gap-2`}>
-              <img src={IconCheckBlue} alt="check icon" />
+              <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
               <span>Matério ou pharmaco-vigilance</span>
             </p>
           </m.li>
           <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls2}>
             <p className={`${styles.paragraph1} flex gap-2`}>
-              <img src={IconCheckBlue} alt="check icon" />
+              <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
               <span>Registres, Observatoires, Cohortes</span>
             </p>
           </m.li>
           <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls3}>
             <p className={`${styles.paragraph1} flex gap-2`}>
-              <img src={IconCheckBlue} alt="check icon" />
+              <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
               <span>Etudes sur les alicaments</span>
             </p>
           </m.li>
           <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls4}>
             <p className={`${styles.paragraph1} flex gap-2`}>
-              <img src={IconCheckBlue} alt="check icon" />
+              <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
               <span>Enquêtes Médico-Marketing</span>
             </p>
           </m.li>
@@ -89,31 +91,31 @@ const CardAbout2 = () => {
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls5}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Unités INSERM, CNRS</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls6}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Agences de recherches</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls7}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Instituts de veille sanitaire</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls8}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Associations ou groupes académiques</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls9}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>DRRC</span>
               </p>
             </m.li>
@@ -128,31 +130,31 @@ const CardAbout2 = () => {
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls11}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>CRO</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls12}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Industrie pharmaceutique</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls13}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Industrie du dispositif médical</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls14}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Industrie agro-alimentaire</span>
               </p>
             </m.li>
             <m.li initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls15}>
               <p className={`${styles.paragraph1} flex gap-2`}>
-                <img src={IconCheckBlue} alt="check icon" />
+                <img src={IconCheckBlue} width={20} height={20} alt="check icon" />
                 <span>Industrie cosmétique et para-pharmaceutique.</span>
               </p>
             </m.li>

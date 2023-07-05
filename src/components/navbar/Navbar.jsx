@@ -8,6 +8,7 @@ import logoRemoveBg from "../../assets/images/logonobg.svg";
 import ButtonLanguageTexts from "../buttons/ButtonLanguages.jsx";
 import ThemeModeButton from "../buttons/ThemeModeButton.jsx";
 import menu from "../../assets/images/menu.svg";
+import close from "../../assets/images/close.svg";
 
 const Navbar = () => {
   const { theme } = useTheme;
@@ -45,7 +46,9 @@ const Navbar = () => {
         <img
           src={logoRemoveBg}
           alt="medsharing"
-          className={`w-[40px] h-[40px] bg-white rounded-full`}
+          width={40}
+          height={40}
+          className={` bg-white rounded-full`}
         />
       </Link>
       <Link to="/">
@@ -92,7 +95,9 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          width={28}
+          height={28}
+          className="object-contain"
           onClick={() => setToggle((prev) => !prev)}
         />
 

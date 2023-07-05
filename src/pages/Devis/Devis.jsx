@@ -190,9 +190,10 @@ const Devis = () => {
                     </h2>
                   </div>
                 </div>
-                <div className={`w-[75%] h-[75%]`}>
+                <div className={`w-[100%] h-[100%]`}>
                   <img
-                    className="h-[100%] w-[100%]"
+                    width={613}
+                    height={444}
                     src={vectorContact}
                     alt="contact image"
                   />
@@ -373,7 +374,7 @@ const Devis = () => {
               <div className="bg-[#D9D9D9] w-full flex flex-col items-center rounded-tr-[20px] rounded-br-[20px]">
                 <div className="flex align-baseline flex-col w-full sm:my-5 sm:px-16 px-6 sm:py-12 py-4">
                   <div className="flex items-center gap-3 mt-6">
-                    <img src={phoneIcon} alt="phone icon" />
+                    <img src={phoneIcon} alt="phone icon" height={30} width={30} />
                     <Link to={"tel:0148753914"}>
                       <p className="text-primary text-[24px] text-bolder">
                         +33(0)148753914
@@ -381,7 +382,7 @@ const Devis = () => {
                     </Link>
                   </div>
                   <div className="flex items-center gap-3 mt-6">
-                    <img src={mapIcon} alt="map icon" />
+                    <img src={mapIcon} alt="map icon" height={30} width={30} />
                     <Link
                       to={
                         "https://www.google.com/maps?q=Medsharing+Solution+e-CRF&ftid=0x47e672a91afbce3b:0x357a800695fd02"
@@ -393,7 +394,7 @@ const Devis = () => {
                     </Link>
                   </div>
                   <div className="flex items-center gap-3 mt-6">
-                    <img src={mailIcon} alt="mail icon" />
+                    <img src={mailIcon} alt="mail icon" height={30} width={30} />
                     <Link
                       mailto={"info@medsharing.fr"}
                     >

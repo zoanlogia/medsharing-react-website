@@ -1,16 +1,11 @@
-const SolucesIcons = ({
-  className,
-  src,
-  alt,
-  title,
-  onClick,
-  children,
-}) => {
+const SolucesIcons = ({ className, src, alt, title, onClick, children, width, height }) => {
   return (
     <>
       <div onClick={onClick} className={className}>
         <img
-          className={`object-contain w-[100%] h-[100%]`}
+          width={width}
+          height={height}
+          className={`object-contain`}
           src={src}
           alt={alt}
         />

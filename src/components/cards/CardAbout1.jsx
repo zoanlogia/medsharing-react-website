@@ -3,10 +3,8 @@ import { layout } from "../../constants/style";
 import SectionTitle from "../texts/SectionTitle.jsx";
 import Button from "../buttons/Button.jsx";
 import Lottie1 from "../animations/lottie/Lottie1.jsx";
-import { motion as m, useAnimation } from "framer-motion";
+import { motion as m } from "framer-motion";
 import useSlideIn from "../../hooks/useSlideIn.jsx";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 
 const CardAbout1 = () => {
   const slideInControls = useSlideIn("left", .5);
@@ -14,19 +12,13 @@ const CardAbout1 = () => {
   const slideInControls2 = useSlideIn("left", 1.5);
   const slideInControls3 = useSlideIn("left", 2);
 
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
 
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
+
 
   return (
     <>
       <div className={`${layout.sectionInfo}`}>
-        <m.div ref={ref} initial={{ opacity: 0, x: "-100vw" }} animate={{slideInControls}}>
+        <m.div initial={{ opacity: 0, x: "-100vw" }} animate={slideInControls}>
         <SectionTitle size="70%">Qui sommes-nous ?</SectionTitle>
         </m.div>
         <div>
