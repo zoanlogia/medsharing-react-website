@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { navLinks } from "../../constants";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LOCALES } from "../../i18n/locales";
 import { useTheme } from "../../hooks/useTheme";
 import logoRemoveBg from "../../assets/images/logonobg.svg";
@@ -41,14 +41,14 @@ const Navbar = () => {
       }`}
       onScroll={handleScroll}
     >
-      <NavLink to="/">
+      <Link to="/">
         <img
           src={logoRemoveBg}
           alt="medsharing"
           className={`w-[40px] h-[40px] bg-white rounded-full`}
         />
-      </NavLink>
-      <NavLink to="/">
+      </Link>
+      <Link to="/">
         <h4
           className={`ml-3 font-poppins font-semibold xs:text-[20px] text-[20px] xs:leading-[53px] leading-[43px] ${
             theme === "light" ? "text-primary" : "text-white"
@@ -56,7 +56,7 @@ const Navbar = () => {
         >
           Medsharing
         </h4>
-      </NavLink>
+      </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {links.map(
           (
