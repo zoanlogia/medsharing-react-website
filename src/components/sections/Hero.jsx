@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY} xl:h-screen`}
+      className={`flex md:flex-row flex-col ${styles.paddingY} lg:h-screen`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
@@ -70,8 +70,15 @@ const Hero = () => {
           theme === "light" ? "bg-primary p-3 rounded-2xl" : ""
         } md:my-10 relative`}
       >
-        <img
+        <img rel="preload" 
+        
           src={heroCity}
+          srcSet={
+            `${heroCity} 1200w, 
+             ${heroCity}?w=200 200w,
+             ${heroCity}?w=400 400w, 
+             ${heroCity}?w=800 800w, 
+             ${heroCity}?w=1024 1024w`}
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />

@@ -44,7 +44,7 @@ const LandingPage = () => {
       <m.div
         style={{ opacity: heroAnimation.opacity, scale: heroAnimation.scale }}
         ref={heroAnimation.Ref}
-        className={` ${styles.flexCenter} ${styles.boxWidth} h-screen mx-auto`}
+        className={` ${styles.flexCenter} ${styles.boxWidth} xl:h-screen mx-auto`}
       >
         <Hero />
       </m.div>
