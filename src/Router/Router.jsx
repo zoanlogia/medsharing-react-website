@@ -20,6 +20,7 @@ const Router = () => {
             <Route path="/devis" element={<Devis />}/>
             <Route path="/legacy" element={<Legacy />}/>
             <Route path="/*" element={<Error />} />
+            
         </Routes>
     </BrowserRouter>
     )

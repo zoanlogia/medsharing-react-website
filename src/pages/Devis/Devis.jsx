@@ -22,9 +22,13 @@ import vectorContact from "../../assets/images/vectorContact.svg";
 import phoneIcon from "../../assets/images/phoneIcon.svg";
 import mapIcon from "../../assets/images/mapIcon.svg";
 import mailIcon from "../../assets/images/mailIcon.svg";
+import useScrollToTop from "../../hooks/useScrollToTop.jsx";
 
 
 const Devis = () => {
+
+  useScrollToTop();
+
   const { theme } = useTheme();
 
   const [showModal, setShowModal] = useState(false);

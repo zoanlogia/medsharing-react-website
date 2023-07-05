@@ -1,18 +1,19 @@
 import { motion as m } from "framer-motion";
-import { useTheme } from "../../hooks/useTheme.jsx";
-import { useScrollFadeScaleDown } from "../../hooks/useScrollFadeScale.jsx";
+import { useTheme } from "../../hooks/useTheme";
+import { useScrollFadeScaleDown } from "../../hooks/useScrollFadeScale";
 import styles from "../../constants/style";
 
-import Navbar from "../../components/navbar/Navbar.jsx";
-import Hero from "../../components/sections/Hero.jsx";
-import Stats from "../../components/sections/Stats.jsx";
-import Business from "../../components/sections/Business.jsx";
-import Billing from "../../components/sections/Billing.jsx";
-import CardDeal from "../../components/cards/CardDeal.jsx";
-import Counters from "../../components/counters/Counters.jsx";
-import Testimonials from "../../components/sections/Testimonials.jsx";
-import Cta from "../../components/sections/Cta.jsx";
-import Footer from "../../components/footer/Footer.jsx";
+import Navbar from "../../components/navbar/Navbar";
+import Hero from "../../components/sections/Hero";
+import Stats from "../../components/sections/Stats";
+import Business from "../../components/sections/Business";
+import Billing from "../../components/sections/Billing";
+import CardDeal from "../../components/cards/CardDeal";
+import Counters from "../../components/counters/Counters";
+import Testimonials from "../../components/sections/Testimonials";
+import Cta from "../../components/sections/Cta";
+import Footer from "../../components/footer/Footer";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const LandingPage = () => {
   const heroAnimation = useScrollFadeScaleDown();
@@ -23,7 +24,8 @@ const LandingPage = () => {
   const countersAnimation = useScrollFadeScaleDown();
   const testimonialsAnimation = useScrollFadeScaleDown();
   const ctaAnimation = useScrollFadeScaleDown();
-  const footerAnimation = useScrollFadeScaleDown();
+
+  useScrollToTop()
 
   const { theme } = useTheme();
 
@@ -79,18 +81,18 @@ const LandingPage = () => {
           >
             <Testimonials />
           </m.div>
-          <m.div
+          <div
             ref={ctaAnimation.Ref}
             style={{ opacity: ctaAnimation.opacity, scale: ctaAnimation.scale }}
           >
             <Cta />
-          </m.div>
-          <m.div
-            ref={footerAnimation.Ref}
-            style={{ opacity: footerAnimation.opacity, scale: footerAnimation.scale }}
+          </div>
+          <div
+            // ref={footerAnimation.Ref}
+            // style={{ opacity: footerAnimation.opacity, scale: footerAnimation.scale }}
           >
             <Footer />
-          </m.div>
+          </div>
         </div>
       </div>
     </div>

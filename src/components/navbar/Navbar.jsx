@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 1 ) {
+    if (offset > 1) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -24,11 +24,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const links = navLinks[LOCALES.FRENCH] || navLinks[LOCALES.ENGLISH];
 

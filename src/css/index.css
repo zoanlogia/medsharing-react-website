@@ -1735,12 +1735,9 @@ video {
   padding-right: 1em ;
 }
 
-
-/* 
-.fade-in {
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
-} */
+nav a.active {
+  background-color: white;
+  color: #003F75;
+  border-radius: 25px;
+  padding: 5px 10px;
+}

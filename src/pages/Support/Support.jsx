@@ -15,8 +15,12 @@ import InputGroup from "../../components/inputs/InputGroup.jsx";
 import Textarea from "../../components/inputs/Textarea.jsx";
 import Button from "../../components/buttons/Button.jsx";
 import Footer from "../../components/footer/Footer.jsx";
+import useScrollToTop from "../../hooks/useScrollToTop.jsx";
 
 const Support = () => {
+
+  useScrollToTop();
+
   const { theme } = useTheme();
 
   const [showModal, setShowModal] = useState(false);
@@ -114,7 +118,7 @@ const Support = () => {
                   htmlFor="name"
                   classLabel={`font-poppins font-normal text-[20px] leading-[30.8px]`}
                   classInput={
-                    "bg-transparent -indigo-500 h-[25px] border-b-2 border-primary  placeholder-gray-500"
+                    "bg-transparent h-[25px] border-b-2 border-primary  placeholder-gray-500"
                   }
                   placeholder="Inscrivez votre nom"
                   type="text"

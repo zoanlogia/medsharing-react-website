@@ -14,8 +14,12 @@ import serviceAgreement from "../../assets/images/serviceAgreement.png";
 import drone from "../../assets/images/drone.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import useScrollToTop from "../../hooks/useScrollToTop.jsx";
 
 const Legacy = () => {
+
+  useScrollToTop();
+
   const { theme } = useTheme();
 
   const [selectedBadge, setSelectedBadge] = useState("1");

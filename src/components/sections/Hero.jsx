@@ -75,9 +75,7 @@ const Hero = () => {
           alt="robot"
           className="w-[100%] h-[100%] relative z-index-[5]"
         />
-        
-        <div className="absolute z-[1] w-[60%] h-[60%] rounded-full bottom-40 white__gradient" />
-        
+
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

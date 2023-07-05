@@ -9,8 +9,12 @@ import Footer from "../../components/footer/Footer.jsx";
 import econsentVector from "../../assets/images/econsentVector.svg";
 import business from "../../assets/images/business.svg";
 import randomisationVector from "../../assets/images/randomisationVector.svg";
+import useScrollToTop from "../../hooks/useScrollToTop.jsx";
 
 const Services = () => {
+
+  useScrollToTop();
+
   const { theme } = useTheme();
 
   return (

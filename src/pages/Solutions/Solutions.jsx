@@ -14,8 +14,13 @@ import SolucesIcons from "../../components/icons/SolucesIcons.jsx";
 import CardText from "../../components/cards/CardText.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Button from "../../components/buttons/Button.jsx";
+import useScrollToTop from "../../hooks/useScrollToTop.jsx";
 
 const Solutions = () => {
+
+
+  useScrollToTop();
+
   const { theme } = useTheme();
 
   const [showStates, setShowStates] = useState({
@@ -25,22 +30,17 @@ const Solutions = () => {
     kit: false,
   });
 
-  // const [isHovered, setIsHovered] = useState(false);
-
-  // if (!isHovered) {
-  //   setIsHovered(true);
-  // }
-
   const toggleShow = (key) => {
     setShowStates((prevState) => {
       const updatedStates = {};
       Object.keys(prevState).forEach((stateKey) => {
         updatedStates[stateKey] =
-          stateKey === key ? !prevState[stateKey] : false;
+          stateKey === key ? (prevState[stateKey] ? true : !prevState[stateKey]) : false;
       });
       return updatedStates;
     });
   };
+  
 
   return (
     <div className={`${theme} overflow-hidden`}>
@@ -49,8 +49,7 @@ const Solutions = () => {
           <Navbar />
         </div>
       </div>
-      {/* <div class="blobImgSolutionsRight xs:hidden md:block"></div> */}
-      <div className="white__gradient left-0 bottom-[60%] w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
+      
       <section
         className={`${styles.paddingX} ${styles.flexStart} ${styles.paddingY}`}
       >
@@ -507,7 +506,7 @@ const Solutions = () => {
         </div>
       </section>
 
-      <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div>
+      {/* <div className="white__gradient right-0 w-[40%] h-[40%] absolute xxs:hidden md:block"></div> */}
       <div className="ripple-background xxs:hidden md:block"></div>
       <div className="circle small-l shade1 xxs:hidden md:block"></div>
       <div className="circle medium-l shade2 xxs:hidden md:block"></div>
