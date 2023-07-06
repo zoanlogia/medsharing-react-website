@@ -1,5 +1,5 @@
 import styles, { layout } from "../../constants/style";
-import bill from "../../assets/images/bill.webp";
+import bill from "../../assets/images/bill.svg";
 import hrBlue from "../../assets//images/hrBlue.svg";
 const Billing = () => {
   return (
