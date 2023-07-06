@@ -1,15 +1,16 @@
 import { useTheme } from "../../hooks/useTheme.jsx";
 import styles from "../../constants/style.js";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import SectionParagraph from "../../components/texts/SectionParagraph.jsx";
-import SectionTitle from "../../components/texts/SectionTitle.jsx";
-import ServicesCard from "../../components/cards/ServicesCard.jsx";
-import Footer from "../../components/footer/Footer.jsx";
-
 import econsentVector from "../../assets/images/econsentVector.svg";
 import business from "../../assets/images/business.svg";
 import randomisationVector from "../../assets/images/randomisationVector.svg";
 import useScrollToTop from "../../hooks/useScrollToTop.jsx";
+import { Suspense, lazy } from "react";
+
+const Navbar = lazy(() => import("../../components/navbar/Navbar.jsx"));
+const SectionParagraph = lazy(() => import("../../components/texts/SectionParagraph.jsx"));
+const SectionTitle = lazy(() => import("../../components/texts/SectionTitle.jsx"));
+const ServicesCard = lazy(() => import("../../components/cards/ServicesCard.jsx"));
+const Footer = lazy(() => import("../../components/footer/Footer.jsx"));
 
 const Services = () => {
 
@@ -19,6 +20,7 @@ const Services = () => {
 
   return (
     <div className={`${theme} w-full overflow-hidden`}>
+      <Suspense fallback={<div>Chargement...</div>}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
@@ -79,9 +81,8 @@ const Services = () => {
               <Footer />
             </div>
           </div>
+        </Suspense>
         </div>
-      
-    
   );
 };
 

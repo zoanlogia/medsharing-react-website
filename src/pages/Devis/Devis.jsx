@@ -7,22 +7,24 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SuccessModal from "../../components/modals/SuccessModal";
-import Rainfall from "../../components/animations/Rainfall";
-import Navbar from "../../components/navbar/Navbar";
-import SectionTitle from "../../components/texts/SectionTitle";
-import InputGroup from "../../components/inputs/InputGroup";
-import Select from "../../components/inputs/Select";
-import Textarea from "../../components/inputs/Textarea";
-import Button from "../../components/buttons/Button";
-import BadgeSocialMedias from "../../components/badges/BadgeSocialMedias";
-import Footer from "../../components/footer/Footer";
 
 import vectorContact from "../../assets/images/vectorContact.svg";
 import phoneIcon from "../../assets/images/phoneIcon.svg";
 import mapIcon from "../../assets/images/mapIcon.svg";
 import mailIcon from "../../assets/images/mailIcon.svg";
 import useScrollToTop from "../../hooks/useScrollToTop.jsx";
+
+import React, { Suspense } from 'react';
+const SuccessModal = React.lazy(() => import('../../components/modals/SuccessModal'));
+const Rainfall = React.lazy(() => import('../../components/animations/Rainfall'));
+const Navbar = React.lazy(() => import('../../components/navbar/Navbar'));
+const SectionTitle = React.lazy(() => import('../../components/texts/SectionTitle'));
+const InputGroup = React.lazy(() => import('../../components/inputs/InputGroup'));
+const Select = React.lazy(() => import('../../components/inputs/Select'));
+const Textarea = React.lazy(() => import('../../components/inputs/Textarea'));
+const Button = React.lazy(() => import('../../components/buttons/Button'));
+const BadgeSocialMedias = React.lazy(() => import('../../components/badges/BadgeSocialMedias'));
+const Footer = React.lazy(() => import('../../components/footer/Footer'));
 
 
 const Devis = () => {
@@ -94,6 +96,7 @@ const Devis = () => {
   return (
     <AnimatePresence>
       <div className={`${theme} w-full overflow-hidden static`}>
+        <Suspense fallback={<div>chargement...</div>}>
         {showModal && (
           <m.div
             className="backdrop"
@@ -404,7 +407,7 @@ const Devis = () => {
                     </Link>
                   </div>
                   <div className="mt-6 shadow-xl w-full h-[600px]">
-                    <iframe className="w-full h-full rounded-2xl"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=MEDSHARING,%2044%20rue%20Roger%20Salengro,%2094120,%20Fontenay%20Sous%20Bois,%20France+(Medsharing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
+                    <iframe className="w-full h-full rounded-2xl" title="medsharing map"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=MEDSHARING,%2044%20rue%20Roger%20Salengro,%2094120,%20Fontenay%20Sous%20Bois,%20France+(Medsharing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
                 </div>
               </div>
               <BadgeSocialMedias posX={"right"} />
@@ -412,6 +415,7 @@ const Devis = () => {
             <Footer />
           </div>
         </div>
+        </Suspense>
       </div>
     </AnimatePresence>
   );

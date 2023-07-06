@@ -8,13 +8,18 @@ import kit from "../../assets/images/kit.svg";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../components/navbar/Navbar.jsx";
-import SectionTitle from "../../components/texts/SectionTitle.jsx";
-import SolucesIcons from "../../components/icons/SolucesIcons.jsx";
-import CardText from "../../components/cards/CardText.jsx";
-import Footer from "../../components/footer/Footer.jsx";
-import Button from "../../components/buttons/Button.jsx";
 import useScrollToTop from "../../hooks/useScrollToTop.jsx";
+
+import React, { Suspense } from 'react';
+const Navbar = React.lazy(() => import('../../components/navbar/Navbar'));
+const SectionTitle = React.lazy(() => import('../../components/texts/SectionTitle'));
+const SolucesIcons = React.lazy(() => import('../../components/icons/SolucesIcons'));
+const CardText = React.lazy(() => import('../../components/cards/CardText'));
+const Footer = React.lazy(() => import('../../components/footer/Footer'));
+const Button = React.lazy(() => import('../../components/buttons/Button'));
+
+// ... reste du code ...
+
 
 const Solutions = () => {
 
@@ -44,6 +49,7 @@ const Solutions = () => {
 
   return (
     <div className={`${theme} overflow-hidden`}>
+      <Suspense fallback={<div>Chargement...</div>}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
@@ -522,6 +528,7 @@ const Solutions = () => {
           <Footer />
         </div>
       </div>
+      </Suspense>
     </div>
   );
 };
