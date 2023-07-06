@@ -73,14 +73,10 @@ const Hero = () => {
         } md:my-10 relative`}
       >
         <img rel="preload" 
-        
+        width={900}
+        height={400}
           src={heroCity}
-          srcSet={
-            `${heroCity} 1200w, 
-             ${heroCity}?w=200 200w,
-             ${heroCity}?w=400 400w, 
-             ${heroCity}?w=800 800w, 
-             ${heroCity}?w=1024 1024w`}
+          
           alt="robot"
           className="relative z-index-[5]"
         />
